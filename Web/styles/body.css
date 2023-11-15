@@ -25,7 +25,7 @@ html {
 html,
 body {
   display: flex;
-  background-color: white;
+  background-color: #fffeeb;
   color: black;
   min-height: 100%;
   min-width: 100%;
