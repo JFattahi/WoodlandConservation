@@ -5,9 +5,25 @@ Devon Leigh - HTML element styling
 */
 
 /*developer defined classes*/
+
+@font-face {
+  font-family: "CustomFont"; /* Give your font a name */
+  src: url("/Web/styles/fonts/ArchivoNarrow-Regular.ttf"); /* Specify the URL and format of the font file */
+}
+
 .nav-bar {
   display: flex;
   align-items: center;
+  /* Added because of bootstrap changed the position? */
+  margin-top: 1rem;
+}
+
+/* Adjust the Chevron by the header titles */
+.nav-bar i {
+  font-size: large;
+  vertical-align: middle;
+  margin-left: 0.4rem;
+  margin-bottom: 0.1rem;
 }
 
 ul {
@@ -22,19 +38,21 @@ ul {
   list-style: none;
 }
 
+/* Header section texts*/
 .nav-bar a {
-  color: black;
+  font-family: "CustomFont", sans-serif; /* Use the custom font */
+  font-size: x-large;
   opacity: 100%;
   /*text color transition*/
   transition: color 400ms ease-out;
   line-height: 1;
-  font-size: 1rem;  
 }
 
 .nav-bar a:link {
   text-decoration: none;
 }
 
+/* Drop down hightlight colour */
 .nav-bar a:hover {
   color: green;
 }

@@ -3,6 +3,7 @@
   Authors: 
   Devon Leigh - Styling, structure, content
   Rahabar Mahmud - Content, styling, structure, footer
+  Ben Le - redesign 
 -->
 
 <!DOCTYPE html>
@@ -22,13 +23,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Link bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <!--Linking the css files for styling-->
     <link rel="stylesheet" href="styles/body.css" />
     <link rel="stylesheet" href="styles/nav.css" />
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/footer.css" />
-    <link rel="stylesheet" href="styles/index.css" />
-    <link rel="stylesheet" href="styles/estore.css" />
+    <link rel="stylesheet" href="styles/carousel.css" />
+    <!-- <link rel="stylesheet" href="styles/estore.css" /> -->
+    <link rel="stylesheet" href="styles/dropdown.css" />
 
     <!--Linking custom fonts-->
     <link
@@ -49,6 +58,13 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
 
+    <!-- Linking javascript files for bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
     <!--Linking the javascript files for functionality-->
     <script src="scripts/estore.js" async></script>
     <script defer src="scripts/main.js" async></script>
@@ -57,7 +73,7 @@
       src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"
     ></script>
 
-    <title>French Village Forest Conservation</title>
+    <title>Woodland Conservation</title>
   </head>
 
   <body>
@@ -65,11 +81,11 @@
       <div class="header-container">
         <div class="org-name">
           <!--Links back to homepage if clicked-->
-          <a class="org-logo" href="index.html"></a>
+          <a class="org-logo" href="index.html"
+            ><img src="https://i.ibb.co/GvF71Pz/logo.png"
+          /></a>
           <!--Links back to homepage if clicked-->
-          <p>
-            <a href="index.html">French Village Forest <b>Conservation</b></a>
-          </p>
+          <!-- <a class="org-text" href="index.html"></a> -->
         </div>
         <div class="menu-btn">
           <div class="menu-btn_burger"></div>
@@ -77,14 +93,68 @@
             <nav>
               <ul>
                 <!--Links to alternative pages in the navbar-->
-                <li><a href="pages/about/about.html">About</a></li>
-                <li><a href="pages/ecosystem/ecosystem.html">Ecosystem</a></li>
-                <li><a href="pages/burial/burial.html">Burial</a></li>
-                <li><a href="pages/quiz/game.php">Quiz</a></li>
-                <li><a href="pages/e-commerce/estore.html">Marketplace</a></li>
-                <li><a href="pages/newmap/client/index.html">Map</a></li>
-                <li><a href="pages/newmap/client/conservation.html">Gallery</a></li>
-                <li><a href="pages/newmap/admin/index.html">Photo Upload</a></li>
+                <div class="dropdown">
+                  <li>
+                    <a class="dropbtn" href="pages/about/about.html">About</a>
+                  </li>
+                  <div class="dropdown-content">
+                    <a href="pages/about/about.html" class="dropdown-top"
+                      >About Woodland</a
+                    >
+                    <a href="pages/about/news.html">News</a>
+                    <a href="pages/about/faq.html">FAQ</a>
+                    <a href="pages/about/contact.html" class="dropdown-bottom"
+                      >Contact Us</a
+                    >
+                  </div>
+                </div>
+
+                <div class="dropdown">
+                  <li>
+                    <a class="dropbtn" href="pages/burial/burial.html"
+                      >Burial</a
+                    >
+                  </li>
+                  <div class="dropdown-content">
+                    <a href="#" class="dropdown-top">About Burial</a>
+                    <a href="#" class="dropdown-bottom">Request Burial</a>
+                  </div>
+                </div>
+
+                <li>
+                  <a href="pages/e-commerce/estore.html">Marketplace</a>
+                </li>
+
+                <li>
+                  <a href="pages/newmap/client/index.html">Map</a>
+                </li>
+
+                <div class="dropdown">
+                  <li>
+                    <a
+                      class="dropbtn"
+                      href="pages/newmap/client/conservation.html"
+                      >Gallery</a
+                    >
+                  </li>
+                  <div class="dropdown-content">
+                    <a
+                      href="pages/newmap/client/conservation.html"
+                      class="dropdown-top"
+                      >Photo Gallery</a
+                    >
+                    <a
+                      href="pages/newmap/admin/index.html"
+                      class="dropdown-bottom"
+                      >Upload a Photo</a
+                    >
+                    <a
+                      href="pages/ecosystem/ecosystem.html"
+                      class="dropdown-bottom"
+                      >Ecosystem</a
+                    >
+                  </div>
+                </div>
               </ul>
             </nav>
           </div>
@@ -94,175 +164,108 @@
 
     <!--Main content div for all page content for responsive design-->
     <div class="main-content">
-      <!-- Slider main container -->
-      <div class="swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div
-            class="swiper-slide"
-            style="background-image: url(resources/bg1.jpg)"
-          >
-            <div class="swiper-text">
-              <h2>Welcome to French Village</h2>
+      <!-- Adding the Carousel -->
+      <div id="carouselExampleCaptions" class="carousel slide carousel-fade">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://i.ibb.co/s1YL73x/slide1.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <div class="slide-container">
+                <div class="content">
+                  <h5>
+                    Welcome to Woodland<br />
+                    Conservation
+                  </h5>
+                  <p>
+                    Experience the beauty of our woodland<br />
+                    conservation site in Nova Scotia, where<br />
+                    we are dedicated to building hiking<br />
+                    trails that cater to the needs of the<br />
+                    elderly.
+                  </p>
+                </div>
+              </div>
+              <button
+                class="button button1"
+                onclick="location.href='pages/about/about.html'"
+              >
+                Learn More
+              </button>
             </div>
           </div>
-          <div
-            class="swiper-slide"
-            style="
-              background-image: url(https://images.unsplash.com/photo-1448375240586-882707db888b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
-            "
-          >
-            <div class="swiper-text">
-              <h2>An exquisitely perserved experience</h2>
+          <div class="carousel-item">
+            <img
+              src="https://i.ibb.co/D5hpmYg/slide2.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>
+                Some representative placeholder content for the second slide.
+              </p>
             </div>
           </div>
-          <div
-            class="swiper-slide"
-            style="
-              background-image: url(https://images.unsplash.com/photo-1427434991195-f42379e2139d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80);
-            "
-          >
-            <div class="swiper-text">
-              <h2>New friends await</h2>
-            </div>
-          </div>
-          <div
-            class="swiper-slide"
-            style="
-              background-image: url(https://images.unsplash.com/photo-1649648439629-cab47849bb31?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1476&q=80);
-            "
-          >
-            <div class="swiper-text">
-              <h2>Uncover history</h2>
+          <div class="carousel-item">
+            <img
+              src="https://i.ibb.co/FKJtwcV/slide3.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
             </div>
           </div>
         </div>
-
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      </div>
-
-      <!--Holds information regarding french village-->
-      <div class="about-container section-p1">
-        <div class="about-section section-p1">
-          <div class="burial-container">
-            <div class="burial-content">
-              <div class="about-title">
-                <h2>EXPLORE THE OUTDOORS</h2>
-              </div>
-              <div class="burial-text">
-                The French Village Forest Preserve is located directly in a
-                small community located in Saint Margaret's Bay. This
-                conservation is home to the first green natural burial in all of
-                Canada, this process is done without embalming and allowing
-                nature to organically recycle the body. With it's impressive
-                flora and flauna, spanning trees and remote location; it is
-                truly one of a kind.
-                <br />
-                <a
-                  href="pages/ecosystem/ecosystem.html"
-                  style="margin: 15px"
-                  href=""
-                  >LEARN MORE</a
-                >
-              </div>
-            </div>
-
-            <div class="burial-photo"></div>
-          </div>
-        </div>
-      </div>
-
-      <!--The div showing the banner for the map-->
-      <div
-        class="about-container section-p1"
-        style="background-color: antiquewhite"
-      >
-        <div class="about-section section-p1">
-          <div class="burial-container">
-            <div class="map-photo"></div>
-            <div class="burial-content">
-              <div class="about-title">
-                <h2>Check out our Interactive Map!</h2>
-              </div>
-              <div class="burial-text">
-                The French Village Forest Preserve is located directly in a
-                small community located in Saint Margaret's Bay. This
-                conservation is home to the first green natural burial in all of
-                Canada, this process is done without embalming and allowing
-                nature to organically recycle the body. With it's impressive
-                flora and flauna, spanning trees and remote location; it is
-                truly one of a kind.
-                <br />
-                <a href="pages/map/map.html" style="margin: 15px" href=""
-                  >LEARN MORE</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!--This section is used to display the visit our marketplace banner-->
-      <section id="heroHome">
-        <h2 style="color: black">French Village Conservation</h2>
-        <h1 style="color: rgb(0, 166, 255)">MarketPlace</h1>
-        <h4 style="color: black">
-          We have seasonal products all throughout the year
-        </h4>
-        <!--A button to redirect the user to our estore page-->
-        <a href="pages/e-commerce/estore.html"
-          ><button class="button glow-button">Visit Our Store</button></a
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
         >
-      </section>
-
-      <!--This section contains our information for the new part of our webpage-->
-      <div class="news-container section-p2">
-        <div class="news-title">
-          <h1>NEWS</h1>
-        </div>
-
-        <!--We have smaller news section with different new news-->
-        <div class="news-section">
-          <div class="card">
-            <div class="card-image card-1"></div>
-            <h2>New deer family!</h2>
-            <p>
-              Recently discovered within the conservation is a new collection of
-              adorable fawns. We anticipate them to call the conservation home
-              and look forward to them growing up!
-            </p>
-            <p>
-              <a href="">READ MORE</a>
-            </p>
-          </div>
-
-          <div class="card">
-            <div class="card-image card-2"></div>
-            <h2>Fiona aftermath</h2>
-            <p>
-              Fiona has come and gone and the damages are felt widespread
-              accross the province and our conservation is no exception.
-            </p>
-            <p>
-              <a href="">READ MORE</a>
-            </p>
-          </div>
-
-          <div class="card">
-            <div class="card-image card-3"></div>
-            <h2>Coastal Birch-day!</h2>
-            <p>
-              Today some of the yellow costal birch on the preservation turned
-              250 years old today!
-            </p>
-            <p>
-              <a href="">READ MORE</a>
-            </p>
-          </div>
-        </div>
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
+      <!-- End of Carousel -->
 
       <!--The footer for our webpage-->
       <footer class="section-p1">
@@ -278,7 +281,6 @@
         <!--links to alternative pages on website-->
         <div class="col">
           <h4>Useful Links</h4>
-          <a href="pages/quiz/game.php">Quiz</a>
           <a href="#">Sign-in</a>
           <a href="pages/e-commerce/estore.html">Marketplace</a>
           <a href="pages/map/map.html">Map</a>

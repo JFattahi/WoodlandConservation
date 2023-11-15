@@ -6,19 +6,20 @@ Rahabar Mahmud - HTML element styling
 */
 
 /*import custom fonts from google api and rsms*/
-@import url("https://rsms.me/inter/inter.css");
-@import url("https://fonts.googleapis.com/css?family=Spartan");
+/* @import url("https://rsms.me/inter/inter.css");
+@import url("https://fonts.googleapis.com/css?family=Spartan"); */
+
+/* Custom font for logo name */
 
 /*html elements section*/
 html {
-  font-family: "spartan", sans-serif;
+  font-size: larger;
 }
 
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: "spartan";
 }
 
 html,
@@ -31,6 +32,7 @@ body {
   overflow-x: hidden;
   justify-content: center;
   align-items: center;
+  font-family: "CustomFont";
 }
 
 a {
@@ -47,6 +49,7 @@ a:link {
   text-decoration: none;
 }
 
+/* LOGO TEXT */
 a:hover {
   color: green;
 }
@@ -147,12 +150,14 @@ about-title {
   display: flex;
   flex-direction: column;
   padding: 10px;
+  font-family: "CustomFont";
 }
 
 .about-title {
   margin: 10px;
 }
 
+/* ss */
 .burial-content {
   width: 50%;
   display: inline-table;
