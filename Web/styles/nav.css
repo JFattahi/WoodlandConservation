@@ -19,15 +19,16 @@ Devon Leigh - HTML element styling
 }
 
 /* Adjust the Chevron by the header titles */
-.nav-bar i {
+/* .nav-bar i {
   font-size: large;
   vertical-align: middle;
   margin-left: 0.4rem;
   margin-bottom: 0.1rem;
-}
+} */
 
 ul {
   display: flex;
+  padding: none;
   align-items: center;
   list-style: none;
 }
@@ -40,6 +41,7 @@ ul {
 
 /* Header section texts*/
 .nav-bar a {
+  color: #282d32;
   font-family: "CustomFont", sans-serif; /* Use the custom font */
   font-size: x-large;
   opacity: 100%;

@@ -1,0 +1,31 @@
+/* .main-content {
+  height: 1500px;
+} */
+
+  .main-content {
+    font-family: "CustomFont";
+    color: #282d32;
+  }
+
+  .faq_title {
+    margin-top: 3rem;
+  }
+
+  .title {
+    font-weight: 800;
+    font-family: "CustomFont";
+    color: #282d32;
+    font-size: xx-large;
+    margin-top: 8rem;
+    margin-bottom: 3rem;
+  }
+
+  .accordion {
+    margin-bottom: 3rem;
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+
+  .faq-container {
+    margin-bottom: 3rem;
+  }

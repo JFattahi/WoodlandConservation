@@ -1,7 +1,7 @@
 .slide-container {
   border-radius: 25px;
   /* background-color: rgba(255, 255, 255, 0.7); */
-  margin-bottom: 5rem;
+  margin-bottom: 1rem;
 }
 
 .slide-container,
@@ -10,7 +10,7 @@
   color: whitesmoke;
   /* text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.5), 1px -1px 1px rgba(0, 0, 0, 0.5),
     -1px 1px 1px rgba(0, 0, 0, 0.5), 1px 1px 1px rgba(0, 0, 0, 0.5); */
-  text-shadow: 0 4px 8px rgba(124, 124, 124, 0.5);
+  text-shadow: 0 4px 8px rgba(124, 124, 124, 1);
 }
 
 .slide-container h5 {

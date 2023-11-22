@@ -90,7 +90,7 @@ a:hover {
   text-align: center;
 }
 
-button {
+/* button {
   background: transparent;
   border: 2px solid #fff;
   color: #fff;
@@ -98,7 +98,7 @@ button {
   padding: 10px 30px;
   font-size: 15px;
   cursor: pointer;
-}
+} */
 
 .swiper {
   width: 100%;

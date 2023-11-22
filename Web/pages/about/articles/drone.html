@@ -1,0 +1,289 @@
+<!-- Add more '../' to the relative paths -->
+<!--
+  Ben Le
+-->
+
+<!DOCTYPE html>
+
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Link bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- Linking the css files for styling -->
+    <link rel="stylesheet" href="../../../styles/body.css" />
+    <link rel="stylesheet" href="../../../styles/article.css" />
+    <link rel="stylesheet" href="../../../styles/nav.css" />
+    <link rel="stylesheet" href="../../../styles/header.css" />
+    <link rel="stylesheet" href="../../../styles/footer.css" />
+    <link rel="stylesheet" href="../../../styles/dropdown.css" />
+
+    <!-- Linking custom fonts -->
+    <link
+      rel="stylesheet"
+      href="../../../path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Linking javascript files for bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Linking the javascript files for functionality -->
+    <script src="../../scripts/estore.js" async></script>
+    <script defer src="../../scripts/main.js" async></script>
+    <script src="../../scripts/contact.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"
+    ></script>
+
+    <title>Woodland Conservation</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="org-name">
+          <!-- Links back to homepage if clicked -->
+          <a class="org-logo" href="../../../index.html"
+            ><img src="https://i.ibb.co/GvF71Pz/logo.png"
+          /></a>
+          <!-- Links back to homepage if clicked -->
+          <!-- <a class="org-text" href="index.html"></a> -->
+        </div>
+        <div class="menu-btn">
+          <div class="menu-btn_burger"></div>
+          <div id="nav-bar" class="nav-bar">
+            <nav>
+              <ul>
+                <!-- Links to alternative pages in the navbar -->
+                <div class="dropdown">
+                  <li>
+                    <a class="dropbtn" href="../../../pages/about/about.html"
+                      >About</a
+                    >
+                  </li>
+                  <div class="dropdown-content">
+                    <a
+                      href="../../../pages/about/about.html"
+                      class="dropdown-top"
+                      >About Woodland</a
+                    >
+                    <a href="../../../pages/about/news.html">News</a>
+                    <a href="../../../pages/about/faq.html">FAQ</a>
+                    <a
+                      href="../../../pages/about/contact.html"
+                      class="dropdown-bottom"
+                      >Contact Us</a
+                    >
+                  </div>
+                </div>
+
+                <div class="dropdown">
+                  <li>
+                    <a class="dropbtn" href="../../../pages/burial/burial.html"
+                      >Burial</a
+                    >
+                  </li>
+                  <div class="dropdown-content">
+                    <a href="#" class="dropdown-top">About Burial</a>
+                    <a href="#" class="dropdown-bottom">Request Burial</a>
+                  </div>
+                </div>
+
+                <li>
+                  <a href="../../../pages/e-commerce/estore.html"
+                    >Marketplace</a
+                  >
+                </li>
+
+                <li>
+                  <a href="../../../pages/newmap/client/index.html">Map</a>
+                </li>
+
+                <div class="dropdown">
+                  <li>
+                    <a
+                      class="dropbtn"
+                      href="../../../pages/newmap/client/conservation.html"
+                      >Gallery</a
+                    >
+                  </li>
+                  <div class="dropdown-content">
+                    <a
+                      href="../../../pages/newmap/client/conservation.html"
+                      class="dropdown-top"
+                      >Photo Gallery</a
+                    >
+                    <a
+                      href="../../../pages/newmap/admin/index.html"
+                      class="dropdown-bottom"
+                      >Upload a Photo</a
+                    >
+                    <a
+                      href="../../../pages/ecosystem/ecosystem.html"
+                      class="dropdown-bottom"
+                      >Ecosystem</a
+                    >
+                  </div>
+                </div>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main content div for all page content for responsive design -->
+
+    <div class="main-content">
+      <!-- ADD STUFF HERE -->
+      <div class="article-page">
+        <div
+          id="background_image"
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          <img src="https://i.ibb.co/6bVNWGN/cropped-drone.jpg" />
+        </div>
+        <h2>
+          Technology Meets Nature: Drones Aid Woodland Conservation Efforts
+        </h2>
+
+        <p id="author-name">Mark D. Lucy | Nov. 22, 2023</p>
+
+        <p>
+          In a marriage of innovation and environmental stewardship, the realm
+          of woodland conservation has embraced cutting-edge technology with the
+          use of drones. These unmanned aerial vehicles are now playing a
+          pivotal role in monitoring and protecting vulnerable ecosystems,
+          ushering in a new era of efficiency and effectiveness in conservation
+          strategies.
+        </p>
+
+        <p>
+          Drones equipped with advanced imaging technology have become
+          invaluable tools for conservationists and researchers. These
+          high-flying devices offer a bird's-eye view of woodland areas,
+          allowing for the rapid assessment of large and often inaccessible
+          areas that would be challenging or time-consuming to survey on foot.
+          One of the key applications of drones in woodland conservation is in
+          the monitoring of tree health and vegetation. High-resolution cameras
+          and sensors onboard the drones provide detailed images and data,
+          enabling experts to identify signs of stress or disease in trees. This
+          early detection is crucial in implementing targeted interventions to
+          prevent the spread of diseases that could devastate entire forests.
+        </p>
+
+        <p>
+          The use of drones extends beyond mere observation; they are also
+          employed in mapping and surveying efforts. By creating accurate 3D
+          models of the terrain, drones assist conservationists in understanding
+          the topography of woodland areas. This information is instrumental in
+          planning conservation strategies, such as reforestation initiatives
+          and the identification of critical habitats for protection. One of the
+          standout features of drone technology is its ability to reach remote
+          and sensitive areas without causing disruption. Conservationists can
+          monitor wildlife populations without disturbing their habitats,
+          gaining valuable insights into animal behavior and migration patterns.
+          This non-intrusive approach minimizes the impact of human presence on
+          delicate ecosystems.
+        </p>
+
+        <p>
+          The real-time data provided by drones also enhances the efficiency of
+          conservation efforts. Rapid identification of illegal logging
+          activities, encroachment, and other threats allows for swift
+          intervention, preventing further damage to vulnerable woodlands. The
+          use of drones has, therefore, become a critical tool in the fight
+          against deforestation and habitat loss. As technology continues to
+          advance, so does its potential to contribute to environmental
+          conservation. The marriage of drones and woodland conservation
+          represents a harmonious blend of innovation and nature protection,
+          showcasing the possibilities when technology is harnessed for the
+          greater good of our planet.
+        </p>
+
+        <p>
+          The use of drones in woodland conservation marks a paradigm shift in
+          how we approach the challenges of safeguarding our natural heritage.
+          By embracing these high-tech tools, conservationists are not only
+          enhancing their ability to monitor and protect ecosystems but are also
+          paving the way for a more sustainable and technology-driven future for
+          environmental stewardship.
+        </p>
+        <img class="bar" src="https://i.ibb.co/CH6Cmcp/gold-bar.png" />
+      </div>
+      <!-- END -->
+      <!-- The footer for our webpage -->
+      <footer class="section-p1">
+        <div class="col">
+          <h4>Contact Us</h4>
+          <p>
+            <strong>Address:</strong> 71 St Pauls Ln, French Village, NS B3Z 4E3
+          </p>
+          <p><strong>Phone:</strong> 111 222 333/ (+1) 444 555 666</p>
+          <p><strong>Hours:</strong> 10:00 - 16:00; Mon - Sat</p>
+        </div>
+
+        <!-- links to alternative pages on the website -->
+        <div class="col">
+          <h4>Useful Links</h4>
+          <a href="#">Sign-in</a>
+          <a href="../../../pages/e-commerce/estore.html">Marketplace</a>
+          <a href="../../../pages/map/map.html">Map</a>
+        </div>
+
+        <div class="col">
+          <div class="follow">
+            <h4>Follow us</h4>
+            <div class="icon">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-pinterest-p"></i>
+              <i class="fab fa-linkedin"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>Ⓒ SMU Software Engineering Group F</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

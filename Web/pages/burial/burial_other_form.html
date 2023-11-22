@@ -1,5 +1,7 @@
 <!--
-  Ben Le
+  Purpose: Landing page of the website, contains links to all scripts and CSS files and contains information and links regarding the conservation
+  Authors: 
+  Ben Le - redesign 
 -->
 
 <!DOCTYPE html>
@@ -28,7 +30,7 @@
     />
     <!--Linking the css files for styling-->
     <link rel="stylesheet" href="../../styles/body.css" />
-    <link rel="stylesheet" href="../../styles/news.css" />
+    <link rel="stylesheet" href="../../styles/burial_self_form.css" />
     <link rel="stylesheet" href="../../styles/nav.css" />
     <link rel="stylesheet" href="../../styles/header.css" />
     <link rel="stylesheet" href="../../styles/footer.css" />
@@ -167,77 +169,46 @@
 
     <div class="main-content">
       <!--ADD STUFF HERE-->
-      <div class="news-page">
-        <h1 class="news-title">News & Announcements</h1>
-        <img class="bar" src="https://i.ibb.co/CH6Cmcp/gold-bar.png" />
-        <table class="news-container">
-          <tr>
-            <td class="news-desc">
-              <h4>
-                Educational Trails Open: Woodland Conservation Center Promotes
-                Environmental Awareness
-              </h4>
-              <p>
-                Embark on an educational journey through newly established
-                trails in a Woodland Conservation Center. Engage with
-                interactive exhibits, learn about the importance of forests, and
-                gain a deeper understanding of the role each individual plays in
-                preserving these natural wonders.
-              </p>
-              <button
-                class="readmore-button"
-                onclick="location.href='../../pages/about/articles/trail.html'"
-              >
-                Read More
-              </button>
-            </td>
-            <td><img src="https://i.ibb.co/YLP1XK7/hiking.jpg" /></td>
-          </tr>
-          <tr>
-            <td class="news-desc">
-              <h4>
-                Preserving the Past, Securing the Future: Woodland Conservation
-                Rescues Endangered Trees
-              </h4>
-              <p>
-                Delve into the rescue mission of rare and endangered tree
-                species as a woodland conservation project strives to protect
-                the genetic diversity of these botanical treasures, safeguarding
-                their existence against the threat of extinction.
-              </p>
-              <button
-                class="readmore-button"
-                onclick="location.href='../../pages/about/articles/endangered.html'"
-              >
-                Read More
-              </button>
-            </td>
-            <td><img src="https://i.ibb.co/Zfjpg25/yellow-birch.jpg" /></td>
-          </tr>
-          <tr>
-            <td class="news-desc">
-              <h4>
-                Technology Meets Nature: Drones Aid Woodland Conservation
-                Efforts
-              </h4>
-              <p>
-                Uncover the innovative use of technology in woodland
-                conservation as drones are employed to monitor and protect
-                vulnerable ecosystems. See how these high-tech tools contribute
-                to more efficient and effective conservation strategies.
-              </p>
-              <button
-                class="readmore-button"
-                onclick="location.href='../../pages/about/articles/drone.html'"
-              >
-                Read More
-              </button>
-            </td>
-            <td><img src="https://i.ibb.co/GkH6WJx/drone.jpg" /></td>
-          </tr>
-        </table>
+      <div class="container">
+        <h3>Natural Burial Request</h3>
+        <form
+          id="contact-form"
+        >
+          <h3>Burial Request for Loved One</h3>
+          <h4>Requester's Information</h4>
+          <p>
+            <label for="name">First Name</label>
+            <input type="text" id="name" name="name" required />
+          </p>
+          <p>
+            <label for="name2">Last Name</label>
+            <input type="text" id="name2" name="name2" required />
+          </p>
+          <p>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </p>
+          <p>
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" />
+          </p>
+          <p>
+            <label for="relationship">Relationship to Loved One</label>
+            <input type="text" id="relationship" name="relationship" required />
+          </p>
+          <h4>Loved One's Information</h4>
+          <p>
+            <label for="name3">First Name</label>
+            <input type="text" id="name3" name="name3" required />
+          </p>
+          <p>
+            <label for="name4">Last Name</label>
+            <input type="text" id="name4" name="name4" required />
+          </p>
+          <button class="contact-button" type="submit">Send</button>
+        </form>
       </div>
-      <!-- END -->
+
       <!--The footer for our webpage-->
       <footer class="section-p1">
         <div class="col">
@@ -271,7 +242,7 @@
         </div>
 
         <div class="copyright">
-          <p>Ⓒ SMU Software Engineering Group F</p>
+          <p>Ⓒ SMU Software Engineering Group A</p>
         </div>
       </footer>
     </div>

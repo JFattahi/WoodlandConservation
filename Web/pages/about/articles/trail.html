@@ -1,0 +1,302 @@
+<!-- Add more '../' to the relative paths -->
+<!--
+  Ben Le
+-->
+
+<!DOCTYPE html>
+
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Link bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- Linking the css files for styling -->
+    <link rel="stylesheet" href="../../../styles/body.css" />
+    <link rel="stylesheet" href="../../../styles/article.css" />
+    <link rel="stylesheet" href="../../../styles/nav.css" />
+    <link rel="stylesheet" href="../../../styles/header.css" />
+    <link rel="stylesheet" href="../../../styles/footer.css" />
+    <link rel="stylesheet" href="../../../styles/dropdown.css" />
+
+    <!-- Linking custom fonts -->
+    <link
+      rel="stylesheet"
+      href="../../../path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Linking javascript files for bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Linking the javascript files for functionality -->
+    <script src="../../scripts/estore.js" async></script>
+    <script defer src="../../scripts/main.js" async></script>
+    <script src="../../scripts/contact.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"
+    ></script>
+
+    <title>Woodland Conservation</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="org-name">
+          <!-- Links back to homepage if clicked -->
+          <a class="org-logo" href="../../../index.html"
+            ><img src="https://i.ibb.co/GvF71Pz/logo.png"
+          /></a>
+          <!-- Links back to homepage if clicked -->
+          <!-- <a class="org-text" href="index.html"></a> -->
+        </div>
+        <div class="menu-btn">
+          <div class="menu-btn_burger"></div>
+          <div id="nav-bar" class="nav-bar">
+            <nav>
+              <ul>
+                <!-- Links to alternative pages in the navbar -->
+                <div class="dropdown">
+                  <li>
+                    <a class="dropbtn" href="../../../pages/about/about.html"
+                      >About</a
+                    >
+                  </li>
+                  <div class="dropdown-content">
+                    <a
+                      href="../../../pages/about/about.html"
+                      class="dropdown-top"
+                      >About Woodland</a
+                    >
+                    <a href="../../../pages/about/news.html">News</a>
+                    <a href="../../../pages/about/faq.html">FAQ</a>
+                    <a
+                      href="../../../pages/about/contact.html"
+                      class="dropdown-bottom"
+                      >Contact Us</a
+                    >
+                  </div>
+                </div>
+
+                <div class="dropdown">
+                  <li>
+                    <a class="dropbtn" href="../../../pages/burial/burial.html"
+                      >Burial</a
+                    >
+                  </li>
+                  <div class="dropdown-content">
+                    <a href="#" class="dropdown-top">About Burial</a>
+                    <a href="#" class="dropdown-bottom">Request Burial</a>
+                  </div>
+                </div>
+
+                <li>
+                  <a href="../../../pages/e-commerce/estore.html"
+                    >Marketplace</a
+                  >
+                </li>
+
+                <li>
+                  <a href="../../../pages/newmap/client/index.html">Map</a>
+                </li>
+
+                <div class="dropdown">
+                  <li>
+                    <a
+                      class="dropbtn"
+                      href="../../../pages/newmap/client/conservation.html"
+                      >Gallery</a
+                    >
+                  </li>
+                  <div class="dropdown-content">
+                    <a
+                      href="../../../pages/newmap/client/conservation.html"
+                      class="dropdown-top"
+                      >Photo Gallery</a
+                    >
+                    <a
+                      href="../../../pages/newmap/admin/index.html"
+                      class="dropdown-bottom"
+                      >Upload a Photo</a
+                    >
+                    <a
+                      href="../../../pages/ecosystem/ecosystem.html"
+                      class="dropdown-bottom"
+                      >Ecosystem</a
+                    >
+                  </div>
+                </div>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main content div for all page content for responsive design -->
+
+    <div class="main-content">
+      <!-- ADD STUFF HERE -->
+      <div class="article-page">
+        <div
+          id="background_image"
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          <img src="https://i.ibb.co/WzNJ1WP/cropped-hiking.jpg" />
+        </div>
+        <h2>
+          Educational Trails Open: Woodland Conservation Center Promotes
+          Environmental Awareness
+        </h2>
+
+        <p id="author-name">Aidan J. Penny | Nov. 22, 2023</p>
+
+        <p>
+          Nature enthusiasts and environmental advocates have a new reason to
+          celebrate as the Woodland Conservation Center opens its doors to a
+          series of educational trails. These thoughtfully designed pathways
+          wind through the heart of the center, offering visitors a unique
+          opportunity to immerse themselves in the wonders of the forest while
+          gaining valuable insights into the crucial role of woodlands in
+          sustaining life on Earth. The trails, adorned with the vibrant colors
+          of flora and the soothing sounds of nature, serve as more than just
+          recreational routes. Each step along the way is an invitation to
+          engage with interactive exhibits that provide a comprehensive
+          understanding of the delicate balance within woodland ecosystems and
+          the challenges they face in the modern world.
+        </p>
+
+        <p>
+          As visitors traverse the trails, they encounter exhibits showcasing
+          the rich biodiversity of the woodlands, highlighting the diverse array
+          of plant and animal species that call these habitats home. From rare
+          and endangered trees to elusive wildlife, the displays offer a glimpse
+          into the intricate web of life that flourishes within the forest. One
+          of the center's focal points is an interactive learning space where
+          visitors can delve into the importance of forests in mitigating
+          climate change, maintaining air and water quality, and providing vital
+          habitat for countless species. Engaging visuals and hands-on
+          activities make the educational experience both informative and
+          enjoyable for visitors of all ages.
+        </p>
+
+        <p>
+          One of the center's focal points is an interactive learning space
+          where visitors can delve into the importance of forests in mitigating
+          climate change, maintaining air and water quality, and providing vital
+          habitat for countless species. Engaging visuals and hands-on
+          activities make the educational experience both informative and
+          enjoyable for visitors of all ages.
+        </p>
+
+        <p>
+          The Woodland Conservation Center places a strong emphasis on
+          instilling a sense of environmental responsibility. Along the trails,
+          informational signs prompt visitors to reflect on the impact of human
+          activities on deforestation, habitat loss, and biodiversity. The goal
+          is to inspire a collective commitment to sustainable practices and
+          conservation efforts. Local schools and community groups are
+          encouraged to make use of the educational trails as part of their
+          curriculum. The center provides guided tours led by knowledgeable
+          naturalists, ensuring that students gain firsthand knowledge of the
+          vital role woodlands play in maintaining ecological balance.
+        </p>
+
+        <p>
+          Local schools and community groups are encouraged to make use of the
+          educational trails as part of their curriculum. The center provides
+          guided tours led by knowledgeable naturalists, ensuring that students
+          gain firsthand knowledge of the vital role woodlands play in
+          maintaining ecological balance. The grand opening of the educational
+          trails marks a significant step in the Woodland Conservation Center's
+          mission to promote environmental awareness and education. By providing
+          a platform for individuals to connect with nature and understand the
+          importance of preserving our woodlands, the center aims to cultivate a
+          generation of environmentally conscious citizens.
+        </p>
+
+        <p>
+          Whether you're a nature enthusiast, a student eager to learn, or a
+          family seeking an educational outdoor adventure, the Woodland
+          Conservation Center's educational trails promise an enriching
+          experience that goes beyond the surface beauty of the forest,
+          fostering a deep appreciation for the vital role these natural wonders
+          play in the health of our planet.
+        </p>
+        <img class="bar" src="https://i.ibb.co/CH6Cmcp/gold-bar.png" />
+      </div>
+      <!-- END -->
+      <!-- The footer for our webpage -->
+      <footer class="section-p1">
+        <div class="col">
+          <h4>Contact Us</h4>
+          <p>
+            <strong>Address:</strong> 71 St Pauls Ln, French Village, NS B3Z 4E3
+          </p>
+          <p><strong>Phone:</strong> 111 222 333/ (+1) 444 555 666</p>
+          <p><strong>Hours:</strong> 10:00 - 16:00; Mon - Sat</p>
+        </div>
+
+        <!-- links to alternative pages on the website -->
+        <div class="col">
+          <h4>Useful Links</h4>
+          <a href="#">Sign-in</a>
+          <a href="../../../pages/e-commerce/estore.html">Marketplace</a>
+          <a href="../../../pages/map/map.html">Map</a>
+        </div>
+
+        <div class="col">
+          <div class="follow">
+            <h4>Follow us</h4>
+            <div class="icon">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-pinterest-p"></i>
+              <i class="fab fa-linkedin"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>Ⓒ SMU Software Engineering Group F</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

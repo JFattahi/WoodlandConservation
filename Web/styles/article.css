@@ -1,0 +1,49 @@
+body {
+  background: #f8ffeb;
+  font-family: "CustomFont";
+}
+
+.article-page h2 {
+  font-weight: bold;
+  background-color: #eae9d8;
+  margin-bottom: 1rem;
+  padding: 5px;
+}
+
+.article-page p {
+  font-size: 20px;
+}
+
+.article-page {
+  text-align: left;
+  background-color: #fffeeb;
+  padding: 20px 15px;
+  margin: 0 70px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.article-page .bar {
+  height: 10px;
+  width: 100%;
+}
+
+.main-content {
+  margin-top: 5rem;
+}
+
+#background_image {
+  position: relative;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+}
+
+#background_image img {
+  height: 700px;
+  width: 100%;
+  opacity: 95%;
+}
+
+#author-name {
+  font-size: 16px;
+  color: grey;
+}
