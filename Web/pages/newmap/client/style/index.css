@@ -2,29 +2,18 @@
  The purpose of this file is to define the styling for the index page
 
  Author: Agowun Muhammad Altaf (A00448118), wrote the whole file
+ Ben Le: added changes to mathc overall theme
 */
 h1 {
   font-size: 3em;
 }
 
 .sect_title {
-  padding: 1em 10vw;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  display: grid;
-  grid-template-areas: "a b" "a c";
-  gap: 0 1em;
+  text-align: center;
 }
-.sect_title h1 {
-  grid-area: a;
-  line-height: 100%;
-}
+
 .sect_title p {
-  grid-area: b;
-}
-.sect_title h5 {
-  grid-area: c;
+  margin-top: -2rem;
 }
 
 header {
@@ -53,7 +42,7 @@ header #img_container img {
   width: 100%;
   height: auto;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   grid-column-start: 1;
   grid-row-start: 1;
   opacity: 0;
@@ -76,7 +65,9 @@ header #description {
   border-radius: 1rem;
   padding: 1.5em 2em;
   max-width: 35%;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11), 0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11), 0 8px 16px rgba(0, 0, 0, 0.11);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+    0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11),
+    0 8px 16px rgba(0, 0, 0, 0.11);
   transition: all 1s;
 }
 header #description .text_content {
@@ -181,7 +172,7 @@ header #description #slider_indicator .indicator_container .indicator div {
   transform: translateZ(0);
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   scale: 1.3;
   will-change: transform;
 }
@@ -235,13 +226,15 @@ header #description #slider_indicator .indicator_container .indicator div {
   max-width: 96vw;
   border-radius: 1rem;
   aspect-ratio: 20/12;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07),
+    0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07),
+    0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
 }
 #map_sect #map_container #map {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 #map_sect #map_container svg {
   pointer-events: none;
@@ -285,7 +278,9 @@ header #description #slider_indicator .indicator_container .indicator div {
   margin: 0.5em;
   background-color: var(--bg-color);
   padding: 1em;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11), 0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11), 0 8px 16px rgba(0, 0, 0, 0.11);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+    0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11),
+    0 8px 16px rgba(0, 0, 0, 0.11);
 }
 #map_sect #map_container #markers_panel img {
   max-width: 100%;
@@ -309,7 +304,7 @@ header #description #slider_indicator .indicator_container .indicator div {
   border: none;
   transform: translate(-50%, -50%);
   -webkit-clip-path: circle(0% at 50% 50%);
-          clip-path: circle(0% at 50% 50%);
+  clip-path: circle(0% at 50% 50%);
   cursor: pointer;
 }
 
@@ -361,4 +356,4 @@ header #description #slider_indicator .indicator_container .indicator div {
     top: 2em !important;
     left: 1.5em !important;
   }
-}/*# sourceMappingURL=index.css.map */
+} /*# sourceMappingURL=index.css.map */

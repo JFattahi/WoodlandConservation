@@ -1,0 +1,125 @@
+.main * {
+  box-sizing: border-box;
+}
+
+.main {
+  /* background-color: #f1f1f1; */
+  padding: 20px;
+  font-family: "CustomFont";
+}
+
+#myBtnContainer button {
+  border-radius: 15px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+/* Center website */
+.main {
+  max-width: 2000px;
+  min-height: 700px;
+  margin: auto;
+}
+
+.main h2 {
+  margin-top: 5rem;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  position: relative; /* Ensure the overlay is positioned relative to this container */
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* .content img {
+  height: 275px;
+} */
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Css for Pagetation */
+.pagination-button {
+  margin-top: 5rem;
+}
+
+.page-item a {
+  color: black;
+}
+
+.page-item a:hover {
+  color: green;
+}
+
+/* Overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.25); /* Black see-through */
+  color: #f1f1f1;
+  opacity: 0;
+  display: flex;
+  justify-content: left;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  align-items: last baseline;
+  transition: 0.5s ease;
+}
+
+.overlay a {
+  color: #f1f1f1;
+  margin-left: 7px;
+}
+
+.overlay a:hover {
+  color: lightgray;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.content:hover .overlay {
+  opacity: 1;
+}

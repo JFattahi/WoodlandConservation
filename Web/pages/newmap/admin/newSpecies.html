@@ -21,7 +21,7 @@
     </head>
     <body>
         <div id="form">
-            <!-- populated with the images of the specie to be uploaded -->
+            <!-- populated with the images of the species to be uploaded -->
             <div class="preview"></div>
 
             <label for="imageInput" id="imageInputLabel"
@@ -37,32 +37,6 @@
                     multiple
                 />
             </label>
-
-            <label for="category"
-                >Category:
-                <select name="category" id="category">
-                    <option value="unselected">Select Category</option>
-                    <option value="fauna">Fauna</option>
-                    <option value="flora">Flora</option>
-                </select>
-            </label>
-
-            <label for="name">Name: <input id="name" type="text" /></label>
-
-            <label for="description"
-                >Description:
-                <textarea
-                    name="description"
-                    id="description"
-                    cols="80"
-                    rows="10"
-                ></textarea>
-            </label>
-
-            <button id="upload">Upload</button>
-
-            <!-- populated with the progression of uploading the images -->
-            <div id="progress"></div>
         </div>
     </body>
 </html>

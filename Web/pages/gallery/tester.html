@@ -1,20 +1,8 @@
 <!--
-  Purpose: Landing page of the website, contains links to all scripts and CSS files and contains information and links regarding the conservation
-  Authors: 
-  Ben Le - redesign 
+  Ben Le
 -->
 
 <!DOCTYPE html>
-
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-/>
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-/>
-
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -37,13 +25,11 @@
     />
     <!--Linking the css files for styling-->
     <link rel="stylesheet" href="../../styles/body.css" />
+    <link rel="stylesheet" href="../../styles/photoupload.css" />
     <link rel="stylesheet" href="../../styles/nav.css" />
-    <link rel="stylesheet" href="../../styles/faq.css" />
     <link rel="stylesheet" href="../../styles/header.css" />
     <link rel="stylesheet" href="../../styles/footer.css" />
     <link rel="stylesheet" href="../../styles/dropdown.css" />
-    <link rel="stylesheet" href="../../styles/_accordion.scss" />
-    <!-- <link rel="stylesheet" href="../../styles/estore.css" /> -->
 
     <!--Linking custom fonts-->
     <link
@@ -74,7 +60,7 @@
     <!--Linking the javascript files for functionality-->
     <script src="../../scripts/estore.js" async></script>
     <script defer src="../../scripts/main.js" async></script>
-    <script src="../../scripts/contact.js"></script>
+    <script src="../../scripts/photoupload.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script
       defer
@@ -177,147 +163,55 @@
     <!--Main content div for all page content for responsive design-->
 
     <div class="main-content">
-      <!--START ADD STUFF HERE-->
-      <h2 class="title">Frequently asked questions</h2>
+      <!--ADD STUFF HERE-->
+      <h2>Have any questions or concerns?<br />Feel free to reach out!</h2>
       <div class="container">
-        <div class="accordion" id="accordionExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseOne"
-                aria-expanded="false"
-                aria-controls="collapseOne"
-              >
-                Why is woodland conservation important?
-              </button>
-            </h2>
-            <div
-              id="collapseOne"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                Woodland conservation is crucial for maintaining biodiversity,
-                preserving ecosystems, mitigating climate change, and providing
-                essential resources such as clean air and water. It also
-                supports various plant and animal species, contributing to the
-                overall health of our planet.
-              </div>
-            </div>
+        <form
+          id="contact-form"
+          method="post"
+          onsubmit="sendMessage(); reset(); return false;"
+        >
+          <h3>&#x1F4C4; Contact Us</h3>
+          <p>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </p>
+          <p>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </p>
+          <p>
+            <label for="media">Social Media</label>
+            <input type="text" id="media" name="media" />
+          </p>
+          <p><label class="upload-title">Upload Images</label></p>
+          <div id="form">
+            <!-- populated with the images of the species to be uploaded -->
+            <div class="preview"></div>
+            <label for="images" id="imageInputLabel"
+              >Add Images
+              <input
+                hidden
+                type="file"
+                name="images"
+                id="images"
+                accept="image/*"
+                multiple
+              />
+            </label>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo"
-                aria-expanded="false"
-                aria-controls="collapseTwo"
-              >
-                What are the main threats to woodland ecosystems?
-              </button>
-            </h2>
-            <div
-              id="collapseTwo"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                Common threats to woodland ecosystems include deforestation,
-                habitat fragmentation, invasive species, pollution, and climate
-                change. These factors can lead to the loss of biodiversity,
-                disruption of ecological processes, and degradation of overall
-                ecosystem health.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseThree"
-                aria-expanded="false"
-                aria-controls="collapseThree"
-              >
-                How can individuals contribute to woodland conservation?
-              </button>
-            </h2>
-            <div
-              id="collapseThree"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                Individuals can contribute to woodland conservation by
-                practicing responsible recreation, participating in tree
-                planting initiatives, supporting sustainable forestry practices,
-                reducing their carbon footprint, and educating others about the
-                importance of preserving woodlands.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseFour"
-                aria-expanded="false"
-                aria-controls="collapseFour"
-              >
-                What is the difference between conservation and preservation of
-                woodlands?
-              </button>
-            </h2>
-            <div
-              id="collapseFour"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                Conservation involves sustainable management of woodlands for
-                human use, such as logging and recreation, while preservation
-                aims to protect woodlands in their natural state, minimizing
-                human impact. Both approaches are essential for maintaining
-                biodiversity and ecosystem health.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseFive"
-                aria-expanded="false"
-                aria-controls="collapseFive"
-              >
-                How does woodland conservation support wildlife?
-              </button>
-            </h2>
-            <div
-              id="collapseFive"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                Woodland conservation provides essential habitats for a diverse
-                range of plant and animal species. Maintaining healthy woodlands
-                ensures the survival of various wildlife populations,
-                contributing to the overall biodiversity of the ecosystem.
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- END -->
+
+          <button class="contact-button" type="submit">Send</button>
+        </form>
+        <form
+          enctype="multipart/form-data"
+          method="post"
+          onsubmit="formSubmit()"
+        >
+          <label>Attach file:</label>
+          <input type="file" name="my_file" />
+          <input type="submit" value="Submit" />
+        </form>
       </div>
       <!--The footer for our webpage-->
       <footer class="section-p1">

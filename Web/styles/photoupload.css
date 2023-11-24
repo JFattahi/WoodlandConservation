@@ -1,0 +1,143 @@
+body {
+  background: #fffeeb;
+}
+
+form {
+  background: rgb(236, 236, 236);
+  display: flex;
+  flex-direction: column;
+  padding: auto;
+  width: 1500px;
+  border-radius: 10px;
+  margin-left: -5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.main-content h2 {
+  font-weight: 800;
+  font-family: "CustomFont";
+  margin-top: 6rem;
+  color: #282d32;
+  font-size: xx-large;
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin-left: 0.75rem;
+  font-family: "CustomFont";
+}
+
+textarea {
+  /* margin-left: 4rem; */
+  resize: none;
+}
+
+form h3 {
+  margin-top: 10px;
+  color: #282d32;
+  font-weight: 800;
+  margin-bottom: 20px;
+  font-family: "CustomFont";
+}
+
+input {
+  width: 76.3rem;
+}
+
+form input,
+form textarea {
+  border: 1px solid grey;
+  margin: 10px 0;
+  padding: 10px;
+  background: white;
+}
+
+.upload-title {
+  margin-bottom: -3rem;
+}
+
+.contact-button {
+  font-weight: 500;
+  border: none;
+  color: #ba972f;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 15px;
+  background-color: #fcf2e0;
+  margin-bottom: 1rem;
+  margin-left: 675px;
+  width: 180px;
+}
+
+.contact-button:hover {
+  color: green;
+}
+
+/*  */
+
+#form {
+  padding: 1em 10vw;
+  display: flex;
+  flex-direction: column;
+}
+#form .preview {
+  margin-left: -9rem;
+  min-height: 300px;
+  width: 76.3rem;
+  border: 1px solid grey;
+  padding: 10px;
+  background: white;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+  position: relative;
+}
+#form .preview img {
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+#form .preview::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(100%);
+  content: "Click on image to remove";
+}
+#form #imageInputLabel {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: black;
+  font-weight: 500;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 15px;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  margin-left: 25rem;
+  width: 180px;
+}
+
+#form label {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em 0;
+}
+#form label input {
+  padding: 0.5em;
+  font-size: large;
+  border-radius: 0.5rem;
+}
