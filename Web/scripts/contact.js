@@ -17,7 +17,7 @@ function sendMessage() {
   emailjs
     .send(serviceID, templateID, params)
     .then((res) => {
-      alert("Thank you, " + params["name"] + "! Your message has been sent");
+      location.replace("/Web/pages/success/contact_success.html");
     })
     .catch();
 }

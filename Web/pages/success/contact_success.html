@@ -3,6 +3,16 @@
 -->
 
 <!DOCTYPE html>
+
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -25,7 +35,7 @@
     />
     <!--Linking the css files for styling-->
     <link rel="stylesheet" href="../../styles/body.css" />
-    <link rel="stylesheet" href="../../styles/photoupload.css" />
+    <link rel="stylesheet" href="../../styles/contact_success.css" />
     <link rel="stylesheet" href="../../styles/nav.css" />
     <link rel="stylesheet" href="../../styles/header.css" />
     <link rel="stylesheet" href="../../styles/footer.css" />
@@ -60,7 +70,7 @@
     <!--Linking the javascript files for functionality-->
     <script src="../../scripts/estore.js" async></script>
     <script defer src="../../scripts/main.js" async></script>
-    <script src="../../scripts/photoupload.js" defer></script>
+    <script src="../../scripts/contact.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script
       defer
@@ -109,21 +119,13 @@
 
                 <div class="dropdown">
                   <li>
-                    <a
-                      class="dropbtn"
-                      href="../../pages/burial/burial_page.html"
+                    <a class="dropbtn" href="../../pages/burial/burial.html"
                       >Burial</a
                     >
                   </li>
                   <div class="dropdown-content">
-                    <a href="../../pages/burial/burial_page.html"
-                      >About Burial</a
-                    >
-                    <a
-                      href="../../pages/burial/burial_page.html#buttons"
-                      class="dropdown-bottom"
-                      >Request Burial</a
-                    >
+                    <a href="#" class="dropdown-top">About Burial</a>
+                    <a href="#" class="dropdown-bottom">Request Burial</a>
                   </div>
                 </div>
 
@@ -137,18 +139,20 @@
 
                 <div class="dropdown">
                   <li>
-                    <a class="dropbtn" href="../../pages/gallery/gallery.html"
+                    <a
+                      class="dropbtn"
+                      href="../../pages/newmap/client/conservation.html"
                       >Gallery</a
                     >
                   </li>
                   <div class="dropdown-content">
                     <a
-                      href="../../pages/gallery/gallery.html"
+                      href="../../pages/newmap/client/conservation.html"
                       class="dropdown-top"
                       >Photo Gallery</a
                     >
                     <a
-                      href="../../pages/gallery/photoupload.html"
+                      href="../../pages/newmap/admin/index.html"
                       class="dropdown-bottom"
                       >Upload a Photo</a
                     >
@@ -170,46 +174,16 @@
 
     <div class="main-content">
       <!--ADD STUFF HERE-->
-      <h2>Share your Experiences!</h2>
-      <div class="container">
-        <form
-          id="contact-form"
-          method="post"
-          onsubmit="sendMessage(); reset(); return false;"
-        >
-          <h3>&#x1F4F8; Upload Photos</h3>
-          <p>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required />
-          </p>
-          <p>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required />
-          </p>
-          <p>
-            <label for="media">Social Media</label>
-            <input type="text" id="media" name="media" />
-          </p>
-          <p><label class="upload-title">Upload Images</label></p>
-          <div id="form">
-            <!-- populated with the images of the species to be uploaded -->
-            <div class="preview"></div>
-            <label for="images" id="imageInputLabel"
-              >Add Images
-              <input
-                hidden
-                type="file"
-                name="images"
-                id="images"
-                accept="image/*"
-                multiple
-              />
-            </label>
-          </div>
-
-          <button class="contact-button" type="submit">Send</button>
-        </form>
+      <div class="success-page">
+        <img class="check" src="https://i.ibb.co/sKKdxnk/checkmark.png" />
+        <h1 class="success-title">Success</h1>
+        <img class="bar" src="https://i.ibb.co/CH6Cmcp/gold-bar.png" />
+        <h3>
+          We have recieved your message;<br />
+          one of our representatives will be in touch!
+        </h3>
       </div>
+      <!-- END -->
       <!--The footer for our webpage-->
       <footer class="section-p1">
         <div class="col">
