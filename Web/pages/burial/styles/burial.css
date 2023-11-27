@@ -4,7 +4,7 @@
     Brandon Watson - styling*/
 
 .main-content-burial{
-    background-image: url("../../resources/image/formbackground.jpg"); /* The image used */
+  background-image: url("../../resources/image/formbackground.jpg"); /* The image used */
   background-color: #cccccc; /* Used if the image is unavailable */
   height: max-content; /* You must set a specified height */
   background-position: center; /* Center the image */

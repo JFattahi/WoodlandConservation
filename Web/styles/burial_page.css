@@ -1,16 +1,12 @@
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   background: #fffeeb;
 }
 
-/* #background_image{
-    width: 1448px;
-    height: 995px;
-    position: relative;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  } */ /*The style of background image */
 
 .title2 {
   margin-top: 1rem;
@@ -28,58 +24,6 @@ body {
   text-align: center;
   color: white; /* Adjust the text color as needed */
 }
-
-/* border-left: 100px solid rgb(236, 236, 236);
-  border-right: 100px solid rgb(236, 236, 236); */
-
-/* .main-content h2 {
-    font-weight: 800;
-    font-family: "CustomFont";
-    margin-top: 6rem;
-    color: #282d32;
-  
-    font-size: xx-large;
-  } */
-
-/* label {
-    display: block;
-    text-align: left;
-    margin-left: 0.75rem;
-    font-family: "CustomFont";
-  } */
-
-/* textarea {
-    margin-left: 8rem;
-    resize: none;
-  } */
-
-/* form h3 {
-    margin-top: 10px;
-    color: #282d32;
-    font-weight: 800;
-    margin-bottom: 20px;
-    font-family: "CustomFont";
-  } */
-
-/* form h4 {
-    margin-top: 10px;
-    color: #282d32;
-    font-weight: 800;
-    margin-bottom: 20px;
-    font-family: "CustomFont";
-  } */
-
-/* input {
-    width: 30rem;
-  }
-  
-  form input,
-  form textarea {
-    border: 1px solid grey;
-    margin: 10px 0;
-    padding: 10px;
-    background: white;
-  } */
 
 .button-container {
   display: flex;
@@ -133,7 +77,10 @@ body {
 }
 
 #title_background {
-  font-size: 3em;
+  font-size: 2em;
+  width: 80%;
+  text-align: center;
+  margin: auto auto;
   color: aliceblue;
   position: absolute;
   text-align: center;
@@ -142,11 +89,10 @@ body {
 } /*The style of title on background image*/
 
 #information {
-  margin-left: 11rem;
-  width: 1490px;
-  height: 400px;
-  padding-left: 150px;
-  padding-right: 150px;
+  display: flexbox;
+  margin: auto auto;
+  width: 100%;
+
 } /*The style of introduction container*/
 
 #information p {
@@ -155,14 +101,25 @@ body {
 
 #information_title {
   /* color: green; */
-  font-size: 40px;
+  width: 60%;
+  margin: 2em auto;
+  font-size: 2rem;
   font-family: "Times New Roman", Times, serif;
   align-content: center;
 } /*The style of introduction title "Want a natural burial?"*/
 
 #information_content {
+  display: flex;
+  min-width: 0;
   color: black;
+  width: 80%;
+  height: fit-content;
+  margin: auto auto;
   font-family: "Times New Roman", Times, serif;
-  font-size: 20px;
+  font-size: clamp(5px, 15px, 30px);
   align-content: center;
-} /*style the font including color and size"*/
+  
+} 
+#information-contetn p {
+  min-width: 0;
+}

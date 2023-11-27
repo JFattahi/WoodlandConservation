@@ -47,3 +47,8 @@ body {
   font-size: 16px;
   color: grey;
 }
+
+.content-fit {
+  width: 100%;
+  display: block;
+}
