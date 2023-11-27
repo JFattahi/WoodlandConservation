@@ -81,6 +81,7 @@ ul {
     display: block;
   }
   li {
+    display: block;
     margin: 0 0 1rem;
     list-style: none;
   }
@@ -94,6 +95,7 @@ ul {
     -moz-transition: 0.5s;
     -webkit-transition: 0.5s;
     transition: 0.5s;
+    z-index: 4;
   }
 
   /*when max-width is less than 568px, adjust content to be responsive*/
