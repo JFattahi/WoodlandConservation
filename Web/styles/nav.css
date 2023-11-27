@@ -35,7 +35,8 @@ ul {
 
 .nav-bar li {
   flex: 0 0 auto;
-  margin-left: 1rem;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
   list-style: none;
 }
 
@@ -43,7 +44,8 @@ ul {
 .nav-bar a {
   color: #282d32;
   font-family: "CustomFont", sans-serif; /* Use the custom font */
-  font-size: x-large;
+  font-size: 1.2em;
+  padding: 0;
   opacity: 100%;
   /*text color transition*/
   transition: color 400ms ease-out;
@@ -85,7 +87,7 @@ ul {
   .nav-bar a {
     color: black;
     padding: 8px 8px 8px 32px;
-    font-size: 26px;
+    font-size: 1.5em;
     /*transition for all link elements, specified specifically for each browser type4*/
     -o-transition: 0.5s;
     -ms-transition: 0.5s;

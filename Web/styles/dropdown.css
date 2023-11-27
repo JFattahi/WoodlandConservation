@@ -1,3 +1,8 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 @font-face {
   font-family: "CustomFont"; /* Give your font a name */
   src: url("/Web/styles/fonts/ArchivoNarrow-Regular.ttf"); /* Specify the URL and format of the font file */
@@ -10,6 +15,7 @@
 }
 
 .dropdown {
+  padding: 0;
   position: relative;
   display: inline-block;
 }
