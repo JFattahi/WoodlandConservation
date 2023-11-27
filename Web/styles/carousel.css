@@ -37,6 +37,10 @@
   /* text-shadow: none; */
 }
 
+/* .carousel-inner img {
+  height: 100%;
+} */
+
 .button {
   font-weight: 550;
   border: none;
@@ -58,3 +62,9 @@
 .button1 {
   background-color: #fcf2e0;
 } /* Green */
+
+/* @media only screen and (max-width: 768px) {
+  .carousel {
+    margin-top: 5rem;
+  }
+} */
