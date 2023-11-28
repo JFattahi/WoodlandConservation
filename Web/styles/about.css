@@ -1,6 +1,252 @@
+/*
+Edited by: Alex Nguyen (A) 
+*/
 /* Style for text container */
 .aboutpage-container {
   margin-top: 8rem;
   margin-bottom: 8rem;
 
+}
+
+
+.div {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.div-2 {
+  background-color: #fff;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+}
+
+@media (max-width: 991px) {
+  .div-2 {
+    max-width: 100%;
+  }
+}
+
+.div-3 {
+  background-color: #fcf2e0;
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  flex-direction: column;
+  padding: 50px 60px;
+}
+
+@media (max-width: 991px) {
+  .div-3 {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+}
+
+.div-4 {
+  color: #282d32;
+  text-align: center;
+  backdrop-filter: blur(2px);
+  align-self: center;
+  margin-top: 235px;
+  max-width: 430px;
+  font: 600 104px/128px Archivo Narrow, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+@media (max-width: 991px) {
+  .div-4 {
+    margin-top: 40px;
+    font-size: 40px;
+    line-height: 54px;
+  }
+}
+
+.div-5 {
+  color: #282d32;
+  text-align: center;
+  align-self: center;
+  margin-top: 83px;
+  max-width: 937px;
+  font: 600 26px/35px Archivo Narrow, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+@media (max-width: 991px) {
+  .div-5 {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+}
+
+.img {
+  aspect-ratio: 1.73;
+  object-fit: contain;
+  object-position: center;
+  width: 798px;
+  overflow: hidden;
+  align-self: center;
+  margin-top: 185px;
+  max-width: 100%;
+}
+
+@media (max-width: 991px) {
+  .img {
+    margin-top: 40px;
+  }
+}
+
+.div-6 {
+  color: #282d32;
+  text-align: center;
+  backdrop-filter: blur(2px);
+  align-self: center;
+  margin-top: 265px;
+  max-width: 641px;
+  font: 600 104px/128px Archivo Narrow, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+@media (max-width: 991px) {
+  .div-6 {
+    max-width: 100%;
+    margin-top: 40px;
+    font-size: 40px;
+    line-height: 54px;
+  }
+}
+
+.div-7 {
+  color: #000;
+  text-align: center;
+  align-self: center;
+  margin-top: 83px;
+  max-width: 879px;
+  font: 600 26px/35px Archivo Narrow, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+@media (max-width: 991px) {
+  .div-7 {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+}
+
+.img-2 {
+  aspect-ratio: 2.33;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  overflow: hidden;
+  align-self: stretch;
+  margin-top: 182px;
+}
+
+@media (max-width: 991px) {
+  .img-2 {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+}
+
+.img-3 {
+  aspect-ratio: 1.72;
+  object-fit: contain;
+  object-position: center;
+  width: 800px;
+  overflow: hidden;
+  align-self: end;
+  margin-top: 90px;
+  max-width: 100%;
+}
+
+@media (max-width: 991px) {
+  .img-3 {
+    margin-top: 40px;
+  }
+}
+
+.div-8 {
+  color: #ba972f;
+  text-align: center;
+  align-self: center;
+  margin-top: 185px;
+  max-width: 926px;
+  font: italic 600 26px/33px Source Serif Pro, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+@media (max-width: 991px) {
+  .div-8 {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+}
+
+.img-4 {
+  aspect-ratio: 1.49;
+  object-fit: contain;
+  object-position: center;
+  width: 803px;
+  overflow: hidden;
+  align-self: center;
+  margin-top: 182px;
+  max-width: 100%;
+}
+
+@media (max-width: 991px) {
+  .img-4 {
+    margin-top: 40px;
+  }
+}
+
+.div-9 {
+  color: #282d32;
+  text-align: center;
+  backdrop-filter: blur(2px);
+  align-self: center;
+  margin-top: 278px;
+  max-width: 611px;
+  font: 600 104px/102px Archivo Narrow, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+@media (max-width: 991px) {
+  .div-9 {
+    max-width: 100%;
+    margin-top: 40px;
+    font-size: 40px;
+    line-height: 43px;
+  }
+}
+
+.div-10 {
+  color: #000;
+  text-align: center;
+  align-self: center;
+  margin-top: 72px;
+  max-width: 879px;
+  font: 600 26px/35px Archivo Narrow, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+@media (max-width: 991px) {
+  .div-10 {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+}
+
+.img-5 {
+  aspect-ratio: 0.97;
+  object-fit: contain;
+  object-position: center;
+  width: 92px;
+  overflow: hidden;
+  align-self: center;
+  max-width: 100%;
+  margin: 92px 0 218px;
+}
+
+@media (max-width: 991px) {
+  .img-5 {
+    margin: 40px 0;
+  }
 }

@@ -146,7 +146,7 @@ a:hover {
 }
 
 .burial-text,
-about-title {
+.about-title {
   display: flex;
   flex-direction: column;
   padding: 10px;
@@ -242,6 +242,7 @@ about-title {
   width: 50%;
   margin-left: 1vmin;
 }
+
 .first-article,
 .second-article {
   display: flex;
@@ -252,6 +253,7 @@ about-title {
 .second-article {
   margin-top: 1vmin;
 }
+
 .history-card,
 .flora-card,
 .fauna-card {
@@ -278,11 +280,9 @@ about-title {
 .history-card:before,
 .flora-card:before,
 .fauna-card:before {
-  background: linear-gradient(
-    130deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(60, 161, 51, 1) 100%
-  );
+  background: linear-gradient(130deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(60, 161, 51, 1) 100%);
   background-position: 0% 0%;
   background-size: 300% 300%;
   content: "";
@@ -301,10 +301,8 @@ about-title {
 .history-content,
 .flora-content,
 .fauna-content {
-  background-image: radial-gradient(
-    rgba(255, 255, 255, 0.2) 20%,
-    transparent 8%
-  );
+  background-image: radial-gradient(rgba(255, 255, 255, 0.2) 20%,
+      transparent 8%);
   background-position: 0% 0%;
   background-size: 5vmin 5vmin;
   height: 100%;
@@ -317,19 +315,19 @@ about-title {
 }
 
 /*container content position shift on hover*/
-.history-card:hover > .history-content {
+.history-card:hover>.history-content {
   /*shifts background position on hover*/
   background-position: -10% 0%;
 }
 
 /*container content position shift on hover*/
-.flora-card:hover > .flora-content {
+.flora-card:hover>.flora-content {
   /*shifts background position on hover*/
   background-position: -10% 0%;
 }
 
 /*container content position shift on hover*/
-.fauna-card:hover > .fauna-content {
+.fauna-card:hover>.fauna-content {
   /*shifts background position on hover*/
   background-position: -10% 0%;
 }
@@ -354,6 +352,7 @@ about-title {
   flex-wrap: wrap;
   border-radius: 15px;
 }
+
 /*general styling for card container*/
 .card {
   background: #f4ffe8;
@@ -376,6 +375,7 @@ about-title {
   transform: scale(1.03);
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
+
 /*stock photo for cards*/
 .card-1 {
   background-image: url("https://media.istockphoto.com/id/182686524/photo/nap-time.jpg?s=612x612&w=0&k=20&c=1kSSuM1_42hi9jSamitj5zKGaouEVzBEyaYAZZtox3A=");
@@ -420,7 +420,7 @@ about-title {
 }
 
 /*scaling image on card hover*/
-.card:hover > .card-image {
+.card:hover>.card-image {
   height: 350px;
 }
 
@@ -526,7 +526,8 @@ about-title {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
+  -webkit-backface-visibility: hidden;
+  /* Safari */
   backface-visibility: hidden;
   border-radius: 50%;
 }
@@ -596,6 +597,7 @@ about-title {
   justify-items: center;
   width: 75%;
 }
+
 .history-text p,
 .mission-text p,
 .rules-text p {
