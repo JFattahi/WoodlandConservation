@@ -2,7 +2,7 @@
 $enteredPass = $_POST["admin-password"];
 
 // Read in password
-require("../../pages/burial/mysqldb_group24A.php");
+require("../../pages/database/mysqldb_group24A.php");
 
 if($enteredPass == $adminPagePass) {
     // Correct password, redirect to the admin page
