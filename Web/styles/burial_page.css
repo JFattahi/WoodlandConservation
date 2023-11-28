@@ -112,6 +112,7 @@ body {
 #information_content {
   color: black;
   font-size: 20px;
+  margin: auto;
   align-content: center;
 } /*style the font including color and size"*/
 
@@ -129,9 +130,9 @@ body {
   }
 
   #information {
+    display: inline-block;
     width: 650px;
-    margin-left: -130px;
-    margin-bottom: 50px;
+    width: 100vw;
   }
 
   .faq-container {
