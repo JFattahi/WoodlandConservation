@@ -1,3 +1,7 @@
+<!--
+  Ben Le
+-->
+
 <!DOCTYPE html>
 
 <link
@@ -15,6 +19,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Link Icon for browser tab -->
+    <link
+      rel="icon"
+      href="https://i.ibb.co/PWqTJvM/logo-Icon.png"
+      type="image/x-icon"
+    />
+
     <!-- Link bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -24,11 +35,11 @@
     />
     <!--Linking the css files for styling-->
     <link rel="stylesheet" href="../../styles/body.css" />
-    <link rel="stylesheet" href="../../styles/burial_forms.css" />
     <link rel="stylesheet" href="../../styles/nav.css" />
     <link rel="stylesheet" href="../../styles/header.css" />
     <link rel="stylesheet" href="../../styles/footer.css" />
     <link rel="stylesheet" href="../../styles/dropdown.css" />
+    <link rel="stylesheet" href="../../styles/about.css" />
 
     <!--Linking custom fonts-->
     <link
@@ -169,59 +180,75 @@
 
     <div class="main-content">
       <!--ADD STUFF HERE-->
-      <div class="container">
-        <h3>Natural Burial Request</h3>
-        <form
-          id="self-req-form"
-          action="../../pages/database/add_self_req.php"
-          method="POST"
-        >
-          <h3>Self Request Form</h3>
-          <p>
-            <label for="fname">First Name</label>
-            <input
-              type="text"
-              id="fname"
-              name="fname"
-              pattern="[A-Za-z '-]+"
-              required
-            />
-          </p>
-          <p>
-            <label for="lname2">Last Name</label>
-            <input
-              type="text"
-              id="lname"
-              name="lname"
-              pattern="[A-Za-z '-]+"
-              required
-            />
-          </p>
-          <p>
-            <label for="birthdate">Date of Birth</label>
-            <input
-              type="date"
-              id="birthdate"
-              name="birthdate"
-              placeholder="yyyy-mm-dd"
-            />
-          </p>
-          <p>
-            <label for="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              pattern="^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$"
-              required
-            />
-          </p>
-          <p>
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone" required />
-          </p>
-          <button class="submit-button" type="submit">Send</button>
-        </form>
+
+      <div class="aboutpage-container">
+        <!-- History Section -->
+        <div class="history-section div-3">
+          <div class="history-title">
+            <h1 class="main-container div-4">HISTORY</h1>
+          </div>
+          <div class="history-text main-container div-5">
+            <p>
+              "In 20xx, the French Village Forest Preservation was discovered by
+              X Y who noticed some flora and fauna on the premises that have a
+              deserve to be preserved for future generations. After much
+              community-driven work, we are left with a majestic piece of
+              history that we can preserve for our community and the life that
+              thrives within the ecosystem here."
+            </p>
+          </div>
+          <img loading="lazy" srcset="..." class="img" />
+        </div>
+
+        <!-- Mission Section -->
+        <div id="mission-section" class="mission-section div-2">
+          <div id="mission-title" class="mission-title">
+            <h1 class="main-container div-6">OUR MISSION</h1>
+          </div>
+          <div class="mission-text main-container div-7">
+            <p>
+              "To preserve a dynamic and unique system of natural and cultural
+              resources, and to develop innovative educational, recreational and
+              cultural opportunities of regional value, while exercising
+              environmental and fiscal responsibility."
+            </p>
+          </div>
+          <img loading="lazy" srcset="..." class="img-2" />
+          <img loading="lazy" srcset="..." class="img-3" />
+          <div class="div-8">
+            Green burials minimize environmental impact, have a very low carbon
+            footprint, and aid in the restoration and protection of natural
+            habitats.
+          </div>
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/42c4b9b3-9ec7-4f81-9888-d75a9e21e0f2?"
+            class="img-4"
+          />
+        </div>
+
+        <!-- Rules Section -->
+        <div id="rules-section" class="rules-section div-3">
+          <div id="rules-title" class="rules-title">
+            <h1 class="main-container div-9">
+              ORDINANCES, RULES & REGULATIONS
+            </h1>
+          </div>
+          <div id="rules-text" class="rules-text main-container div-10">
+            <p>
+              The general purpose of these Regulations is to set forth rules and
+              regulations governing the use of District Property that are
+              intended to protect and preserve District Property and the flora,
+              fauna, and scenic beauties therein, and to provide opportunities
+              for the education, pleasure, and recreation of the public.
+            </p>
+          </div>
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/6ce15a07-f74b-4241-a124-52672efc3237?"
+            class="img-5"
+          />
+        </div>
       </div>
 
       <!--The footer for our webpage-->
