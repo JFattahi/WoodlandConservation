@@ -1,17 +1,20 @@
 /*
 Purpose: Provides styling for the body div as well as much of the content in index.html
-Author(s) / Work Done: 
-Devon Leigh - HTML element styling
-Rahabar Mahmud - HTML element styling
+Authors:
+
+Ben
+Hossein
+Storm
+Matthew
+Alex
+
 */
 
-/*import custom fonts from google api and rsms*/
-/* @import url("https://rsms.me/inter/inter.css");
-@import url("https://fonts.googleapis.com/css?family=Spartan"); */
 
-/* Custom font for logo name */
 
-/*html elements section*/
+
+
+/*-------------------------------------------------html elements section-------------------------------------------------------*/
 html {
   font-size: larger;
 }
@@ -54,11 +57,8 @@ a:hover {
   color: green;
 }
 
-#link-preview {
-  opacity: 100% !important;
-}
 
-/*developer defined classes*/
+/*----------------------------------------- CSS classes -----------------------------------------------------------*/
 .centered {
   position: absolute;
   top: 50%;
@@ -610,4 +610,10 @@ a:hover {
   align-items: center;
   align-content: center;
   text-align: center;
+}
+
+
+/*-------------------------------------------- CSS Id reluset--------------------------------------------*/
+#link-preview {
+  opacity: 100% !important;
 }
