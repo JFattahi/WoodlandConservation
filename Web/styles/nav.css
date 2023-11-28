@@ -122,5 +122,9 @@ ul {
     .nav-bar ul {
       margin-bottom: 400px;
     }
+
+    .nav-bar a:hover {
+      color: #282d32;
+    }
   }
 }

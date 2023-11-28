@@ -86,4 +86,10 @@
     opacity: 0.8;
     box-shadow: none;
   }
+
+  
+.dropdown-content a:hover {
+  background-color: #fdf5e6;
+}
+
 }
