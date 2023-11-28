@@ -6,16 +6,19 @@
 .slide-container3 {
   font-family: "CustomFont";
   color: whitesmoke;
-  text-shadow: 0 4px 8px rgba(124, 124, 124, 1);
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .slide-container h5 {
   font-family: "CustomFont";
-  font-size: 6em;
+  font-size: 8em;
+  color: #282d32;
+  /* text-shadow: none; */
 }
 
 .slide-container p {
-  font-size: 1.8rem;
+  font-style: italic;
+  font-size: 2.4rem;
 }
 
 .slide-container3 h5,
@@ -28,6 +31,13 @@
 .slide-container2 p {
   font-size: 1rem;
   text-shadow: none;
+}
+
+.welcome {
+  font-style: italic;
+  color: #ba972f;
+  font-size: 3rem;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .button {
@@ -74,6 +84,6 @@
   }
 
   .slide-container p {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
