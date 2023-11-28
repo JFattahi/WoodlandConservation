@@ -17,11 +17,13 @@
   }
 
   .accordion {
+    width: 60vw;
+    max-width: 600px;
     margin-bottom: 3rem;
-    padding-left: 150px;
-    padding-right: 150px;
+    margin:auto;
   }
 
   .faq-container {
+    width: 100vw;
     margin-bottom: 3rem;
   }

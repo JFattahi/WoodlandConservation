@@ -77,8 +77,11 @@ ul {
   }
   ul {
     display: block;
+    height: 100%;
+    margin: auto 0;
   }
   li {
+    display:block;
     margin: 0 0 1rem;
     list-style: none;
   }
@@ -102,7 +105,7 @@ ul {
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1100px) {
     .nav-bar {
       background-color: #fffeeb;
       display: flex;

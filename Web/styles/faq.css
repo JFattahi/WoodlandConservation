@@ -16,6 +16,8 @@
 }
 .accordion {
   margin-bottom: 3rem;
+  width: 60vw;
+  margin:auto;
 }
 
 .container {

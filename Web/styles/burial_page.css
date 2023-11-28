@@ -51,7 +51,7 @@ body {
   background-color: #fcf2e0;
   margin-bottom: 1rem;
   margin-left: 1rem;
-  width: 380px;
+  width: 340px;
 }
 
 .burial-req-button:hover {
@@ -89,11 +89,10 @@ body {
 } /*The style of title on background image*/
 
 #information {
-  margin: auto;
-  width: 1490px;
-  height: 400px;
-  padding-left: 150px;
-  padding-right: 150px;
+  margin: 1em 0;
+  width: 100vw;
+  height: fit-content;
+
   /* display: flex;
   width: 80vw;
   margin: auto; */
@@ -105,13 +104,14 @@ body {
 
 #information_title {
   /* color: green; */
-  font-size: 40px;
   align-content: center;
 } /*The style of introduction title "Want a natural burial?"*/
 
 #information_content {
   color: black;
+  width: 85vw;
   font-size: 20px;
+  margin: auto;
   align-content: center;
 } /*style the font including color and size"*/
 
@@ -129,9 +129,9 @@ body {
   }
 
   #information {
+    display: inline-block;
     width: 650px;
-    margin-left: -130px;
-    margin-bottom: 50px;
+    width: 100vw;
   }
 
   .faq-container {
