@@ -36,12 +36,6 @@ body {
     color: green;
   }
 
-
-  /*  Purpose: burial sytling
-    Authors: 
-    zilong wang  - styling
-    Brandon Watson - styling */
-
 #title_background{
     font-size: 60px;
     color: aliceblue;
@@ -49,6 +43,9 @@ body {
     text-align: center;
 }/*The style of title on background image*/
 
+/*
+Burial page, content under carousel
+*/
 #information{
     margin-bottom: 2.25rem;
     height: 400px;
@@ -57,13 +54,20 @@ body {
     padding-right: 150px;
 }/*The style of introduction container*/
 
+
+/*
+Burial page title under carousel
+*/
 #information_title{
-   /* color: green; */
-   font-size: 40px;
+   
    align-content: center;  
    margin-top: 7rem;
 }/*The style of introduction title "Want a natural burial?"*/
 
+
+/*
+Burial page, text under carousel
+*/
 #information_content{
   color:black ;
   font-size: 20px;

@@ -89,11 +89,10 @@ body {
 } /*The style of title on background image*/
 
 #information {
-  margin: auto;
-  width: 1490px;
-  height: 400px;
-  padding-left: 150px;
-  padding-right: 150px;
+  margin: 1em 0;
+  width: 100vw;
+  height: fit-content;
+
   /* display: flex;
   width: 80vw;
   margin: auto; */
@@ -105,12 +104,12 @@ body {
 
 #information_title {
   /* color: green; */
-  font-size: 40px;
   align-content: center;
 } /*The style of introduction title "Want a natural burial?"*/
 
 #information_content {
   color: black;
+  width: 85vw;
   font-size: 20px;
   margin: auto;
   align-content: center;
