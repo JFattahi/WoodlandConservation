@@ -29,58 +29,6 @@ body {
   color: white; /* Adjust the text color as needed */
 }
 
-/* border-left: 100px solid rgb(236, 236, 236);
-  border-right: 100px solid rgb(236, 236, 236); */
-
-/* .main-content h2 {
-    font-weight: 800;
-    font-family: "CustomFont";
-    margin-top: 6rem;
-    color: #282d32;
-  
-    font-size: xx-large;
-  } */
-
-/* label {
-    display: block;
-    text-align: left;
-    margin-left: 0.75rem;
-    font-family: "CustomFont";
-  } */
-
-/* textarea {
-    margin-left: 8rem;
-    resize: none;
-  } */
-
-/* form h3 {
-    margin-top: 10px;
-    color: #282d32;
-    font-weight: 800;
-    margin-bottom: 20px;
-    font-family: "CustomFont";
-  } */
-
-/* form h4 {
-    margin-top: 10px;
-    color: #282d32;
-    font-weight: 800;
-    margin-bottom: 20px;
-    font-family: "CustomFont";
-  } */
-
-/* input {
-    width: 30rem;
-  }
-  
-  form input,
-  form textarea {
-    border: 1px solid grey;
-    margin: 10px 0;
-    padding: 10px;
-    background: white;
-  } */
-
 .button-container {
   display: flex;
   /* flex-direction: space-around; */
@@ -163,3 +111,35 @@ body {
   font-size: 20px;
   align-content: center;
 } /*style the font including color and size"*/
+
+@media only screen and (max-width: 768px) {
+  .button-container {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #title_background {
+    font-size: 40px;
+  }
+
+  #information {
+    width: 700px;
+    margin-left: -142.5px;
+  }
+
+  .faq-container {
+    margin-left: -141px;
+    width: 690px;
+  }
+
+  #information p {
+    font-size: 15px;
+  }
+
+  #background_image{
+    margin-top: 100px;
+  }
+}
