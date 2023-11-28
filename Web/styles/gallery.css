@@ -119,7 +119,12 @@
   color: lightgray;
 }
 
-/* When you mouse over the container, fade in the overlay title */
 .content:hover .overlay {
   opacity: 1;
+}
+
+@media only screen and (max-width: 768px) {
+  .column {
+    width: 100%;
+  }
 }

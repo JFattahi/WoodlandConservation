@@ -1,6 +1,4 @@
 .slide-container {
-  border-radius: 25px;
-  /* background-color: rgba(255, 255, 255, 0.7); */
   margin-bottom: 1rem;
 }
 
@@ -8,22 +6,17 @@
 .slide-container3 {
   font-family: "CustomFont";
   color: whitesmoke;
-  /* text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.5), 1px -1px 1px rgba(0, 0, 0, 0.5),
-    -1px 1px 1px rgba(0, 0, 0, 0.5), 1px 1px 1px rgba(0, 0, 0, 0.5); */
   text-shadow: 0 4px 8px rgba(124, 124, 124, 1);
 }
 
 .slide-container h5 {
+  font-family: "CustomFont";
   font-size: 6em;
 }
 
 .slide-container p {
   font-size: 1.8rem;
 }
-
-/* .slide-container3 {
-  margin-bottom: 25rem;
-} */
 
 .slide-container3 h5,
 .slide-container2 h5 {
@@ -57,13 +50,30 @@
 
 .button1 {
   background-color: #fcf2e0;
-} /* Green */
+}
 
 @media only screen and (max-width: 768px) {
   .carousel-inner img {
-    /* width: 100%; */
     height: 450px;
     object-fit: cover;
     object-position: 60% 60%;
+  }
+
+  .slide-container2 h5,
+  .slide-container3 h5 {
+    text-shadow: 0 4px 8px rgba(124, 124, 124, 1);
+  }
+
+  .slide-container2 p,
+  .slide-container3 p {
+    text-shadow: 0 4px 8px rgba(124, 124, 124, 1);
+  }
+
+  .slide-container h5 {
+    font-size: 30px;
+  }
+
+  .slide-container p {
+    font-size: 18px;
   }
 }

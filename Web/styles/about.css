@@ -5,18 +5,15 @@ Edited by: Alex Nguyen (A)
 .aboutpage-container {
   margin-top: 8rem;
   margin-bottom: 8rem;
-
 }
 
-
 .div {
-  background-color: #fff;
+  background-color: #fffeeb;
   display: flex;
   flex-direction: column;
 }
 
 .div-2 {
-  background-color: #fff;
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -37,6 +34,7 @@ Edited by: Alex Nguyen (A)
   max-width: 1200px;
   flex-direction: column;
   padding: 50px 60px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 991px) {
@@ -53,7 +51,8 @@ Edited by: Alex Nguyen (A)
   align-self: center;
   margin-top: 235px;
   max-width: 430px;
-  font: 600 104px/128px Archivo Narrow, -apple-system, Roboto, Helvetica, sans-serif;
+  font: 600 104px/128px Archivo Narrow, -apple-system, Roboto, Helvetica,
+    sans-serif;
 }
 
 @media (max-width: 991px) {
@@ -70,7 +69,8 @@ Edited by: Alex Nguyen (A)
   align-self: center;
   margin-top: 83px;
   max-width: 937px;
-  font: 600 26px/35px Archivo Narrow, -apple-system, Roboto, Helvetica, sans-serif;
+  font: 600 26px/35px Archivo Narrow, -apple-system, Roboto, Helvetica,
+    sans-serif;
 }
 
 @media (max-width: 991px) {
@@ -104,7 +104,8 @@ Edited by: Alex Nguyen (A)
   align-self: center;
   margin-top: 265px;
   max-width: 641px;
-  font: 600 104px/128px Archivo Narrow, -apple-system, Roboto, Helvetica, sans-serif;
+  font: 600 104px/128px Archivo Narrow, -apple-system, Roboto, Helvetica,
+    sans-serif;
 }
 
 @media (max-width: 991px) {
@@ -122,7 +123,8 @@ Edited by: Alex Nguyen (A)
   align-self: center;
   margin-top: 83px;
   max-width: 879px;
-  font: 600 26px/35px Archivo Narrow, -apple-system, Roboto, Helvetica, sans-serif;
+  font: 600 26px/35px Archivo Narrow, -apple-system, Roboto, Helvetica,
+    sans-serif;
 }
 
 @media (max-width: 991px) {
@@ -172,7 +174,8 @@ Edited by: Alex Nguyen (A)
   align-self: center;
   margin-top: 185px;
   max-width: 926px;
-  font: italic 600 26px/33px Source Serif Pro, -apple-system, Roboto, Helvetica, sans-serif;
+  font: italic 600 26px/33px Source Serif Pro, -apple-system, Roboto, Helvetica,
+    sans-serif;
 }
 
 @media (max-width: 991px) {
@@ -206,7 +209,8 @@ Edited by: Alex Nguyen (A)
   align-self: center;
   margin-top: 278px;
   max-width: 611px;
-  font: 600 104px/102px Archivo Narrow, -apple-system, Roboto, Helvetica, sans-serif;
+  font: 600 104px/102px Archivo Narrow, -apple-system, Roboto, Helvetica,
+    sans-serif;
 }
 
 @media (max-width: 991px) {
@@ -224,7 +228,8 @@ Edited by: Alex Nguyen (A)
   align-self: center;
   margin-top: 72px;
   max-width: 879px;
-  font: 600 26px/35px Archivo Narrow, -apple-system, Roboto, Helvetica, sans-serif;
+  font: 600 26px/35px Archivo Narrow, -apple-system, Roboto, Helvetica,
+    sans-serif;
 }
 
 @media (max-width: 991px) {

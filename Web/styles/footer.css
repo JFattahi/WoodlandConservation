@@ -87,3 +87,18 @@ footer {
   margin: 0;
   padding: 0;
 }
+
+@media only screen and (max-width: 768px) {
+  .section-p1 .col:nth-child(1) {
+    display: block;
+    margin-right: 50px;
+  }
+
+  .section-p1 .col:nth-child(2) {
+    display: none;
+  }
+
+  footer {
+    height: 420px;
+  }
+}
