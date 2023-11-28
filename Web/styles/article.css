@@ -28,6 +28,8 @@ body {
 }
 
 .main-content {
+  position:absolute;
+  top: 500px;
   margin-top: 5rem;
 }
 
