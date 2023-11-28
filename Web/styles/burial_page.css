@@ -89,11 +89,14 @@ body {
 } /*The style of title on background image*/
 
 #information {
-  margin-left: 11rem;
+  margin: auto;
   width: 1490px;
   height: 400px;
   padding-left: 150px;
   padding-right: 150px;
+  /* display: flex;
+  width: 80vw;
+  margin: auto; */
 } /*The style of introduction container*/
 
 #information p {
@@ -126,8 +129,9 @@ body {
   }
 
   #information {
-    width: 700px;
-    margin-left: -142.5px;
+    width: 650px;
+    margin-left: -130px;
+    margin-bottom: 50px;
   }
 
   .faq-container {
@@ -139,7 +143,7 @@ body {
     font-size: 15px;
   }
 
-  #background_image{
+  #background_image {
     margin-top: 100px;
   }
 }

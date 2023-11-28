@@ -19,10 +19,6 @@ body {
   margin-right: auto;
 }
 
-/* .news-container tr {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-} */
-
 .news-container h4,
 .news-container p {
   text-align: left;

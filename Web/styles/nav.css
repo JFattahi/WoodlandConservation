@@ -42,7 +42,7 @@ ul {
 /* Header section texts*/
 .nav-bar a {
   color: #282d32;
-  font-family: "CustomFont", sans-serif; /* Use the custom font */
+  font-family: "CustomFont"; /* Use the custom font */
   font-size: x-large;
   opacity: 100%;
   /*text color transition*/
@@ -97,7 +97,30 @@ ul {
   /*when max-width is less than 568px, adjust content to be responsive*/
   @media screen and (max-width: 568px) {
     .nav-bar a {
-      font-size: 1rem;
+      font-size: 20px;
+      font-weight: 580;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .nav-bar {
+      background-color: #fffeeb;
+      display: flex;
+      justify-content: flex-end;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 0%;
+      overflow-x: hidden;
+      text-align: right;
+      /*applys a transition to nav-bar for smoothing*/
+      transition: 0.3s;
+      z-index: 2;
+      margin-top: 0;
+    }
+
+    .nav-bar ul {
+      margin-bottom: 400px;
     }
   }
 }
