@@ -51,7 +51,7 @@ body {
   background-color: #fcf2e0;
   margin-bottom: 1rem;
   margin-left: 1rem;
-  width: 380px;
+  width: 340px;
 }
 
 .burial-req-button:hover {
@@ -135,8 +135,7 @@ body {
   }
 
   .faq-container {
-    margin-left: -141px;
-    width: 690px;
+    width: 100vw;
   }
 
   #information p {
