@@ -2,7 +2,6 @@ body {
   background: #fffeeb;
 }
 
-
 .title2 {
   margin-top: 1rem;
 }
@@ -25,6 +24,7 @@ body {
   /* flex-direction: space-around; */
   justify-content: center;
   align-items: center;
+  margin-top: 3rem;
 }
 
 .burial-req-button {
@@ -42,7 +42,7 @@ body {
   background-color: #fcf2e0;
   margin-bottom: 1rem;
   margin-left: 1rem;
-  width: 340px;
+  width: 370px;
 }
 
 .burial-req-button:hover {
@@ -132,5 +132,4 @@ body {
   #information p {
     font-size: 15px;
   }
-
 }

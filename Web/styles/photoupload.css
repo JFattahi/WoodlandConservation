@@ -17,8 +17,8 @@ form {
 
 .main-content h2 {
   font-weight: 800;
+  margin-top: 2rem;
   font-family: "CustomFont";
-  margin-top: 6rem;
   color: #282d32;
   font-size: xx-large;
 }
@@ -31,7 +31,6 @@ label {
 }
 
 textarea {
-  /* margin-left: 4rem; */
   resize: none;
 }
 
@@ -81,7 +80,6 @@ form textarea {
   color: green;
 }
 
-/*  */
 
 #form {
   padding: 1em 10vw;

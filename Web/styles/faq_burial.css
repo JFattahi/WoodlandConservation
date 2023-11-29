@@ -17,8 +17,8 @@
   }
 
   .accordion {
-    width: 80vw;
-    max-width: 500px;
+    /* width: 80vw; */
+    max-width: 1000px;
     margin-bottom: 3rem;
     margin:auto;
   }
@@ -26,4 +26,11 @@
   .faq-container {
     width: 100vw;
     margin-bottom: 3rem;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .accordion {
+      width: 80vw;
+      max-width: 500px;
+    }
   }
