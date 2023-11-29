@@ -43,7 +43,8 @@ form {
   font-family: "CustomFont";
 }
 
-input, textarea {
+input,
+textarea {
   width: 95%;
 }
 
@@ -68,8 +69,8 @@ input, textarea {
   cursor: pointer;
   border-radius: 15px;
   background-color: #fcf2e0;
+  margin: auto;
   margin-bottom: 1rem;
-  margin-left: 11rem;
   width: 180px;
 }
 

@@ -77,3 +77,33 @@ body {
 caption {
   text-align: center;
 }
+
+@media only screen and (max-width: 1200px) {
+  .bar {
+    width: 400px;
+  }
+
+  .news-container img {
+    width: 600px;
+    height: 500px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .bar {
+    width: 200px;
+  }
+
+  .news-container img {
+    display: none;
+  }
+
+  .news-page {
+    padding: 20px 15px;
+    margin: 0 20px;
+  }
+
+  .main-content table {
+    margin-left: 1.5rem;
+  }
+}
