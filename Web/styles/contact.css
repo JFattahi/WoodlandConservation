@@ -19,9 +19,9 @@ body {
   .main-content h2 {
     font-weight: 800;
     font-family: "CustomFont";
-    margin-top: 6rem;
     color: #282d32;
     font-size: xx-large;
+    margin-top: 1rem;
   }
   
   label {
