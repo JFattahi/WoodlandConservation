@@ -1,80 +1,78 @@
 body {
-    background: #fffeeb;
-  }
-  
-  form {
-    background: rgb(236, 236, 236);
-    display: flex;
-    flex-direction: column;
-    padding: auto;
-    width: 90%;
-    max-width: 600px;
-    border-radius: 10px;
-    margin: 0 auto;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  .main-content h2 {
-    font-weight: 800;
-    font-family: "CustomFont";
-    color: #282d32;
-    font-size: xx-large;
-    margin-top: 1rem;
-  }
-  
-  label {
-    display: block;
-    text-align: left;
-    margin-left: 0.75rem;
-    font-family: "CustomFont";
-  }
-  
-  textarea {
-    /* margin-left: 4rem; */
-    resize: none;
-  }
-  
-  form h3 {
-    margin-top: 10px;
-    color: #282d32;
-    font-weight: 800;
-    margin-bottom: 20px;
-    font-family: "CustomFont";
-  }
-  
-  input {
-    width: 30rem;
-  }
-  
-  form input,
-  form textarea {
-    border: 1px solid grey;
-    margin: 10px 0;
-    padding: 10px;
-    background: white;
-  }
-  
-  .contact-button {
-    font-weight: 500;
-    border: none;
-    color: #ba972f;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 15px;
-    background-color: #fcf2e0;
-    margin-bottom: 1rem;
-    margin-left: 11rem;
-    width: 180px;
-  }
-  
-  .contact-button:hover {
-    color: green;
-  }
-  
+  background: #fffeeb;
+}
+
+form {
+  background: rgb(236, 236, 236);
+  display: flex;
+  flex-direction: column;
+  padding: auto;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.main-content h2 {
+  font-weight: 800;
+  font-family: "CustomFont";
+  color: #282d32;
+  font-size: xx-large;
+  margin-top: 1rem;
+}
+
+.main-content label {
+  display: block;
+  text-align: left;
+  margin-left: 0.75rem;
+  font-family: "CustomFont";
+}
+
+.main-content textarea {
+  resize: none;
+}
+
+.main-content form h3 {
+  margin-top: 10px;
+  color: #282d32;
+  font-weight: 800;
+  margin-bottom: 20px;
+  font-family: "CustomFont";
+}
+
+input, textarea {
+  width: 95%;
+}
+
+.main-content form input,
+.main-content form textarea {
+  border: 1px solid grey;
+  margin: 10px 0;
+  padding: 10px;
+  background: white;
+}
+
+.contact-button {
+  font-weight: 500;
+  border: none;
+  color: #ba972f;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 15px;
+  background-color: #fcf2e0;
+  margin-bottom: 1rem;
+  margin-left: 11rem;
+  width: 180px;
+}
+
+.contact-button:hover {
+  color: green;
+}

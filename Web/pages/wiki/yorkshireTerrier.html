@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Link Icon for browser tab -->
+    <link
+      rel="icon"
+      href="https://i.ibb.co/PWqTJvM/logo-Icon.png"
+      type="image/x-icon"
+    />
+
+    <!-- Link bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!--Linking the css files for styling--> 
+    <link rel="stylesheet" href="../../styles/body.css" />
+    <link rel="stylesheet" href="../../styles/gallery.css" />
+    <link rel="stylesheet" href="../../styles/nav.css" />
+    <link rel="stylesheet" href="../../styles/header.css" />
+    <link rel="stylesheet" href="../../styles/footer.css" />
+    <link rel="stylesheet" href="../../styles/dropdown.css" />
+    <link rel="stylesheet" href="../../styles/wikiStyle.css" />
+    <link rel="stylesheet" href="../../styles/wiki.css" />
+
+    <!--Linking custom fonts-->
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Linking javascript files for bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--Linking the javascript files for functionality-->
+    <script src="../../scripts/gallery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"
+    ></script>
+
+    <title>Yorkshire Terrier - Woodland Conservation</title>
+  </head>
+
+  <body>
+
+    <!------------------------------------------------------------------------>
+    <!----------------- Header ----------------------------------------------->
+    <!------------------------------------------------------------------------>
+
+    <header>
+      <div class="header-container">
+        <div class="org-name">
+          <!--Links back to homepage if clicked-->
+          <a class="org-logo" href="../../index.html"
+            ><img src="https://i.ibb.co/GvF71Pz/logo.png"
+          /></a>
+        </div>
+        <div class="menu-btn">
+          <div class="menu-btn_burger"></div>
+          <div id="nav-bar" class="nav-bar">
+            <nav>
+              <ul>
+                <!--Links to alternative pages in the navbar-->
+                <div class="dropdown">
+                  <li>
+                    <a class="dropbtn" href="../../pages/about/about.html"
+                      >About</a
+                    >
+                  </li>
+                  <div class="dropdown-content">
+                    <a href="../../pages/about/about.html" class="dropdown-top"
+                      >About Woodland</a
+                    >
+                    <a href="../../pages/about/news.html">News</a>
+                    <a href="../../pages/about/faq.html">FAQ</a>
+                    <a
+                      href="../../pages/about/contact.html"
+                      class="dropdown-bottom"
+                      >Contact Us</a
+                    >
+                  </div>
+                </div>
+
+                <div class="dropdown">
+                  <li>
+                    <a
+                      class="dropbtn"
+                      href="../../pages/burial/burial_page.html"
+                      >Burial</a
+                    >
+                  </li>
+                  <div class="dropdown-content">
+                    <a
+                      href="../../pages/burial/burial_page.html"
+                      class="dropdown-top"
+                      >About Burial</a
+                    >
+                    <a
+                      href="../../pages/burial/burial_page.html#buttons"
+                      class="dropdown-bottom"
+                      >Request Burial</a
+                    >
+                  </div>
+                </div>
+
+                <li>
+                  <a href="../../pages/e-commerce/estore.html">Marketplace</a>
+                </li>
+
+                <li>
+                  <a href="../../pages/newmap/client/index.html">Map</a>
+                </li>
+
+                <div class="dropdown">
+                  <li>
+                    <a class="dropbtn" href="../../pages/gallery/gallery.html"
+                      >Gallery</a
+                    >
+                  </li>
+                  <div class="dropdown-content">
+                    <a
+                      href="../../pages/gallery/gallery.html"
+                      class="dropdown-top"
+                      >Photo Gallery</a
+                    >
+                    <a
+                      href="../../pages/gallery/photoupload.html"
+                      class="dropdown-bottom"
+                      >Upload a Photo</a
+                    >
+                  </div>
+                </div>
+                <div class="dropdown">
+                  <li>
+                    <a class="dropbtn" href="../../pages/wiki/wikiHome.html"
+                      >Wiki</a
+                    >
+                  </li>
+                  <div class="dropdown-content">
+                    <a
+                      href="../../pages/wiki/wikiHome.html"
+                      class="dropdown-top"
+                      >Home</a
+                    >
+                    <a href="../../pages/wiki/yorkshireTerrier.html"
+                      >Example Wikipage</a
+                    >
+                  </div>
+                </div>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    <!------------------------------------------------------------------------>
+    <!----------------- Main Content ----------------------------------------->
+    <!------------------------------------------------------------------------>
+
+    
+    <div id="LayoutGrid">
+
+      <!------------------------------------------------------------------------>
+      <!----------------- Left Sidebar ----------------------------------------->
+      <!------------------------------------------------------------------------>
+
+      <div class="col-1">
+        <div class="col-1-padding">
+          <div id="my_sidebarLogo">
+            <!-- [INSERT LOGO] -->
+          </div>
+          
+          <div id="sidebarFlavor">
+            <span class="wikiaLogo" id="my_wiki1">W</span>
+            <span class="wikiaLogo">IKI</span>
+            <span class="wikiaLogo" id="my_wiki1">A</span>
+            <span><br></span>
+            <span id="my_wiki4">For fauna and flora, and flamore!</span>
+          </div>
+          
+          <div class="sidebarMenu">
+            <span><a href="#" class="style2" title="Articles Related to current events">Happenings</a></span>
+            <span><a href="#" class="style2" title="Visit a randonly selected articel">Hit-or-Miss</a></span>
+            <span><a href="#" class="style2" title="Learn about wikia">About wikia</a></span>
+            <span><a href="#" class="style2" title="How to contact wikia">Contact us</a></span>
+          </div>
+          
+          <div class="sidebarText">
+            <span id="sidebarSmlTtl">Commitment</span>
+          </div>
+          <div class="sidebarMenu">
+            <span><a href="#" class="style2" title="Guidance on how to use and edit wikia">Assistance</a></span>
+            <span><a href="#" class="style2" title="Learn how to edit wikia">Computing</a></span>
+            <span><a href="#" class="style2" title="About wikia assessment">Assessment</a></span>
+            <span><a href="#" class="style2" title="How to contact wikia">Get connected</a></span>
+          </div>
+          
+          <div class="sidebarText">
+            <span id="sidebarSmlTtl">Device</span>
+          </div>
+          <div class="sidebarMenu">
+            <span><a href="#" class="style2" title="What links here">Create website</a></span>
+            <span><a href="#" class="style2" title="About system">Comments system</a></span>
+            <span><a href="#" class="style2" title="About information">wikia</a></span>
+            <span><a href="#" class="style2" title="wikia stuff">Free code</a></span>
+          </div>
+        </div>
+      </div>
+      
+      <!------------------------------------------------------------------------>
+      <!----------------- Article ---------------------------------------------->
+      <!------------------------------------------------------------------------>
+
+      <div class="col-2">
+        <div id="mainTitle">
+          <h1 id="mainTitle">Yorkshire Terrier &#x1F415</h1>
+        </div>
+        <hr id="titleLine">
+
+        
+        <!------------------------------------------------------------------------>
+        <!----------------- Menu ------------------------------------------------->
+        <!------------------------------------------------------------------------>
+
+        <div id="toc_container">
+          <div class="toc_title">Contents</div>
+          <ul class="toc_list">
+            <li>
+              <span class="toc_number">1 </span><a href="#History" class="style2">History</a>
+            </li>
+            
+            <li>
+              <span class="toc_number">2 </span><a href="#PhysChar" class="style2">Physical Characteristics</a>
+              <ul>
+                <li>
+                  <span class="toc_number">2.1 </span><a href="#PhysCharSize" class="style2">Size</a>
+                </li>
+                <li>
+                  <span class="toc_number">2.2 </span><a href="#PhysCharCoat" class="style2">Coat</a>
+                </li>
+                <li>
+                  <span class="toc_number">2.3 </span><a href="#PhysCharColoration" class="style2">Coloration</a>
+                </li>
+                <li>
+                  <span class="toc_number">2.4 </span><a href="#PhysCharExpression" class="style2">Head and Expression</a>
+                </li>
+              </ul>
+            </li>
+            
+            <li>
+              <span class="toc_number">3 </span><a href="#Temp" class="style2">Temperament</a>
+              <ul>
+                <li>
+                  <span class="toc_number">3.1 </span><a href="#TempIntel" class="style2">Intelligence</a>
+                </li>
+                <li>
+                  <span class="toc_number">3.2 </span><a href="#TempConfidence" class="style2">Confidence</a>
+                </li>
+                <li>
+                  <span class="toc_number">3.3 </span><a href="#TempLoyalty" class="style2">Loyalty</a>
+                </li>
+                <li>
+                  <span class="toc_number">3.4 </span><a href="#TempPlayful" class="style2">Playfulness</a>
+                </li>
+                <li>
+                  <span class="toc_number">3.5 </span><a href="#TempAlert" class="style2">Alertness</a>
+                </li>
+                <li>
+                  <span class="toc_number">3.6 </span><a href="#TempAdapt" class="style2">Adaptability</a>
+                </li>
+                <li>
+                  <span class="toc_number">3.7 </span><a href="#TempSocial" class="style2">Socialization</a>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <span class="toc_number">4 </span><a href="#Care" class="style2">Care and Grooming</a>
+              <ul>
+                <li>
+                  <span class="toc_number">4.1 </span><a href="#CareExercise" class="style2">Regular Exercise</a>
+                </li>
+                <li>
+                  <span class="toc_number">4.2 </span><a href="#CareDiet" class="style2">Balanced Diet</a>
+                </li>
+                <li>
+                  <span class="toc_number">4.3 </span><a href="#CareCoat" class="style2">Grooming the Coat</a>
+                </li>
+                <li>
+                  <span class="toc_number">4.4 </span><a href="#CareDental" class="style2">Dental Care</a>
+                </li>
+                <li>
+                  <span class="toc_number">4.5 </span><a href="#CareEar" class="style2">Ear Cleaning</a>
+                </li>
+                <li>
+                  <span class="toc_number">4.6 </span><a href="#CareNail" class="style2">Nail Maintenance</a>
+                </li>
+                <li>
+                  <span class="toc_number">4.7 </span><a href="#CareVet" class="style2">Regular Vet Check-ups</a>
+                </li>
+                <li>
+                  <span class="toc_number">4.8 </span><a href="#CareSocialization" class="style2">Socialization and Mental Stimulation</a>
+                </li>
+                <li>
+                  <span class="toc_number">4.9 </span><a href="#CareAttention" class="style2">Attention and Affection</a>
+                </li>
+                <li>
+                  <span class="toc_number">4.10 </span><a href="#CareTemperature" class="style2">Temperature Considerations</a>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <span class="toc_number">5 </span><a href="#References" class="style2">References</a>
+            </li>
+          </ul>
+        </div>
+
+        <!------------------------------------------------------------------------>
+        <!----------------- Content ---------------------------------------------->
+        <!------------------------------------------------------------------------>
+        
+        <!-------------- Intro text ------------->
+        <div id="introText">
+          <strong>The Yorkshire Terrier,</strong> often affectionately referred to as the "Yorkie,"
+            is a pint-sized canine companion that has captured the hearts of dog enthusiasts worldwide. 
+            Originating in the rugged landscapes of Yorkshire, England, this breed boasts a rich history 
+            and a charming personality packaged in a small, elegant frame. Despite their diminutive size, 
+            Yorkshire Terriers are big on character, known for their intelligence, feisty spirit, and 
+            distinctive silky coats. From their humble beginnings as skilled rat hunters in mines to 
+            their current status as beloved household pets, the journey of the Yorkshire Terrier is a 
+            tale of tenacity and companionship. In this article, we delve into the fascinating world 
+            of the Yorkshire Terrier, exploring their history, unique traits, care requirements, and 
+            the endearing qualities that have made them cherished members of countless families.
+        </div>
+        
+        
+        <!--------- Section 1 ----------------->
+        <div class="mainSectionTitle" id="History">
+          <h3>History</h3>
+        </div>
+        <hr class="line">
+
+        <!-- Unneeded section title -->
+        <!--
+        <div class="miniSectionTitles">
+          <h5></h5>
+        </div>
+        -->
+        <div class="contentParagraph">
+          The Yorkshire Terrier was developed during the mid-1800s in the northern English 
+          counties of Yorkshire and Lancashire. It became a fashionable lapdog for proper 
+          English ladies in late Victorian times, but its beginnings were distinctly working-class. 
+          The breed is said to be the creation of weavers from Scotland who migrated to 
+          the English north country and brought their Scottish terriers with them. (We pause 
+          here to make the distinction between Scottish terriers, that is, terriers of Scotland, 
+          and the particular breed designated as Scottish Terriers.) Several breeds of now-extinct 
+          Scottish terriers are a part of the Yorkie's genetic mix, along with such still-extant 
+          terriers as the Skye and Dandie Dinmont. One historical source suggests the addition 
+          of Maltese blood. The Scots weavers were proud of their tough little terriers, bred 
+          small enough to squeeze into the nooks and crannies of textile mills in pursuit of 
+          rodents. Jokes were made about the Yorkie's long, silky coat, inferring that its finely 
+          textured hair was a product of the looms. The Yorkie's home region was a center of mining 
+          as well as textile making, and many Yorkies were employed in coal mines as exterminators. 
+          The turning point in breed history came in 1886, when the Kennel Club (England) granted 
+          the Yorkie recognition. With this splash of publicity, the Yorkie became fashionable as a 
+          ladies' companion. And, as the Yorkie's popularity among the fashionable increased, its size 
+          decreased to better meet its new job description: adorable, amusing companion sitting in the 
+          lap of luxury. Yorkies were first seen in America in the 1870s, and the AKC recorded its first 
+          Yorkie, a female named Belle, in 1885.
+        </div>
+
+        <!-- Unneeded section -->
+        <!--
+        <div class="miniSectionTitles">
+          <h5>In North America</h5>
+        </div>
+        <div class="contentParagraph">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Cras accumsan vitae risus id vulputate. Phasellus ac viverra sapie.
+          Morbi turpis leo, venenatis vitae dapibus eget, pulvinar nec metus.
+          Sed bibendum enim est, vitae porta dolor dignissim sit amet.
+        </div>
+        -->
+
+        <!--------- Section 2 ----------------->
+        <div class="mainSectionTitle" id="PhysChar">
+            <h3>Physical Characteristics</h3>
+        </div>
+        <hr class="line">
+
+        <div class="miniSectionTitles" id="PhysCharSize">
+          <h5>Size</h5>
+        </div>
+        <div class="contentParagraph">
+          Yorkies are compact dogs with a toy-sized stature. Adult males typically stand between 7 
+          to 8 inches (18 to 20 cm) at the shoulder, while females are slightly smaller, ranging from 
+          6 to 7 inches (15 to 18 cm). Despite their small size, they possess a robust and well-proportioned 
+          build.
+        </div>
+
+        <div class="miniSectionTitles" id="PhysCharCoat">
+          <h5>Coat</h5>
+        </div>
+        <div class="contentParagraph">
+          The Yorkshire Terrier's most iconic feature is its luxurious coat. The silky, straight, 
+          and glossy fur hangs down on either side of the body, creating a striking contrast between 
+          the deep, glossy blue and bright tan colors. The coat is famously low-shedding, making the 
+          Yorkie a popular choice for individuals with allergies.
+        </div>
+        
+        <div class="miniSectionTitles" id="PhysCharColoration">
+          <h5>Coloration</h5>
+        </div>
+        <div class="contentParagraph">
+          The traditional coat colors of a Yorkshire Terrier are a combination of blue and tan. The 
+          body is predominantly covered in a rich, dark blue color, while the tan markings appear on 
+          the head, chest, legs, and the base of the tail. The distinct coloration contributes to the 
+          breed's unique and memorable aesthetic.
+        </div>
+        
+        <div class="miniSectionTitles" id="PhysCharExpression">
+          <h5>Head and Expression</h5>
+        </div>
+        <div class="contentParagraph">
+          The Yorkie's head is small and flat on top, with a moderately short muzzle. Dark, expressive 
+          eyes convey intelligence and curiosity, framed by small, V-shaped ears that stand erect. The 
+          breed is known for its alert and intelligent expression, reflecting its lively and inquisitive 
+          nature.
+        </div>
+        
+        <div class="contentParagraph">
+          The Yorkshire Terrier's physical characteristics embody a perfect blend of elegance 
+          and compact strength, making them not only a visually captivating breed but also an adaptable 
+          and resilient companion for those seeking a small yet spirited canine friend.
+        </div>
+
+        
+        <!--------- Section 3 ----------------->
+        <div class="mainSectionTitle" id="Temp">
+          <h3>Temperament</h3>
+        </div>
+        <hr class="line">
+        
+        <div class="miniSectionTitles" id="TempIntel">
+          <h5>Intelligence</h5>
+        </div>
+        <div class="contentParagraph">
+          Yorkshire Terriers are highly intelligent dogs, quick to learn new commands and tricks. 
+          Their sharp minds make them responsive to training, and they often enjoy mental stimulation 
+          through games and puzzles.
+        </div>
+        
+        <div class="miniSectionTitles" id="TempConfidence">
+          <h5>Confidence</h5>
+        </div>
+        <div class="contentParagraph">
+          Despite their diminutive size, Yorkies exude confidence and self-assurance. They approach 
+          life with a bold and spirited attitude, fearlessly taking on challenges and exploring their 
+          surroundings.
+        </div>
+        
+        <div class="miniSectionTitles" id="TempLoyalty">
+          <h5>Loyalty</h5>
+        </div>
+        <div class="contentParagraph">
+          Known for forming strong bonds with their human companions, Yorkshire Terriers are exceptionally 
+          loyal. They thrive on human interaction and often become deeply attached to their families, 
+          offering unwavering loyalty and companionship.
+        </div>
+        
+        <div class="miniSectionTitles" id="TempPlayful">
+          <h5>Playfulness</h5>
+        </div>
+        <div class="contentParagraph">
+          Yorkies have a playful and lively nature. They enjoy interactive play, whether it's a game of fetch, 
+          a squeaky toy, or simply spending quality time with their owners. This playfulness makes them 
+          well-suited for families and individuals seeking an engaging and entertaining canine companion.
+        </div>
+        
+        <div class="miniSectionTitles" id="TempAlert">
+          <h5>Alertness</h5>
+        </div>
+        <div class="contentParagraph">
+          With a keen sense of awareness, Yorkshire Terriers make excellent watchdogs. They are quick to 
+          alert their owners to any perceived threats or unusual sounds, making them effective little 
+          guardians despite their small size.
+        </div>
+        
+        <div class="miniSectionTitles" id="TempAdapt">
+          <h5>Adaptability</h5>
+        </div>
+        <div class="contentParagraph">
+          Despite their initial background as working dogs in mines and mills, Yorkies have adapted seamlessly 
+          to modern living. They thrive in various environments, from apartments to larger homes, as long 
+          as they receive the attention, exercise, and mental stimulation they crave.
+        </div>
+        
+        <div class="miniSectionTitles" id="TempSocial">
+          <h5>Socialization</h5>
+        </div>
+        <div class="contentParagraph">
+          Proper socialization is key for Yorkies. Early exposure to different people, animals, and environments 
+          helps ensure they develop into well-adjusted adults. Due to their confidence, they can sometimes be 
+          assertive with other dogs, so positive social interactions from an early age are crucial.
+        </div>
+        
+        <div class="contentParagraph">
+          The Yorkshire Terrier's temperament combines intelligence, confidence, and a playful spirit, 
+          making them delightful companions for those who appreciate a small dog with a big personality. Their 
+          loyalty and alert nature contribute to their enduring popularity as beloved family members.
+        </div>
+        
+        
+        <!--------- Section 4 ----------------->
+        <div class="mainSectionTitle" id="Care">
+          <h3>Care and Grooming</h3>
+        </div>
+        <hr class="line">
+        
+        <div class="miniSectionTitles" id="CareExercise">
+          <h5>Regular Exercise</h5>
+        </div>
+        <div class="contentParagraph">
+          Despite their small size, Yorkies are energetic and benefit from daily exercise. Short walks, 
+          playtime, and interactive games can help them burn off excess energy.
+        </div>
+        
+        <div class="miniSectionTitles" id="CareDiet">
+          <h5>Balanced Diet</h5>
+        </div>
+        <div class="contentParagraph">
+          Provide a well-balanced and nutritious diet appropriate for their size and age. Consult with your 
+          veterinarian to determine the best feeding schedule and dietary requirements.
+        </div>
+        
+        <div class="miniSectionTitles" id="CareCoat">
+          <h5>Grooming the Coat</h5>
+        </div>
+        <div class="contentParagraph">
+          The long, silky coat of a Yorkshire Terrier requires regular grooming to prevent tangling and matting. 
+          Daily brushing helps maintain the coat's shine and removes loose hair.
+        </div>
+        <div class="contentParagraph">
+          Professional grooming may be necessary every 4-6 weeks, depending on the length of the coat and 
+          personal preferences.
+        </div>
+        
+        <div class="miniSectionTitles" id="CareDental">
+          <h5>Dental Care</h5>
+        </div>
+        <div class="contentParagraph">
+          Yorkies are prone to dental issues, so regular dental care is essential. Brush their teeth regularly 
+          and provide dental chews or toys to promote good oral health.
+        </div>
+        
+        <div class="miniSectionTitles" id="CareEar">
+          <h5>Ear Cleaning</h5>
+        </div>
+        <div class="contentParagraph">
+          Check and clean their ears regularly to prevent wax buildup and potential infections. Gentle cleaning 
+          with a veterinarian-approved solution can help maintain ear health.
+        </div>
+        
+        <div class="miniSectionTitles" id="CareNail">
+          <h5>Nail Maintenance</h5>
+        </div>
+        <div class="contentParagraph">
+          Trim their nails regularly to prevent discomfort and ensure proper foot health. If you're not comfortable 
+          doing this yourself, a professional groomer can assist.
+        </div>
+        
+        <div class="miniSectionTitles" id="CareVet">
+          <h5>Regular Vet Check-ups</h5>
+        </div>
+        <div class="contentParagraph">
+          Schedule regular veterinary check-ups to monitor your Yorkie's overall health. Vaccinations, preventive care, 
+          and early detection of any health issues are crucial for their well-being.
+        </div>
+        
+        <div class="miniSectionTitles" id="CareSocialization">
+          <h5>Socialization and Mental Stimulation</h5>
+        </div>
+        <div class="contentParagraph">
+          Yorkies thrive on social interaction and mental stimulation. Engage them in various activities, introduce 
+          them to different environments, and provide toys that challenge their intelligence.
+        </div>
+        
+        <div class="miniSectionTitles" id="CareAttention">
+          <h5>Attention and Affection</h5>
+        </div>
+        <div class="contentParagraph">
+          Yorkshire Terriers are highly social and enjoy being with their human companions. Regular interaction, cuddles, 
+          and playtime contribute to their happiness.
+        </div>
+        
+        <div class="miniSectionTitles" id="CareTemperature">
+          <h5>Temperature Considerations</h5>
+        </div>
+        <div class="contentParagraph">
+          Due to their small size and fine coat, Yorkies can be sensitive to extreme temperatures. In cold weather, 
+          provide them with a warm sweater, and in hot weather, ensure they have shade and access to water.
+        </div>
+
+        <br>
+        
+        <div class="contentParagraph">
+          The Yorkshire Terrier's temperament combines intelligence, confidence, and a playful spirit, 
+          making them delightful companions for those who appreciate a small dog with a big personality. Their 
+          loyalty and alert nature contribute to their enduring popularity as beloved family members.
+        </div>
+        
+        
+        <!--------- References ----------------->
+        <div class="mainSectionTitle" id="References">
+          <h3>References</h3>
+        </div>
+        <hr class="line">
+        <ul id="refList">
+          <li>1. <a href="https://en.wikipedia.org/wiki/Yorkshire_Terrier/" target="_blank">Yorkshire Terrier</a> - Wikipedia</li>
+          <li>2. <a href="https://www.akc.org/dog-breeds/yorkshire-terrier/" target="_blank">Yorkshire Terrier (Yorkie) Dog Breed Information</a> - American Kennel Club</li>
+        </ul>
+      </div>
+    
+      <!------------------------------------------------------------------------>
+      <!----------------- Right sidebar ---------------------------------------->
+      <!------------------------------------------------------------------------>
+
+      <div class="col-3">
+        <div class="col-3-padding">
+          <table id="Table1">
+            <tr>
+              <td colspan="2" class="cell0"><p id="my_wiki22"><span id="my_wiki23">Yorkshire Terrier</span></p></td>
+            </tr>
+
+            <tr>
+              <td colspan="2" class="cell1">
+                <div id="my_indexImage1">
+                  <img src="images/fauna.jpg" id="indexImage1" alt="">
+                </div>
+              </td>
+            </tr>
+
+
+            <tr>
+              <td class="cell2"><p> <span id="my_wiki24">Origin</span></p>
+              </td>
+              <td class="cell2"><p>Yorkshire, England</p></td>
+            </tr>
+
+            
+            <tr>
+              <td colspan="2" class="cell0"><p id="my_wiki22"><span id="my_wiki23">Physical Traits</span></p></td>
+            </tr>
+
+            <tr>
+              <td class="cell2"><p> <span id="my_wiki24">Height</span></p>
+              </td>
+              <td class="cell2"><p>7-8 inches</p></td>
+            </tr>
+
+            <tr>
+              <td class="cell2"><p> <span id="my_wiki24">Weight</span></p>
+              </td>
+              <td class="cell2"><p>~7 pounds</p></td>
+            </tr>
+
+            <tr>
+              <td class="cell2"><p> <span id="my_wiki24">Life Expectancy</span></p>
+              </td>
+              <td class="cell2"><p>11-15 years</p></td>
+            </tr>
+            
+            <tr>
+              <td colspan="2" class="cell0"><p id="my_wiki22"><span id="my_wiki23">Domestic Dog Breed</span></p></td>
+            </tr>
+
+          </table>
+        </div>
+      </div>
+
+    </div>
+    
+    
+    <!------------------------------------------------------------------------>
+    <!----------------- Footer ----------------------------------------------->
+    <!------------------------------------------------------------------------>
+
+    <div id="my_footer">
+      <footer id="footer">
+        <div id="my_footerText">
+          <p>This page was last edited on 29 November 2023, at 3:35 (CT)</p>
+          <p>Ⓒ SMU Software Engineering Group A</p>
+        </div>
+    </div>
+    
+  </body>
+</html>

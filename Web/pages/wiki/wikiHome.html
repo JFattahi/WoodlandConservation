@@ -1,7 +1,3 @@
-<!--
-  Ben Le
--->
-
 <!DOCTYPE html>
 
 <link
@@ -33,13 +29,15 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <!--Linking the css files for styling-->
+    <!--Linking the css files for styling--> 
     <link rel="stylesheet" href="../../styles/body.css" />
-    <link rel="stylesheet" href="../../styles/news.css" />
+    <link rel="stylesheet" href="../../styles/gallery.css" />
     <link rel="stylesheet" href="../../styles/nav.css" />
     <link rel="stylesheet" href="../../styles/header.css" />
     <link rel="stylesheet" href="../../styles/footer.css" />
     <link rel="stylesheet" href="../../styles/dropdown.css" />
+    <link rel="stylesheet" href="../../styles/wikiStyle.css" />
+    <link rel="stylesheet" href="../../styles/wikiHome.css" />
 
     <!--Linking custom fonts-->
     <link
@@ -68,19 +66,22 @@
     ></script>
 
     <!--Linking the javascript files for functionality-->
-    <script src="../../scripts/estore.js" async></script>
-    <script defer src="../../scripts/main.js" async></script>
-    <script src="../../scripts/contact.js"></script>
+    <script src="../../scripts/gallery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"
     ></script>
 
-    <title>Woodland Conservation</title>
+    <title>Wikia - Woodland Conservation</title>
   </head>
 
   <body>
+
+    <!------------------------------------------------------------------------>
+    <!----------------- Header ----------------------------------------------->
+    <!------------------------------------------------------------------------>
+
     <header>
       <div class="header-container">
         <div class="org-name">
@@ -187,116 +188,94 @@
         </div>
       </div>
     </header>
-    <!--Main content div for all page content for responsive design-->
-    <div class="main-content">
-      <!--ADD STUFF HERE-->
-      <div class="news-page">
-        <h1 class="news-title">&#128240; News & Announcements</h1>
-        <img class="bar" src="https://i.ibb.co/CH6Cmcp/gold-bar.png" />
-        <table class="news-container">
-          <tr>
-            <td class="news-desc">
-              <h4>
-                Educational Trails Open: Woodland Conservation Center Promotes
-                Environmental Awareness
-              </h4>
-              <p>
-                Embark on an educational journey through newly established
-                trails in a Woodland Conservation Center. Engage with
-                interactive exhibits, learn about the importance of forests, and
-                gain a deeper understanding of the role each individual plays in
-                preserving these natural wonders.
-              </p>
-              <button
-                class="readmore-button"
-                onclick="location.href='../../pages/about/articles/trail.html'"
-              >
-                Read More
-              </button>
-            </td>
-            <td><img src="https://i.ibb.co/YLP1XK7/hiking.jpg" /></td>
-          </tr>
-          <tr>
-            <td class="news-desc">
-              <h4>
-                Preserving the Past, Securing the Future: Woodland Conservation
-                Rescues Endangered Trees
-              </h4>
-              <p>
-                Delve into the rescue mission of rare and endangered tree
-                species as a woodland conservation project strives to protect
-                the genetic diversity of these botanical treasures, safeguarding
-                their existence against the threat of extinction.
-              </p>
-              <button
-                class="readmore-button"
-                onclick="location.href='../../pages/about/articles/endangered.html'"
-              >
-                Read More
-              </button>
-            </td>
-            <td><img src="https://i.ibb.co/Zfjpg25/yellow-birch.jpg" /></td>
-          </tr>
-          <tr>
-            <td class="news-desc">
-              <h4>
-                Technology Meets Nature: Drones Aid Woodland Conservation
-                Efforts
-              </h4>
-              <p>
-                Uncover the innovative use of technology in woodland
-                conservation as drones are employed to monitor and protect
-                vulnerable ecosystems. See how these high-tech tools contribute
-                to more efficient and effective conservation strategies.
-              </p>
-              <button
-                class="readmore-button"
-                onclick="location.href='../../pages/about/articles/drone.html'"
-              >
-                Read More
-              </button>
-            </td>
-            <td><img src="https://i.ibb.co/GkH6WJx/drone.jpg" /></td>
-          </tr>
-        </table>
+    
+    <!------------------------------------------------------------------------>
+    <!----------------- Main Content ----------------------------------------->
+    <!------------------------------------------------------------------------>
+
+    
+    <div id="LayoutGrid">
+
+      <!------------------------------------------------------------------------>
+      <!----------------- Left Sidebar ----------------------------------------->
+      <!------------------------------------------------------------------------>
+
+      <div class="col-1">
+        <div class="col-1-padding">
+        </div>
       </div>
-      <!-- END -->
-      <!--The footer for our webpage-->
-      <footer class="section-p1">
-        <div class="col">
-          <h4>Contact Us</h4>
-          <p>
-            <strong>Address:</strong> 71 St Pauls Ln, French Village, NS B3Z 4E3
-          </p>
-          <p><strong>Phone:</strong> 111 222 333/ (+1) 444 555 666</p>
-          <p><strong>Hours:</strong> 10:00 - 16:00; Mon - Sat</p>
+      
+      <!------------------------------------------------------------------------>
+      <!----------------- Article ---------------------------------------------->
+      <!------------------------------------------------------------------------>
+
+      <div class="col-2">
+        <div id="sectionTitle">
+          <h2>&#x1F4D6 Welcome to Wikia!</h2>
         </div>
 
-        <!--links to alternative pages on website-->
-        <div class="col">
-          <h4>Useful Links</h4>
-          <a href="#">Sign-in</a>
-          <a href="pages/e-commerce/estore.html">Marketplace</a>
-          <a href="pages/map/map.html">Map</a>
+        <p>
+          Welcome to the Conservation Wiki, the resource to get all the information
+          you need about the fauna, flora, and f-more! We are currently a work in progress,
+          but feel free to access the wikipages that are currently active.
+        </p>
+        <p>
+          If you would like to contribute, drop by the Woodland Conservation site in Nova Scotia,
+          send photos of the wildlife and plantlife, or even just say hi to us on our social media!
+        </p>
+        <p>
+          Don't know what else to say, so I'm going to stop now.
+        </p>
+
+        <div id="sectionTitle">
+          <h2>&#x1F4C3 Wikipages</h2>
         </div>
 
-        <div class="col">
-          <div class="follow">
-            <h4>Follow us</h4>
-            <div class="icon">
-              <i class="fab fa-facebook-f"></i>
-              <i class="fab fa-twitter"></i>
-              <i class="fab fa-instagram"></i>
-              <i class="fab fa-pinterest-p"></i>
-              <i class="fab fa-linkedin"></i>
-            </div>
-          </div>
-        </div>
+        <div id="webpages">
 
-        <div class="copyright">
+          <ul class="wikiList" id="animalWikiList">
+            <li><a href="../../pages/wiki/yorkshireTerrier.html">The Yorkshire Terrier &#x1F415</a></li>
+            <li>Northern Leopard Frog &#x1F438</li>
+            <li>White-tailed Deer &#x1F98C</li>
+            <li>Eastern Gray Squirrel 🐿️</li>
+            <li>Red Fox &#x1F98A</li>
+            <li>Snowshoe Hare &#x1F407</li>
+          </ul>
+          
+          <ul class="wikiList" id="plantWikiList">
+            <li>Highbush Blueberry 🫐</li>
+            <li>Mountain Laurel &#x1F33C</li>
+            <li>Wintergreen &#x1F33F</li>
+            <li>Hobblebush &#x1F4AE</li>
+            <li>Indian Pipe &#x1F344</li>
+            <li>Wood Sorrel &#x1F340</li>
+          </ul>
+
+        </div>
+      </div>
+    
+      <!------------------------------------------------------------------------>
+      <!----------------- Right sidebar ---------------------------------------->
+      <!------------------------------------------------------------------------>
+
+      <div class="col-3">
+        <div class="col-3-padding">
+        </div>
+      </div>
+
+    </div>
+    
+    
+    <!------------------------------------------------------------------------>
+    <!----------------- Footer ----------------------------------------------->
+    <!------------------------------------------------------------------------>
+
+    <div id="my_footer">
+      <footer id="footer">
+        <div id="my_footerText">
           <p>Ⓒ SMU Software Engineering Group A</p>
         </div>
-      </footer>
     </div>
+    
   </body>
 </html>

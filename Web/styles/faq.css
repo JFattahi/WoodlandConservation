@@ -1,3 +1,7 @@
+body {
+  background-color: #f8ffeb;
+}
+
 .main-content {
   font-family: "CustomFont";
   color: #282d32;
@@ -7,15 +11,21 @@
   font-family: "CustomFont";
   color: #282d32;
   font-size: xx-large;
-  margin-top: 8rem;
-  margin-bottom: 3rem;
+  margin-top: 3rem;
 }
 .accordion {
   margin-bottom: 3rem;
   width: 60vw;
-  margin:auto;
+  margin: auto;
 }
 
 .container {
-  margin-bottom: 19.5rem;
+  margin-bottom: 10rem;
+}
+
+.faq-page {
+  background-color: #fffeeb;
+  padding: 20px 15px;
+  margin: 0 70px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
