@@ -135,8 +135,8 @@ body {
   }
 
   .faq-container {
-    margin-left: -141px;
-    width: 670px;
+    width: 100vw;
+    margin-bottom: 3rem;
   }
 
   #information p {
