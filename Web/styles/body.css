@@ -68,6 +68,8 @@ a:hover {
 }
 
 .main-content {
+  position: absolute;
+  top: 5rem;
   visibility: visible;
   display: block;
   opacity: 1;
