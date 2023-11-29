@@ -10,7 +10,7 @@
 }
 
 .dropbtn {
-  display:block;
+  display: block;
   padding: 1rem;
   font-size: 1rem;
   border: none;
@@ -88,9 +88,7 @@
     box-shadow: none;
   }
 
-  
-.dropdown-content a:hover {
-  background-color: #fdf5e6;
-}
-
+  .dropdown-content a:hover {
+    background-color: #fdf5e6;
+  }
 }
