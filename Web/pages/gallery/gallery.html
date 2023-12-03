@@ -78,7 +78,7 @@
     <title>Woodland Conservation</title>
   </head>
 
-  <body onload="filterSelection('all')">
+  <body onload="filterPhotos('all')">
     <header>
       <div class="header-container">
         <div class="org-name">
@@ -194,24 +194,16 @@
         <h2>&#128247; Photo Gallery</h2>
         <div id="myBtnContainer">
           <button class="btn btn-secondary" disabled>Tags</button>
-          <button class="btn" onclick="filterSelection('all')">Show all</button>
-          <button class="btn" onclick="filterSelection('people')">
-            People
-          </button>
-          <button class="btn" onclick="filterSelection('trees')">Trees</button>
-          <button class="btn" onclick="filterSelection('plants')">
-            Plants
-          </button>
-          <button class="btn" onclick="filterSelection('species')">
-            Species
-          </button>
-          <button class="btn" onclick="filterSelection('nature')">
-            Nature
-          </button>
-          <button class="btn" onclick="filterSelection('foundations')">
+          <button class="btn" onclick="filterPhotos('all')">Show all</button>
+          <button class="btn" onclick="filterPhotos('people')">People</button>
+          <button class="btn" onclick="filterPhotos('trees')">Trees</button>
+          <button class="btn" onclick="filterPhotos('plants')">Plants</button>
+          <button class="btn" onclick="filterPhotos('species')">Species</button>
+          <button class="btn" onclick="filterPhotos('nature')">Nature</button>
+          <button class="btn" onclick="filterPhotos('foundations')">
             Foundations
           </button>
-          <button class="btn" onclick="filterSelection('pets')">Pets</button>
+          <button class="btn" onclick="filterPhotos('pets')">Pets</button>
         </div>
 
         <!-- Portfolio Gallery Grid -->

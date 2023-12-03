@@ -1,44 +1,106 @@
-filterSelection("all");
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("column");
-  if (c == "all") c = "";
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+/**
+ * Purpose: This JavaScript will retreive the user information from the contact form
+ * Send an email to the Admin email via emailJS, and then send the user to the
+ * Success page after successfully sending the email to the Admin.
+ * Author: Ben Le
+ */
+
+// Initialize with all elements displayed
+filterPhotos("all");
+
+/**
+ * Function to filter photos based on the given tag
+ * Author: Ben Le
+ * @param {*} tag, the tag to be filtered
+ */
+function filterPhotos(tag) {
+  // Get all elements with the class "column" (representing photos)
+  var photos;
+  var i;
+
+  // Gets all the photos
+  photos = document.getElementsByClassName("column");
+
+  // If the category is "all," display all photos
+  if (tag == "all") {
+    tag = "";
+  }
+
+  // Iterate through each photo
+  for (i = 0; i < photos.length; i++) {
+    // Remove "show" from all class name of photos
+    removePhoto(photos[i]);
+
+    // If the photo belongs to the selected tag, add the "show" class
+    if (photos[i].className.indexOf(tag) > -1) addPhoto(photos[i]);
   }
 }
 
-function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {
-      element.className += " " + arr2[i];
-    }
+/**
+ * Function to add photo to gallery
+ * @param {*} photo, the current photo selected
+ */
+function addPhoto(photo) {
+  // Holds the tags of the photo
+  var tags;
+
+  // Holds "show" to append to class name in order to make photo visible
+  var display;
+
+  // Creates an array of the tag names
+  tags = photo.className.split(" ");
+
+  display = "show";
+
+  // Add show to class name of photo to make it visible
+  if (tags.indexOf(display) == -1) {
+    photo.className += " " + display;
   }
 }
 
-function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);
-    }
+/**
+ * Function to hide photo in gallery
+ * Author: Ben Le
+ * @param {*} photo, the current photo selected
+ */
+function removePhoto(photo) {
+  // Holds the tags of the photo
+  var tags;
+
+  // Holds "show" to remove from class name to hide the photo
+  var hide;
+
+  // Split the photo's current classes and the classes to be removed
+  tags = photo.className.split(" ");
+  hide = "show";
+
+  // Removes "show" from class name of photo to hide
+  while (tags.indexOf(hide) > -1) {
+    tags.splice(tags.indexOf(hide), 1);
   }
-  element.className = arr1.join(" ");
+
+  // Resets class name
+  photo.className = tags.join(" ");
+  console.log(photo.className);
 }
 
-// Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function () {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
+// Gets container for the buttons
+var buttonContainer = document.getElementById("myBtnContainer");
+
+// Gets each of the tag buttons
+var tagButtons = buttonContainer.getElementsByClassName("btn");
+
+// Add click event listeners to buttons for highlighting
+for (var i = 0; i < tagButtons.length; i++) {
+  tagButtons[i].addEventListener("click", function () {
+    // Remove the "active" class from the currently active button
+    var currentActiveButton = document.getElementsByClassName("active");
+    currentActiveButton[0].className = currentActiveButton[0].className.replace(
+      " active",
+      ""
+    );
+
+    // Add the "active" class to the clicked button
     this.className += " active";
   });
 }
