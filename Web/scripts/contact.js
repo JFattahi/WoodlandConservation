@@ -2,9 +2,8 @@
  * Purpose: This JavaScript will retreive the user information from the contact form
  * Send an email to the Admin email via emailJS, and then send the user to the 
  * Success page after successfully sending the email to the Admin.
- * Author: Ben Le
+ * Author: Anonymous
  */
-
 
 // Holds the public ID(Key) of emailJS account
 const publicKey = "Pn8eDSTRu9fiVDLQY";
@@ -18,7 +17,7 @@ const templateID = "template_3ewd6wh";
 /**
  * Function to retreive the information from the contact form, 
  * and send an email with that information to the admin account.
- * Author: Ben Le 
+ * Author: Anonymous
  */
 function sendMessage() {
   // Initializes emailJS with the public key

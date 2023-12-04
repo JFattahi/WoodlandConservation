@@ -1,8 +1,8 @@
 /**
- * Purpose: This JavaScript will retreive the user information from the contact form
- * Send an email to the Admin email via emailJS, and then send the user to the
- * Success page after successfully sending the email to the Admin.
- * Author: Ben Le
+ * Purpose: This JavaScript filters the photo gallery based on a given tag.
+ * The gallery will shows photos with the given tag, and hide the other 
+ * photos without the given tag.
+ * Author: Anonymous
  */
 
 // Initialize with all elements displayed
@@ -10,7 +10,7 @@ filterPhotos("all");
 
 /**
  * Function to filter photos based on the given tag
- * Author: Ben Le
+ * Author: Anonymous
  * @param {*} tag, the tag to be filtered
  */
 function filterPhotos(tag) {
@@ -60,7 +60,7 @@ function addPhoto(photo) {
 
 /**
  * Function to hide photo in gallery
- * Author: Ben Le
+ * Author: Anonymous
  * @param {*} photo, the current photo selected
  */
 function removePhoto(photo) {
