@@ -6,301 +6,250 @@
   Alex Nguyen (just the main container)
 -->
 
+<!-- Document declaration and external CSS links -->
 <!DOCTYPE html>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-/>
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-/>
-
+<!-- HTML document starts with language set to English -->
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Link Icon for browser tab -->
-    <link
-      rel="icon"
-      href="https://i.ibb.co/PWqTJvM/logo-Icon.png"
-      type="image/x-icon"
-    />
+<head>
 
-    <!-- Link bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <!--Linking the css files for styling-->
-    <link rel="stylesheet" href="../../styles/body.css" />
-    <link rel="stylesheet" href="../../styles/nav.css" />
-    <link rel="stylesheet" href="../../styles/header.css" />
-    <link rel="stylesheet" href="../../styles/footer.css" />
-    <link rel="stylesheet" href="../../styles/dropdown.css" />
-    <link rel="stylesheet" href="../../styles/about.css" />
+  <!-- Metadata including character set, viewport settings, and favicon -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--Linking custom fonts-->
-    <link
-      rel="stylesheet"
-      href="path/to/font-awesome/css/font-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+  <!-- Link Icon for browser tab -->
+  <link rel="icon" href="https://i.ibb.co/PWqTJvM/logo-Icon.png" type="image/x-icon" />
 
-    <!-- Linking javascript files for bootstrap -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
+  <!-- Link bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 
-    <!--Linking the javascript files for functionality-->
-    <script src="../../scripts/estore.js" async></script>
-    <script defer src="../../scripts/main.js" async></script>
-    <script src="../../scripts/contact.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"
-    ></script>
+  <!-- Linking the css files for styling -->
+  <link rel="stylesheet" href="../../styles/body.css" />
+  <link rel="stylesheet" href="../../styles/nav.css" />
+  <link rel="stylesheet" href="../../styles/header.css" />
+  <link rel="stylesheet" href="../../styles/footer.css" />
+  <link rel="stylesheet" href="../../styles/dropdown.css" />
+  <link rel="stylesheet" href="../../styles/about.css" />
 
-    <title>Woodland Conservation</title>
-  </head>
+  <!-- Linking custom fonts and additional Font Awesome styles -->
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-  <body>
-    <header>
-      <div class="header-container">
-        <div class="org-name">
-          <!--Links back to homepage if clicked-->
-          <a class="org-logo" href="../../index.html"
-            ><img src="https://i.ibb.co/GvF71Pz/logo.png"
-          /></a>
-        </div>
-        <div class="menu-btn">
-          <div class="menu-btn_burger"></div>
-          <div id="nav-bar" class="nav-bar">
-            <nav>
-              <ul>
-                <!--Links to alternative pages in the navbar-->
-                <div class="dropdown">
-                  <li>
-                    <a class="dropbtn" href="../../pages/about/about.html"
-                      >About</a
-                    >
-                  </li>
-                  <div class="dropdown-content">
-                    <a href="../../pages/about/about.html" class="dropdown-top"
-                      >About Woodland</a
-                    >
-                    <a href="../../pages/about/news.html">News</a>
-                    <a href="../../pages/about/faq.html">FAQ</a>
-                    <a
-                      href="../../pages/about/contact.html"
-                      class="dropdown-bottom"
-                      >Contact Us</a
-                    >
-                  </div>
-                </div>
+  <!-- Linking javascript files for bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 
-                <div class="dropdown">
-                  <li>
-                    <a
-                      class="dropbtn"
-                      href="../../pages/burial/burial_page.html"
-                      >Burial</a
-                    >
-                  </li>
-                  <div class="dropdown-content">
-                    <a
-                      href="../../pages/burial/burial_page.html"
-                      class="dropdown-top"
-                      >About Burial</a
-                    >
-                    <a
-                      href="../../pages/burial/burial_page.html#buttons"
-                      class="dropdown-bottom"
-                      >Request Burial</a
-                    >
-                  </div>
-                </div>
+  <!-- Linking JavaScript files for Bootstrap and functionality -->
+  <script src="../../scripts/estore.js" async></script>
+  <script defer src="../../scripts/main.js" async></script>
+  <script src="../../scripts/contact.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
+  <!-- Page title -->
+  <title>Woodland Conservation</title>
+</head>
+
+<body>
+
+  <!-- Header section with organization logo and navigation -->
+  <header>
+    <div class="header-container">
+      <div class="org-name">
+
+        <!-- Links back to homepage if clicked -->
+        <a class="org-logo" href="../../index.html"><img src="https://i.ibb.co/GvF71Pz/logo.png" /></a>
+      </div>
+      <div class="menu-btn">
+        <div class="menu-btn_burger"></div>
+        <div id="nav-bar" class="nav-bar">
+          <nav>
+            <ul>
+
+              <!-- Links to alternative pages in the navbar -->
+              <div class="dropdown">
                 <li>
-                  <a href="../../pages/e-commerce/estore.html">Marketplace</a>
+                  <a class="dropbtn" href="../../pages/about/about.html">About</a>
                 </li>
+                <div class="dropdown-content">
+                  <a href="../../pages/about/about.html" class="dropdown-top">About Woodland</a>
+                  <a href="../../pages/about/news.html">News</a>
+                  <a href="../../pages/about/faq.html">FAQ</a>
+                  <a href="../../pages/about/contact.html" class="dropdown-bottom">Contact Us</a>
+                </div>
+              </div>
 
+              <!-- More navigation links -->
+              <div class="dropdown">
                 <li>
-                  <a href="../../pages/newmap/client/index.html">Map</a>
+                  <a class="dropbtn" href="../../pages/burial/burial_page.html">Burial</a>
                 </li>
+                <div class="dropdown-content">
+                  <a href="../../pages/burial/burial_page.html" class="dropdown-top">About Burial</a>
+                  <a href="../../pages/burial/burial_page.html#buttons" class="dropdown-bottom">Request Burial</a>
+                </div>
+              </div>
 
-                <div class="dropdown">
-                  <li>
-                    <a class="dropbtn" href="../../pages/gallery/gallery.html"
-                      >Gallery</a
-                    >
-                  </li>
-                  <div class="dropdown-content">
-                    <a
-                      href="../../pages/gallery/gallery.html"
-                      class="dropdown-top"
-                      >Photo Gallery</a
-                    >
-                    <a
-                      href="../../pages/gallery/photoupload.html"
-                      class="dropdown-bottom"
-                      >Upload a Photo</a
-                    >
-                  </div>
+              <li>
+                <a href="../../pages/e-commerce/estore.html">Marketplace</a>
+              </li>
+
+              <li>
+                <a href="../../pages/newmap/client/index.html">Map</a>
+              </li>
+
+              <div class="dropdown">
+                <li>
+                  <a class="dropbtn" href="../../pages/gallery/gallery.html">Gallery</a>
+                </li>
+                <div class="dropdown-content">
+                  <a href="../../pages/gallery/gallery.html" class="dropdown-top">Photo Gallery</a>
+                  <a href="../../pages/gallery/photoupload.html" class="dropdown-bottom">Upload a Photo</a>
                 </div>
-                <div class="dropdown">
-                  <li>
-                    <a class="dropbtn" href="../../pages/wiki/wikiHome.html"
-                      >Wiki</a
-                    >
-                  </li>
-                  <div class="dropdown-content">
-                    <a
-                      href="../../pages/wiki/wikiHome.html"
-                      class="dropdown-top"
-                      >Home</a
-                    >
-                    <a href="../../pages/wiki/yorkshireTerrier.html"
-                      >Example Wikipage</a
-                    >
-                  </div>
+              </div>
+              <div class="dropdown">
+                <li>
+                  <a class="dropbtn" href="../../pages/wiki/wikiHome.html">Wiki</a>
+                </li>
+                <div class="dropdown-content">
+                  <a href="../../pages/wiki/wikiHome.html" class="dropdown-top">Home</a>
+                  <a href="../../pages/wiki/yorkshireTerrier.html">Example Wikipage</a>
                 </div>
-              </ul>
-            </nav>
-          </div>
+              </div>
+            </ul>
+          </nav>
         </div>
       </div>
-    </header>
-    <!--Main content div for all page content for responsive design-->
-
-    <div class="main-content">
-      <!--ADD STUFF HERE-->
-
-      <div class="div">
-        <div class="div-2">
-          <div class="div-3">
-            <div class="div-4">HISTORY</div>
-            <div class="div-5">
-              In 20xx, the French Village Forest Preservation was discovered by
-              X Y who noticed some flora and fauna on the premises that have a
-              deserve to be preserved for future generations. After much
-              community driven work we are left with a majestic piece of history
-              that we can preserve for our community and the life that thrives
-              within the ecosystem here.
-              <br />
-            </div>
-            <img
-              loading="lazy"
-              srcset="
-                https://img1.wsimg.com/isteam/ip/593614af-b7d6-418d-97a5-ff050286f196/electric%20city%20colourized.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:1280
-              "
-              class="img"
-            />
-            <div class="div-6">OUR MISSION</div>
-            <div class="div-7">
-              To preserve a dynamic and unique system of natural and cultural
-              resources, and to develop innovative educational, recreational and
-              cultural opportunities of regional value, while exercising
-              environmental and fiscal responsibility.
-              <br />
-            </div>
-            <img
-              loading="lazy"
-              srcset="
-                https://i.natgeofe.com/n/84ee7ffd-c5dc-4fbb-9046-d07199d71edc/01-holloway_16x9.jpg
-              "
-              class="img-2"
-            />
-            <img
-              loading="lazy"
-              srcset="
-                https://i.natgeofe.com/n/110e8ed3-8ff0-4f32-9df7-666ab5eaf314/003-Ancient-pollarded-oak-tree.jpg?
-              "
-              class="img-3"
-            />
-            <div class="div-8">
-              Green burials minimize environmental impact, have a very low
-              carbon footprint, and aid in the restoration and protection of
-              natural habitats.
-            </div>
-            <img
-              loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/ed2093c3-de6e-4a66-8e43-85ca11e9c594?"
-              class="img-4"
-            />
-            <div class="div-9">RULES & REGULATION</div>
-            <div class="div-10">
-              To preserve a dynamic and unique system of natural and cultural
-              resources, and to develop innovative educational, recreational and
-              cultural opportunities of regional value, while exercising
-              environmental and fiscal responsibility.
-              <br />
-            </div>
-            <img
-              loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/c141d293-c014-47d6-bc90-cfd3eb58e09f?"
-              class="img-5"
-            />
-          </div>
-        </div>
-      </div>
-
-      <!--The footer for our webpage-->
-      <footer class="section-p1">
-        <div class="col">
-          <h4>Contact Us</h4>
-          <p>
-            <strong>Address:</strong> 71 St Pauls Ln, French Village, NS B3Z 4E3
-          </p>
-          <p><strong>Phone:</strong> 111 222 333/ (+1) 444 555 666</p>
-          <p><strong>Hours:</strong> 10:00 - 16:00; Mon - Sat</p>
-        </div>
-
-        <!--links to alternative pages on website-->
-        <div class="col">
-          <h4>Useful Links</h4>
-          <a href="#">Sign-in</a>
-          <a href="pages/e-commerce/estore.html">Marketplace</a>
-          <a href="pages/map/map.html">Map</a>
-        </div>
-
-        <div class="col">
-          <div class="follow">
-            <h4>Follow us</h4>
-            <div class="icon">
-              <i class="fab fa-facebook-f"></i>
-              <i class="fab fa-twitter"></i>
-              <i class="fab fa-instagram"></i>
-              <i class="fab fa-pinterest-p"></i>
-              <i class="fab fa-linkedin"></i>
-            </div>
-          </div>
-        </div>
-
-        <div class="copyright">
-          <p>Ⓒ SMU Software Engineering Group A</p>
-        </div>
-      </footer>
     </div>
-  </body>
+  </header>
+
+  <!-- Main content div for all page content for responsive design -->
+  <div class="main-content">
+
+    <!-- Section with nested divs containing text and images -->
+    <div class="div">
+      <div class="div-2">
+        <div class="div-3">
+
+          <!-- Content about the history of the project -->
+          <div class="div-4">HISTORY</div>
+          <div class="div-5">
+
+            <!-- ... (history content) ... -->
+            In 20xx, the French Village Forest Preservation was discovered by
+            X Y who noticed some flora and fauna on the premises that have a
+            deserve to be preserved for future generations. After much
+            community driven work we are left with a majestic piece of history
+            that we can preserve for our community and the life that thrives
+            within the ecosystem here.
+            <br />
+          </div>
+          <img loading="lazy" srcset="
+                https://img1.wsimg.com/isteam/ip/593614af-b7d6-418d-97a5-ff050286f196/electric%20city%20colourized.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:1280
+              " class="img" />
+
+          <!-- Content about the mission of the project -->
+          <div class="div-6">OUR MISSION</div>
+          <div class="div-7">
+
+            <!-- ... (mission content) ... -->
+            To preserve a dynamic and unique system of natural and cultural
+            resources, and to develop innovative educational, recreational and
+            cultural opportunities of regional value, while exercising
+            environmental and fiscal responsibility.
+            <br />
+          </div>
+          <img loading="lazy" srcset="
+                https://i.natgeofe.com/n/84ee7ffd-c5dc-4fbb-9046-d07199d71edc/01-holloway_16x9.jpg
+              " class="img-2" />
+          <img loading="lazy" srcset="
+                https://i.natgeofe.com/n/110e8ed3-8ff0-4f32-9df7-666ab5eaf314/003-Ancient-pollarded-oak-tree.jpg?
+              " class="img-3" />
+
+          <!-- Content about green burials -->
+          <div class="div-8">
+
+            <!-- ... (green burials content) ... -->
+            Green burials minimize environmental impact, have a very low
+            carbon footprint, and aid in the restoration and protection of
+            natural habitats.
+          </div>
+          <img loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/ed2093c3-de6e-4a66-8e43-85ca11e9c594?" class="img-4" />
+
+          <!-- Content about rules and regulations -->
+          <div class="div-9">RULES & REGULATION</div>
+          <div class="div-10">
+
+            <!-- ... (rules and regulations content) ... -->
+            To preserve a dynamic and unique system of natural and cultural
+            resources, and to develop innovative educational, recreational and
+            cultural opportunities of regional value, while exercising
+            environmental and fiscal responsibility.
+            <br />
+          </div>
+          <img loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/c141d293-c014-47d6-bc90-cfd3eb58e09f?" class="img-5" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer section with contact information and useful links -->
+    <footer class="section-p1">
+
+      <!-- Contact information -->
+      <div class="col">
+        <h4>Contact Us</h4>
+
+        <!-- ... (contact information) ... -->
+        <p>
+          <strong>Address:</strong> 71 St Pauls Ln, French Village, NS B3Z 4E3
+        </p>
+        <p>
+          <strong>Phone:</strong> 111 222 333/ (+1) 444 555 666
+        </p>
+        <p>
+          <strong>Hours:</strong> 10:00 - 16:00; Mon - Sat
+        </p>
+      </div>
+
+      <!-- Links to alternative pages on website -->
+      <div class="col">
+        <h4>Useful Links</h4>
+        <a href="#">Sign-in</a>
+        <a href="pages/e-commerce/estore.html">Marketplace</a>
+        <a href="pages/map/map.html">Map</a>
+      </div>
+
+      <!-- Follow us section with social media icons -->
+      <div class="col">
+        <div class="follow">
+          <h4>Follow us</h4>
+          <div class="icon">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-pinterest-p"></i>
+            <i class="fab fa-linkedin"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright information -->
+      <div class="copyright">
+        <p>Ⓒ SMU Software Engineering Group A</p>
+      </div>
+    </footer>
+  </div>
+</body>
+
 </html>
