@@ -2,9 +2,13 @@
 const imagesInput = document.getElementById("images");
 const preview = document.querySelector(".preview");
 
-// EmailJS configuration
+// Holds the public ID(Key) of emailJS account
 const publicKey = "Pn8eDSTRu9fiVDLQY";
+
+// Holds the service ID of the service through which the email should be sent
 const serviceID = "service_jelguak";
+
+// Holds the template ID of the emailJS account, used for the format of the email sent
 const templateID = "template_c6y1blp";
 
 // Array to store images to be uploaded
