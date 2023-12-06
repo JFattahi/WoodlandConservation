@@ -1,78 +1,69 @@
+/*  Purpose: Originally used for burial page sytling. Now used to style admin_page.html.
+    Authors: 
+    Zilong Wang  - styling
+    Brandon Watson - styling 
+    Matthew MacNeil - removed sections and added extra styling for buttons.
+*/
+
+/* ---------------- Element based styles ----------------- */
+
 body {
-    background: #fffeeb; 
-    font-family: "CustomFont";
-  }
+  background: #fffeeb;
+  font-family: "CustomFont";
+}
 
-  .title2 {
-    margin-top: 1rem;
-  }
+/* ---------------- Class based styles ----------------- */
 
-  .button-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .burial-req-button {
-    font-weight: 500;
-    border: none;
-    color: #282d32;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 0px 30px;
-    cursor: pointer;
-    border-radius: 15px;
-    background-color: #fcf2e0;
-    margin-bottom: 3rem;
-    /* margin-left: 11rem; */
-    width: 350px;
-    height: 50px
-  }
-  
-  .contact-button:hover {
-    color: green;
-  }
+.title2 {
+  margin-top: 1rem;
+}
 
-#title_background{
-    font-size: 60px;
-    color: aliceblue;
-    position:absolute;
-    text-align: center;
-}/*The style of title on background image*/
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-/*
-Burial page, content under carousel
-*/
-#information{
-    margin-bottom: 2.25rem;
-    height: 400px;
-    width: 100vw;
-    padding-left: 150px;
-    padding-right: 150px;
-}/*The style of introduction container*/
+.burial-req-button {
+  font-weight: 500;
+  border: none;
+  color: #282d32;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0px 30px;
+  cursor: pointer;
+  border-radius: 15px;
+  background-color: #fcf2e0;
+  margin-bottom: 3rem;
+  width: 350px;
+  height: 50px;
+}
 
+.contact-button:hover {
+  color: green;
+}
 
-/*
-Burial page title under carousel
-*/
-#information_title{
-   
-   align-content: center;  
-   margin-top: 7rem;
-}/*The style of introduction title "Want a natural burial?"*/
+/* ---------------- ID based styles ----------------- */
 
+#information {
+  margin-bottom: 2.25rem;
+  height: 400px;
+  width: 100vw;
+  padding-left: 150px;
+  padding-right: 150px;
+} 
 
-/*
-Burial page, text under carousel
-*/
-#information_content{
-  color:black ;
+#information_title {
+  align-content: center;
+  margin-top: 7rem;
+}
+
+#information_content {
+  color: black;
   font-size: 20px;
   margin: auto;
   align-content: center;
-}/*style the font including color and size"*/
-
-
+} /*style the font including color and size"*/

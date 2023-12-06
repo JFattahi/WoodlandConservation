@@ -1,6 +1,7 @@
 <!--
   Ben Le
   Matthew MacNeil
+
 -->
 
 <!DOCTYPE html>
@@ -174,8 +175,8 @@
     <!--Main content div for all page content for responsive design-->
 
     <div class="main-content">
-      <!--ADD STUFF HERE-->
       <div class="success-page">
+             
 <?php
 // Fields for the person who is making the burial request
 $fname = $_POST["fname"];
@@ -191,19 +192,19 @@ $lname2 = $_POST["lname-2"];
 // Date the request was made
 $current_date = date("Y-m-d");
 
-
 // Read in database variables
 require("../../pages/database/mysqldb_group24A.php");
 
+// The table that the burial request will be stored into
 $table = "burial_other_requests";
 
 // Try to connect to MySQL
 $link = mysqli_connect($dbLocation, $dbUsername, $dbPassword);
-if (!$link) die("Couldn't connect to MySQL");
+if (!$link) die("Couldn't connect to MySQL"); // Print error message if connection is unsuccessful
 
 // Switch to the database
 mysqli_select_db($link, $dbName)
-        or die("Couldn't open $dbName: ".mysqli_error($link));
+        or die("Couldn't open $dbName: ".mysqli_error($link)); // Print error message if selecting db is unsuccessful
 
 // Create the query to insert the user's request into the db
 $query = "INSERT INTO $table (req_fname, req_lname, req_email, req_phone, relationship, oth_fname, oth_lname, req_date) VALUES";
@@ -215,9 +216,7 @@ $ok = mysqli_query($link, $query); // True only if query was successful
 if (!$ok) {
     print "Sorry your request was not stored properly in our database.";
 } else {
-    //print "We have received your request.<p>";
-    //print "We will get back to you soon.";
-    // Output HTML content
+    // Display success page
     echo '<img class="check" src="https://i.ibb.co/sKKdxnk/checkmark.png" />';
     echo '<h1 class="success-title">Success</h1>';
     echo '<img class="bar" src="https://i.ibb.co/CH6Cmcp/gold-bar.png" />';
@@ -227,8 +226,8 @@ if (!$ok) {
 // Close the connection to the database
 mysqli_close($link);
 ?>
+
 </div>
-      <!-- END -->
       <!--The footer for our webpage-->
       <footer class="section-p1">
         <div class="col">

@@ -177,7 +177,7 @@
       <!--ADD STUFF HERE-->
       <div class="success-page">
 <?php
-// Fields for the person who is making the burial request
+// Fields for the person who is making the burial request that will be stored in the DB
 $fname = $_POST["fname"];
 $lname = $_POST["lname"];
 $birth_date = $_POST["birthdate"];
@@ -190,11 +190,13 @@ $current_date = date("Y-m-d");
 // Read in database variables
 require("../../pages/database/mysqldb_group24A.php");
 
+// The table the user's request will be stored into
 $table = "burial_self_requests";
 
 // Try to connect to MySQL
 $link = mysqli_connect($dbLocation, $dbUsername, $dbPassword);
 
+// If connection to MySQL did not work print out error message
 if (!$link) {
     die("Couldn't connect to MySQL");
 }
@@ -202,11 +204,14 @@ if (!$link) {
 // Switch to the database
 mysqli_select_db($link, $dbName) or die("Couldn't open $dbName: " . mysqli_error($link));
 
-// Birth date field is not required
+// Check if the user entered a birth date
 if (strlen($birth_date) == 0) {
+    // Insert user's information including birthdate into the db
+    // Create query to insert the user's request into the db
     $query = "INSERT INTO $table (requester_fname, requester_lname, email, phone_num, request_date) VALUES";
     $query .= " (\"$fname\", \"$lname\", \"$email\", \"$number\", '$current_date')";
 } else {
+    // Insert the user's information excluding birthdatte into the db
     // Create the query to insert the user's request into the db
     $query = "INSERT INTO $table (requester_fname, requester_lname, birth_date, email, phone_num, request_date) VALUES";
     $query .= " (\"$fname\", \"$lname\", '$birth_date', \"$email\", \"$number\", '$current_date')";
@@ -218,15 +223,17 @@ $ok = mysqli_query($link, $query); // True only if query was successful
 if (!$ok) {
     print "Sorry your request was not stored properly in our database.";
 } else {
-    // Output HTML content
+    // Display success page
     echo '<img class="check" src="https://i.ibb.co/sKKdxnk/checkmark.png" />';
     echo '<h1 class="success-title">Success</h1>';
     echo '<img class="bar" src="https://i.ibb.co/CH6Cmcp/gold-bar.png" />';
     echo '<h3>We have received your request.<br />We will get back to you shortly.</h3>';
 }
 
+// Close the MySQL connection
 mysqli_close($link);
 ?>
+
       </div>
       <!-- END -->
       <!--The footer for our webpage-->
