@@ -1,18 +1,11 @@
 <!--
-  Ben Le
+  Purpose: A Photo gallery page for users to view photos, with tag filtering
+ 
+  Authors: Ben Le: Gallery Design and Structure
 -->
 
+<!-- Document declaration -->
 <!DOCTYPE html>
-
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-/>
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-/>
-
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -26,14 +19,14 @@
       type="image/x-icon"
     />
 
-    <!-- Link bootstrap -->
+    <!-- Linking Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <!--Linking the css files for styling-->
+    <!--Linking the CSS files for styling-->
     <link rel="stylesheet" href="../../styles/body.css" />
     <link rel="stylesheet" href="../../styles/gallery.css" />
     <link rel="stylesheet" href="../../styles/nav.css" />
@@ -41,7 +34,7 @@
     <link rel="stylesheet" href="../../styles/footer.css" />
     <link rel="stylesheet" href="../../styles/dropdown.css" />
 
-    <!--Linking custom fonts-->
+    <!-- Linking custom fonts and additional Font Awesome styles -->
     <link
       rel="stylesheet"
       href="path/to/font-awesome/css/font-awesome.min.css"
@@ -59,26 +52,38 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
 
-    <!-- Linking javascript files for bootstrap -->
+    <!-- Linking JavaScript files for bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
 
-    <!--Linking the javascript files for functionality-->
+    <!--Linking the JavaScript files for functionality-->
     <script src="../../scripts/gallery.js"></script>
+    <script defer src="../../scripts/main.js" async></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"
     ></script>
 
+    <!-- Page title -->
     <title>Woodland Conservation</title>
   </head>
 
+  <!-- Make all photos visible at the start -->
   <body onload="filterPhotos('all')">
+    <!-- Header section with organization logo and navigation -->
     <header>
       <div class="header-container">
         <div class="org-name">
@@ -175,7 +180,7 @@
                       >Home</a
                     >
                     <a href="../../pages/wiki/yorkshireTerrier.html"
-                      >Example Wikipage</a
+                      >Wikipage</a
                     >
                   </div>
                 </div>
@@ -185,13 +190,11 @@
         </div>
       </div>
     </header>
-
     <!--Main content div for all page content for responsive design-->
-
     <div class="main-content">
-      <!--ADD STUFF HERE-->
       <div class="main">
         <h2>&#128247; Photo Gallery</h2>
+        <!-- Tags for filtering -->
         <div id="myBtnContainer">
           <button class="btn btn-secondary" disabled>Tags</button>
           <button class="btn" onclick="filterPhotos('all')">Show all</button>
@@ -205,7 +208,6 @@
           </button>
           <button class="btn" onclick="filterPhotos('pets')">Pets</button>
         </div>
-
         <!-- Portfolio Gallery Grid -->
         <div class="row">
           <img
@@ -492,7 +494,7 @@
             src="https://i.ibb.co/CH6Cmcp/gold-bar.png"
             style="margin-top: 1rem; height: 10px"
           />
-          <!-- END GRID -->
+          <!-- End Grid -->
         </div>
 
         <nav class="pagination-button" aria-label="Page navigation example">
@@ -508,9 +510,9 @@
             </li>
           </ul>
         </nav>
-        <!-- END MAIN -->
+        <!-- End Main -->
       </div>
-      <!-- END -->
+      <!-- End Main-container -->
       <!--The footer for our webpage-->
       <footer class="section-p1">
         <div class="col">

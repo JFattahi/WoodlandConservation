@@ -1,3 +1,11 @@
+/* 
+Purpose: Styling for contact us page and form
+
+Author: Ben Le: Initial Design
+*/
+
+
+/* element based styling */
 body {
   background: #fffeeb;
 }
@@ -16,6 +24,8 @@ form {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+
+/* classed based styling */
 .main-content h2 {
   font-weight: 800;
   font-family: "CustomFont";

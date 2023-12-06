@@ -1,7 +1,14 @@
+/* 
+Purpose: Styling the FAQ accordion and FAQ page
+Author: Ben Le
+*/
+
+/* element based styling */
 body {
   background-color: #f8ffeb;
 }
 
+/* class based stytling  */
 .main-content {
   font-family: "CustomFont";
   color: #282d32;

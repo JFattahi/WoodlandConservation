@@ -2,10 +2,10 @@
 Purpose: Provides styling for the header section of webpages
 Author(s) / Work Done: 
 Devon Leigh - HTML element styling
-Ben le - added sytling
+Ben Le - Added sytling
 */
 
-/*html elements section*/
+/* element based styling */
 
 * {
   margin: 0;
@@ -28,7 +28,7 @@ header {
   z-index: 10;
 }
 
-/*developer defined classes*/
+/* class based styling */
 .header-container {
   display: flex;
   width: 100vw;
@@ -56,9 +56,10 @@ header {
 }
 
 .org-logo img:hover {
-  content: url("https://i.ibb.co/3fhc9FZ/green-logo.png"); 
+  content: url("https://i.ibb.co/3fhc9FZ/green-logo.png");
 }
 
+/* For mobile responsiveness */
 @media screen and (max-width: 1100px) {
   .menu-btn {
     flex: 0 0 auto;

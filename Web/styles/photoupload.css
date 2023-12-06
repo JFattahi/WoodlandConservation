@@ -1,3 +1,10 @@
+/* 
+  Purpose: Styling for photo upload page and form
+
+  Author: Ben Le: Initial Design
+*/
+
+/* element based styling */
 body {
   background: #fffeeb;
 }
@@ -13,14 +20,6 @@ form {
   margin-top: 1rem;
   margin-bottom: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.main-content h2 {
-  font-weight: 800;
-  margin-top: 2rem;
-  font-family: "CustomFont";
-  color: #282d32;
-  font-size: xx-large;
 }
 
 label {
@@ -54,6 +53,15 @@ form textarea {
   background: white;
 }
 
+/* class based styling */
+.main-content h2 {
+  font-weight: 800;
+  margin-top: 2rem;
+  font-family: "CustomFont";
+  color: #282d32;
+  font-size: xx-large;
+}
+
 .upload-title {
   margin-bottom: -3rem;
 }
@@ -80,7 +88,7 @@ form textarea {
   color: green;
 }
 
-
+/* element based styling */
 #form {
   padding: 1em 10vw;
   display: flex;
