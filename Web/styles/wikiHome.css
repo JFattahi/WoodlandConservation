@@ -3,7 +3,7 @@
   Author: Storm: Initial Design
 */
 
-/* element based styling */
+/* --------------- Element based styles ---------------------- */
 body {
   font-family: "CustomFont";
   font-weight: normal;
@@ -15,7 +15,7 @@ body {
   box-sizing: border-box;
 }
 
-/* id based styling */
+/* ---------------- ID based styles ----------------- */
 #LayoutGrid .col-2 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }

@@ -1,8 +1,15 @@
+/* 
+  Purpose: Styling for succes page when user successfully submits a form
+*/
+
+
+/* --------------- Element based styles ---------------------- */
 body {
   background: #f8ffeb;
   font-family: "CustomFont";
 }
 
+/* ---------------- Class based styles ------------------ */
 .success-page {
   background-color: #fffeeb;
   padding: 20px 15px;

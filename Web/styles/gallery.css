@@ -4,7 +4,7 @@
   Author: Ben Le: Initial Design
 */
 
-/* class based styling */
+/* ---------------- Class based styles ------------------ */
 .main * {
   box-sizing: border-box;
 }
@@ -113,14 +113,14 @@
   opacity: 1;
 }
 
-/* element based styling */
+/* --------------- Element based styles ---------------------- */
 #myBtnContainer button {
   border-radius: 15px;
   margin-left: 3px;
   margin-right: 3px;
 }
 
-/* For mobile responsiveness */
+/*----------------- For Mobile Responsiveness -----------------*/
 @media only screen and (max-width: 900px) {
   .column {
     width: 50%;

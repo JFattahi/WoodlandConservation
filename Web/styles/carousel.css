@@ -3,7 +3,7 @@ Purpose: Styling for carousel of homepage
 Author: Ben Le: Initial Design
 */
 
-/* class based styling */
+/* --------------- Element based styles ---------------------- */
 .carousel img {
   height: 90vh;
 }
@@ -72,7 +72,7 @@ Author: Ben Le: Initial Design
   background-color: #fcf2e0;
 }
 
-/* For mobile responsiveness */
+/*----------------- For Mobile Responsiveness -----------------*/
 @media only screen and (max-width: 1360px) {
   .carousel-inner img {
     height: 800px;

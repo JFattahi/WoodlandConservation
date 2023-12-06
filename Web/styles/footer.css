@@ -8,7 +8,7 @@ Rahabar Mahmud - HTML element styling
 Edited by: Alex Nguyen 
 */
 
-/* element basesd styles */
+/* --------------- Element based styles ---------------------- */
 footer {
   display: flex;
   flex-wrap: wrap;
@@ -84,12 +84,12 @@ footer {
   padding: 0;
 }
 
-/* class based styling */
+/* ---------------- Class based styles ------------------ */
 .section-p1 {
   padding: 40px 80px;
 }
 
-/* For mobile responsiveness */
+/*----------------- For Mobile Responsiveness -----------------*/
 @media only screen and (max-width: 768px) {
   .section-p1 .col:nth-child(1) {
     display: block;

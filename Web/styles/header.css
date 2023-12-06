@@ -5,7 +5,7 @@ Devon Leigh - HTML element styling
 Ben Le - Added sytling
 */
 
-/* element based styling */
+/* --------------- Element based styles ---------------------- */
 
 * {
   margin: 0;
@@ -28,7 +28,7 @@ header {
   z-index: 10;
 }
 
-/* class based styling */
+/* ---------------- Class based styles ------------------ */
 .header-container {
   display: flex;
   width: 100vw;

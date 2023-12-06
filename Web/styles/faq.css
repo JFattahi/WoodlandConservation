@@ -3,12 +3,12 @@ Purpose: Styling the FAQ accordion and FAQ page
 Author: Ben Le
 */
 
-/* element based styling */
+/* --------------- Element based styles ---------------------- */
 body {
   background-color: #f8ffeb;
 }
 
-/* class based stytling  */
+/* ---------------- Class based styles ------------------ */
 .main-content {
   font-family: "CustomFont";
   color: #282d32;

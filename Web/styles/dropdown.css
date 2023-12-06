@@ -16,7 +16,7 @@
     U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-/* class based styling */
+/* ---------------- Class based styles ------------------ */
 .dropbtn {
   padding: 1rem;
   font-size: 1rem;
@@ -68,7 +68,7 @@
   background-color: none;
 }
 
-/* For mobile responsiveness */
+/*----------------- For Mobile Responsiveness -----------------*/
 @media screen and (max-width: 768px) {
   .dropdown-top {
     border-radius: 0;

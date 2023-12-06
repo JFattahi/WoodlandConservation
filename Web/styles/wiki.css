@@ -4,7 +4,7 @@
   Author: Storm: Inital Design
 */
 
-/* element based styling */
+/* --------------- Element based styles ---------------------- */
 body {
   font-family: "CustomFont";
   font-weight: normal;
@@ -16,7 +16,7 @@ body {
   box-sizing: border-box;
 }
 
-/*  id based styling*/
+/* ---------------- ID based styles ----------------- */
 #toc_container {
   background-color: #fcf2e0;
   border: 1px solid #ba972f;
@@ -32,6 +32,7 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/*----------------- For Mobile Responsiveness -----------------*/
 @media (max-width: 1300px) {
   #toc_container {
     display: none;

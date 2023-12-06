@@ -11,7 +11,7 @@ Ben Le - Added styling
   src: url("/Web/styles/fonts/ArchivoNarrow-Regular.ttf");
 }
 
-/* element based styling */
+/* --------------- Element based styles ---------------------- */
 ul {
   display: flex;
   padding: none;
@@ -19,7 +19,7 @@ ul {
   list-style: none;
 }
 
-/* class based styling */
+/* ---------------- Class based styles ------------------ */
 .nav-bar {
   display: flex;
   align-items: center;
@@ -49,7 +49,7 @@ ul {
   color: green;
 }
 
-/* For mobile responsiveness */
+/*----------------- For Mobile Responsiveness -----------------*/
 @media screen and (max-width: 1100px) {
   .nav-bar {
     display: flex;

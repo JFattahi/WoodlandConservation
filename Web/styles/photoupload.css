@@ -4,7 +4,7 @@
   Author: Ben Le: Initial Design
 */
 
-/* element based styling */
+/* --------------- Element based styles ---------------------- */
 body {
   background: #fffeeb;
 }
@@ -53,7 +53,7 @@ form textarea {
   background: white;
 }
 
-/* class based styling */
+/* ---------------- Class based styles ------------------ */
 .main-content h2 {
   font-weight: 800;
   margin-top: 2rem;
@@ -88,7 +88,7 @@ form textarea {
   color: green;
 }
 
-/* element based styling */
+/* ---------------- ID based styles ----------------- */
 #form {
   padding: 1em 10vw;
   display: flex;

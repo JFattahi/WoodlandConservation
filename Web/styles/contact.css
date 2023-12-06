@@ -5,7 +5,7 @@ Author: Ben Le: Initial Design
 */
 
 
-/* element based styling */
+/* --------------- Element based styles ---------------------- */
 body {
   background: #fffeeb;
 }
@@ -25,7 +25,7 @@ form {
 }
 
 
-/* classed based styling */
+/* ---------------- Class based styles ------------------ */
 .main-content h2 {
   font-weight: 800;
   font-family: "CustomFont";
