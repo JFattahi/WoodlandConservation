@@ -1,3 +1,12 @@
+  /* 
+  Purpose: Used to style the FAQ section on the burial page.
+  Authors:
+  Ben Le: Initial design
+  Matthew MacNeil: Positioned the FAQ section in a better spot to fit for the burial page.
+  */
+  
+  /* Class based styles */
+  
   .main-content {
     font-family: "CustomFont";
     color: #282d32;
@@ -17,7 +26,6 @@
   }
 
   .accordion {
-    /* width: 80vw; */
     max-width: 1000px;
     margin-bottom: 3rem;
     margin:auto;
@@ -27,6 +35,8 @@
     width: 100vw;
     margin-bottom: 3rem;
   }
+
+/* For mobile responsiveness */
 
   @media only screen and (max-width: 768px) {
     .accordion {

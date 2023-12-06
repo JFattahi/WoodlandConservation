@@ -1,3 +1,14 @@
+<!--
+  Purpose: Contains a form that allows an admin to enter fields to query the database.
+           Once the admin hits submit, the result of the query is printed on a new page.
+           Includes input validation.
+
+  Authors: 
+  Ben Le: Created the form structure and functionality
+  Matthew MacNeil: Altered the form content and added input validation
+-->
+
+<!-- Document declaration -->
 <!DOCTYPE html>
 
 <link
@@ -183,6 +194,7 @@
       <!--ADD STUFF HERE-->
       <div class="container">
         <h3>Query for Burial Self Requests</h3>
+        <!-- A PHP file that will output the content of the query after the admin hits submit  -->
         <form
           id="self-query-form"
           action="../../pages/database/self_req_table.php"

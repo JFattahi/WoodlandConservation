@@ -1,11 +1,15 @@
+/* 
+Purpose: Styles admin_page_login.html.
+Authors:
+Ben Le: Initial design, contact.css.
+Matthew MacNeil: Changed the format of the text and spacing below and on top of the form. 
+*/
+
+/* --------------- Element based styles ---------------------- */
+
 body {
   background: #fffeeb;
   font-family: "CustomFont";
-}
-
-.container {
-  margin-top: 17rem;
-  margin-bottom: 20rem;
 }
 
 form {
@@ -22,19 +26,9 @@ form {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.main-content h2 {
-  font-weight: 800;
-  font-family: "CustomFont";
-  margin-top: 6rem;
-  color: #282d32;
-
-  font-size: xx-large;
-}
-
 label {
   display: block;
   text-align: center;
-  /* margin-left: 0.75rem; */
   font-family: "CustomFont";
 }
 
@@ -61,6 +55,21 @@ form textarea {
   margin: 10px 0;
   padding: 10px;
   background: white;
+}
+
+/* ---------------- Class based styles ------------------ */
+
+.container {
+  margin-top: 17rem;
+  margin-bottom: 20rem;
+}
+
+.main-content h2 {
+  font-weight: 800;
+  font-family: "CustomFont";
+  margin-top: 6rem;
+  color: #282d32;
+  font-size: xx-large;
 }
 
 .submit-button {

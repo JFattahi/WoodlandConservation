@@ -1,7 +1,18 @@
-body {
+  /* 
+  Purpose: Styling for the success page after a user successfully submits a burial request.
+  It is linked in the burial_self_form.html and burial_other_form.html pages.
+  
+  Author: Ben Le 
+  */
+
+  /* Element based styles */
+
+  body {
     background: #f8ffeb;
     font-family: "CustomFont";
   }
+
+  /* Class based styles */
   
   .success-page {
     background-color: #fffeeb;
@@ -22,6 +33,7 @@ body {
     width: 375px;
     height: 400px;
   }
+
   .bar {
     margin-top: -0.75rem;
   }

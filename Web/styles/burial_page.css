@@ -1,6 +1,19 @@
+/*  
+    Purpose: burial_page.html sytling
+    Authors: 
+    zilong wang  - styling
+    Brandon Watson - styling
+    Ben Le - created the styling for the buttons 
+    Matthew MacNeil - changed the spacing of the content on the page
+*/
+
+/* ----- Element based styles ----- */
+
 body {
   background: #fffeeb;
 }
+
+/* ----- Class based styles ----- */
 
 .title2 {
   margin-top: 1rem;
@@ -21,7 +34,6 @@ body {
 
 .button-container {
   display: flex;
-  /* flex-direction: space-around; */
   justify-content: center;
   align-items: center;
   margin-top: 3rem;
@@ -49,12 +61,9 @@ body {
   color: green;
 }
 
-/*  Purpose: burial sytling
-    Authors: 
-    zilong wang  - styling
-    Brandon Watson - styling */
+/* ----- ID based styles ----- */
 
-/* This image was taken from upslash */
+/* This image was taken from unsplash */
 #background_image {
   position: relative;
   margin-left: auto;
@@ -74,18 +83,12 @@ body {
   color: aliceblue;
   position: absolute;
   text-align: center;
-  /* top: 325px;
-    left: 300px; */
 } /*The style of title on background image*/
 
 #information {
   margin: 1em 0;
   width: 100vw;
   height: fit-content;
-
-  /* display: flex;
-  width: 80vw;
-  margin: auto; */
 } /*The style of introduction container*/
 
 #information p {
@@ -93,9 +96,8 @@ body {
 }
 
 #information_title {
-  /* color: green; */
   align-content: center;
-} /*The style of introduction title "Want a natural burial?"*/
+} /*The style of introduction title*/
 
 #information_content {
   color: black;
@@ -104,6 +106,8 @@ body {
   margin: auto;
   align-content: center;
 } /*style the font including color and size"*/
+
+/* ----- Used for mobile responsiveness ----- */
 
 @media only screen and (max-width: 768px) {
   .button-container {

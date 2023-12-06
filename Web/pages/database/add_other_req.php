@@ -1,9 +1,12 @@
 <!--
-  Ben Le
-  Matthew MacNeil
+  Purpose: Displays a success page after the user successfully submits a burial request.
+           Adds a burial request for loved one into the database.
 
+  Authors: 
+  Ben Le: Created the structure of the HTML (contact_success.html)
+  Matthew MacNeil: Added PHP code into the body
 -->
-
+<!-- Document declaration -->
 <!DOCTYPE html>
 
 <link
