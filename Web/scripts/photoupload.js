@@ -44,7 +44,7 @@ function sendMessage() {
   emailjs
     .send(serviceID, templateID, params)
     .then((res) => {
-      // Redirect the user to the success page after successful email submission
+      // Redirect the user to the success page after successful photo submission
       location.replace("/Web/pages/success/photo_success.html");
     })
     .catch();
