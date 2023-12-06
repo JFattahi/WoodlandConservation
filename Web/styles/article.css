@@ -1,8 +1,17 @@
+/* 
+Purpose: Styling for the news articles
+
+Author: Ben Le: Initial Styling
+*/
+
+/* element based styling */
 body {
   background: #f8ffeb;
   font-family: "CustomFont";
 }
 
+
+/* class based styling */
 .article-page h2 {
   font-weight: bold;
   background-color: #eae9d8;
@@ -31,6 +40,8 @@ body {
   position:absolute;
 }
 
+
+/* id based styling */
 #background_image {
   position: relative;
   margin-top: -1rem;

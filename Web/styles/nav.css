@@ -2,35 +2,28 @@
 Purpose: Provides styling for specifically the navbar and it's responsive components
 Author(s) / Work Done: 
 Devon Leigh - HTML element styling
+Ben Le - Added styling
 */
 
-/*developer defined classes*/
-
+/* Custom font used throughout the website */
 @font-face {
-  font-family: "CustomFont"; /* Give your font a name */
-  src: url("/Web/styles/fonts/ArchivoNarrow-Regular.ttf"); /* Specify the URL and format of the font file */
+  font-family: "CustomFont";
+  src: url("/Web/styles/fonts/ArchivoNarrow-Regular.ttf");
 }
 
-.nav-bar {
-  display: flex;
-  align-items: center;
-  /* Added because of bootstrap changed the position? */
-  margin-top: 1rem;
-}
-
-/* Adjust the Chevron by the header titles */
-/* .nav-bar i {
-  font-size: large;
-  vertical-align: middle;
-  margin-left: 0.4rem;
-  margin-bottom: 0.1rem;
-} */
-
+/* element based styling */
 ul {
   display: flex;
   padding: none;
   align-items: center;
   list-style: none;
+}
+
+/* class based styling */
+.nav-bar {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
 }
 
 .nav-bar li {
@@ -39,13 +32,11 @@ ul {
   list-style: none;
 }
 
-/* Header section texts*/
 .nav-bar a {
   color: #282d32;
-  font-family: "CustomFont"; /* Use the custom font */
+  font-family: "CustomFont";
   font-size: x-large;
   opacity: 100%;
-  /*text color transition*/
   transition: color 400ms ease-out;
   line-height: 1;
 }
@@ -54,12 +45,11 @@ ul {
   text-decoration: none;
 }
 
-/* Drop down hightlight colour */
 .nav-bar a:hover {
   color: green;
 }
 
-/*when max-width is less than 768px, adjust content to be responsive*/
+/* For mobile responsiveness */
 @media screen and (max-width: 1100px) {
   .nav-bar {
     display: flex;

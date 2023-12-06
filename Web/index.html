@@ -1,13 +1,14 @@
 <!--
-  Purpose: Landing page of the website, contains links to all scripts and CSS files and contains information and links regarding the conservation
+  Purpose: Homepage of the website conatins a carousel showing the three main parts of the websit the about, burial, and gallery. 
+  
   Authors: 
-  Devon Leigh - Styling, structure, content
-  Rahabar Mahmud - Content, styling, structure, footer
-  Ben Le - redesign 
+  Devon Leigh: Original Styling, structure, content
+  Rahabar Mahmud: Original Content, styling, structure, footer
+  Ben Le: Reconstruction of homepage, added working carousel
 -->
 
+<!-- Document declaration -->
 <!DOCTYPE html>
-
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -36,7 +37,7 @@
     <link rel="stylesheet" href="styles/carousel.css" />
     <link rel="stylesheet" href="styles/dropdown.css" />
 
-    <!--Linking custom fonts-->
+    <!-- Linking custom fonts and additional Font Awesome styles -->
     <link
       rel="stylesheet"
       href="path/to/font-awesome/css/font-awesome.min.css"
@@ -63,18 +64,14 @@
     ></script>
 
     <!--Linking the javascript files for functionality-->
-    <script src="scripts/estore.js" async></script>
     <script defer src="scripts/main.js" async></script>
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"
-    ></script>
 
+    <!-- Page title -->
     <title>Woodland Conservation</title>
   </head>
 
   <body>
-    <!-- Header -->
+    <!-- Header section with organization logo and navigation -->
     <header>
       <div class="header-container">
         <div class="org-name">
@@ -104,7 +101,6 @@
                     >
                   </div>
                 </div>
-
                 <div class="dropdown">
                   <li>
                     <a class="dropbtn" href="pages/burial/burial_page.html"
@@ -194,6 +190,7 @@
           ></button>
         </div>
         <div class="carousel-inner">
+          <!-- First Slide of Carousel -->
           <div class="carousel-item active">
             <img
               src="https://i.ibb.co/YcNKQbm/slide1.jpg"
@@ -222,6 +219,7 @@
               </button>
             </div>
           </div>
+          <!-- Second Slide of Carousel -->
           <div class="carousel-item">
             <img
               src="https://i.ibb.co/D5hpmYg/slide2.jpg"
@@ -241,6 +239,7 @@
               </button>
             </div>
           </div>
+          <!-- Third Slide of Carousel -->
           <div class="carousel-item">
             <img
               src="https://i.ibb.co/FKJtwcV/slide3.jpg"

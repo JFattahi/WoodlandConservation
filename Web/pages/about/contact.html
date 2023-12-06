@@ -1,18 +1,10 @@
 <!--
-  Ben Le
+  Purpose: A contact form for users to enter any questions or inquries to an Admin.
+
+  Author: Ben Le: Created the form structure and functionality
 -->
-
+<!-- Document declaration -->
 <!DOCTYPE html>
-
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-/>
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-/>
-
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -59,6 +51,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
 
     <!-- Linking javascript files for bootstrap -->
     <script
@@ -77,10 +77,12 @@
       src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"
     ></script>
 
+    <!-- Page title -->
     <title>Woodland Conservation</title>
   </head>
 
   <body>
+    <!-- Header section with organization logo and navigation -->
     <header>
       <div class="header-container">
         <div class="org-name">
@@ -114,7 +116,6 @@
                     >
                   </div>
                 </div>
-
                 <div class="dropdown">
                   <li>
                     <a
@@ -177,7 +178,7 @@
                       >Home</a
                     >
                     <a href="../../pages/wiki/yorkshireTerrier.html"
-                      >Example Wikipage</a
+                      >Wikipage</a
                     >
                   </div>
                 </div>
@@ -188,17 +189,20 @@
       </div>
     </header>
     <!--Main content div for all page content for responsive design-->
-
     <div class="main-content">
-      <!--ADD STUFF HERE-->
+      <!-- Question Title -->
       <h2>Have any questions or concerns?<br />Feel free to reach out!</h2>
+      <!-- Contact Form -->
       <div class="container">
+        <!-- JavaScript send email message to Admin email on submit -->
         <form
           id="contact-form"
           onsubmit="sendMessage(); reset(); return false;"
         >
+          <!-- Contact Us Title -->
           <h3>&#x1F4C4; Contact Us</h3>
           <p>
+            <!-- Input Fields -->
             <label for="name">Name</label>
             <input type="text" id="name" name="name" required />
           </p>
@@ -220,6 +224,7 @@
               required
             ></textarea>
           </p>
+          <!-- Submit Button -->
           <button class="contact-button" type="submit">Send</button>
         </form>
       </div>

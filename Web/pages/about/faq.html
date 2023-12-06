@@ -1,20 +1,10 @@
 <!--
-  Purpose: Landing page of the website, contains links to all scripts and CSS files and contains information and links regarding the conservation
-  Authors: 
-  Ben Le - redesign 
+  Purpose: FAQ page for website to answer question of the users
+  Author: Ben Le: Main Design
 -->
 
+<!-- Document declaration -->
 <!DOCTYPE html>
-
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-/>
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-/>
-
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -43,9 +33,8 @@
     <link rel="stylesheet" href="../../styles/footer.css" />
     <link rel="stylesheet" href="../../styles/dropdown.css" />
     <link rel="stylesheet" href="../../styles/_accordion.scss" />
-    <!-- <link rel="stylesheet" href="../../styles/estore.css" /> -->
 
-    <!--Linking custom fonts-->
+  <!-- Linking custom fonts and additional Font Awesome styles -->
     <link
       rel="stylesheet"
       href="path/to/font-awesome/css/font-awesome.min.css"
@@ -62,6 +51,14 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
 
     <!-- Linking javascript files for bootstrap -->
@@ -88,7 +85,7 @@
     <header>
       <div class="header-container">
         <div class="org-name">
-          <!--Links back to homepage if clicked-->
+          <!-- Links back to homepage if clicked -->
           <a class="org-logo" href="../../index.html"
             ><img src="https://i.ibb.co/GvF71Pz/logo.png"
           /></a>
@@ -98,7 +95,7 @@
           <div id="nav-bar" class="nav-bar">
             <nav>
               <ul>
-                <!--Links to alternative pages in the navbar-->
+                <!-- Links to alternative pages in the navbar -->
                 <div class="dropdown">
                   <li>
                     <a class="dropbtn" href="../../pages/about/about.html"
@@ -118,7 +115,7 @@
                     >
                   </div>
                 </div>
-
+                <!-- More navigation links -->
                 <div class="dropdown">
                   <li>
                     <a
@@ -180,8 +177,8 @@
                       class="dropdown-top"
                       >Home</a
                     >
-                    <a href="../../pages/wiki/yorkshireTerrier.html"
-                      >Example Wikipage</a
+                    <a href="../../pages/wiki/yorkshireTerrier.html"></a>
+                      Wikipage</a
                     >
                   </div>
                 </div>
@@ -194,9 +191,10 @@
     <!--Main content div for all page content for responsive design-->
 
     <div class="main-content">
-      <!--START ADD STUFF HERE-->
+      <!-- Conatiner for FAQ -->
       <div class="faq-page">
         <h2 class="title">Frequently asked questions</h2>
+        <!-- FAQ Accordion -->
         <div class="container">
           <div class="accordion" id="accordionExample">
             <div class="accordion-item">
@@ -444,7 +442,6 @@
               </div>
             </div>
           </div>
-          <!-- END -->
         </div>
       </div>
       <!--The footer for our webpage-->

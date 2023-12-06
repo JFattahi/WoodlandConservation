@@ -1,3 +1,9 @@
+/* 
+  Purpose: Styling for Wiki homepage
+  Author: Storm: Initial Design
+*/
+
+/* element based styling */
 body {
   font-family: "CustomFont";
   font-weight: normal;
@@ -8,6 +14,8 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+
+/* id based styling */
 #LayoutGrid .col-2 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }

@@ -1,6 +1,9 @@
 /*
-Edited by: Alex Nguyen (A) 
+Purpose: Style for About page
+
+Author: Alex Nguyen (A) 
 */
+
 /* Style for text container */
 .aboutpage-container {
   margin-top: 8rem;
@@ -160,12 +163,6 @@ Edited by: Alex Nguyen (A)
   max-width: 100%;
 }
 
-@media (max-width: 991px) {
-  .img-3 {
-    margin-top: 40px;
-  }
-}
-
 .div-8 {
   color: #ba972f;
   text-align: center;
@@ -209,15 +206,6 @@ Edited by: Alex Nguyen (A)
   max-width: 611px;
   font: 600 104px/102px "CustomFont", -apple-system, Roboto, Helvetica,
     sans-serif;
-}
-
-@media (max-width: 991px) {
-  .div-9 {
-    max-width: 100%;
-    margin-top: 40px;
-    font-size: 40px;
-    line-height: 43px;
-  }
 }
 
 .div-10 {

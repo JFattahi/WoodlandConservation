@@ -1,18 +1,11 @@
-<!-- Add more '../' to the relative paths -->
 <!--
-  Ben Le
+  Purpose: Articles for News Page, so user can read more about a topic
+  
+  Author: Ben Le: Page design and structure
 -->
 
+<!-- Document declaration and external CSS links -->
 <!DOCTYPE html>
-
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-/>
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-/>
 
 <html lang="en">
   <head>
@@ -42,7 +35,7 @@
     <link rel="stylesheet" href="../../../styles/footer.css" />
     <link rel="stylesheet" href="../../../styles/dropdown.css" />
 
-    <!-- Linking custom fonts -->
+    <!-- Linking custom fonts and additional Font Awesome styles -->
     <link
       rel="stylesheet"
       href="../../../path/to/font-awesome/css/font-awesome.min.css"
@@ -60,6 +53,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
 
     <!-- Linking javascript files for bootstrap -->
     <script
@@ -69,19 +70,14 @@
     ></script>
 
     <!-- Linking the javascript files for functionality -->
-    <script src="../../scripts/estore.js" async></script>
     <script defer src="../../scripts/main.js" async></script>
-    <script src="../../scripts/contact.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"
-    ></script>
 
+    <!-- Page title -->
     <title>Woodland Conservation</title>
   </head>
 
   <body>
+    <!-- Header section with organization logo and navigation -->
     <header>
       <div class="header-container">
         <div class="org-name">
@@ -102,6 +98,7 @@
                       >About</a
                     >
                   </li>
+                  <!-- Drop down menu for the header -->
                   <div class="dropdown-content">
                     <a
                       href="../../../pages/about/about.html"
@@ -117,7 +114,6 @@
                     >
                   </div>
                 </div>
-
                 <div class="dropdown">
                   <li>
                     <a
@@ -139,17 +135,14 @@
                     >
                   </div>
                 </div>
-
                 <li>
                   <a href="../../../pages/e-commerce/estore.html"
                     >Marketplace</a
                   >
                 </li>
-
                 <li>
                   <a href="../../../pages/newmap/client/index.html">Map</a>
                 </li>
-
                 <div class="dropdown">
                   <li>
                     <a
@@ -184,7 +177,7 @@
                       >Home</a
                     >
                     <a href="../../../pages/wiki/yorkshireTerrier.html"
-                      >Example Wikipage</a
+                      >Wikipage</a
                     >
                   </div>
                 </div>
@@ -196,22 +189,23 @@
     </header>
 
     <!-- Main content div for all page content for responsive design -->
-
     <div class="main-content">
-      <!-- ADD STUFF HERE -->
+      <!-- Container for the Article -->
       <div class="article-page">
+        <!-- Article Image -->
         <div
           id="background_image"
           style="display: flex; justify-content: center; align-items: center"
         >
           <img src="https://i.ibb.co/6bVNWGN/cropped-drone.jpg" />
         </div>
+        <!-- Article Title -->
         <h2>
           Technology Meets Nature: Drones Aid Woodland Conservation Efforts
         </h2>
-
+        <!-- Article Author -->
         <p id="author-name">Mark D. Lucy | Nov. 22, 2023</p>
-
+        <!-- Article Text -->
         <p>
           In a marriage of innovation and environmental stewardship, the realm
           of woodland conservation has embraced cutting-edge technology with the
@@ -274,7 +268,6 @@
         </p>
         <img class="bar" src="https://i.ibb.co/CH6Cmcp/gold-bar.png" />
       </div>
-      <!-- END -->
       <!-- The footer for our webpage -->
       <footer class="section-p1">
         <div class="col">

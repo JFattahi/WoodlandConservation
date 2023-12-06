@@ -1,18 +1,11 @@
 <!--
-  Ben Le
+  Purpose: Success page when user successfully submits a photo
+  
+  Ben Le: Page design and  structure
 -->
 
+<!-- Document declaration -->
 <!DOCTYPE html>
-
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-/>
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-/>
-
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -26,14 +19,14 @@
       type="image/x-icon"
     />
 
-    <!-- Link bootstrap -->
+    <!-- Linking Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <!--Linking the css files for styling-->
+    <!--Linking the CSS files for styling-->
     <link rel="stylesheet" href="../../styles/body.css" />
     <link rel="stylesheet" href="../../styles/contact_success.css" />
     <link rel="stylesheet" href="../../styles/nav.css" />
@@ -41,7 +34,7 @@
     <link rel="stylesheet" href="../../styles/footer.css" />
     <link rel="stylesheet" href="../../styles/dropdown.css" />
 
-    <!--Linking custom fonts-->
+    <!-- Linking custom fonts and additional Font Awesome styles -->
     <link
       rel="stylesheet"
       href="path/to/font-awesome/css/font-awesome.min.css"
@@ -58,6 +51,14 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
 
     <!-- Linking javascript files for bootstrap -->
@@ -81,112 +82,113 @@
   </head>
 
   <body>
-    <header>
-      <div class="header-container">
-        <div class="org-name">
-          <!--Links back to homepage if clicked-->
-          <a class="org-logo" href="../../index.html"
-            ><img src="https://i.ibb.co/GvF71Pz/logo.png"
-          /></a>
-        </div>
-        <div class="menu-btn">
-          <div class="menu-btn_burger"></div>
-          <div id="nav-bar" class="nav-bar">
-            <nav>
-              <ul>
-                <!--Links to alternative pages in the navbar-->
-                <div class="dropdown">
-                  <li>
-                    <a class="dropbtn" href="../../pages/about/about.html"
-                      >About</a
-                    >
-                  </li>
-                  <div class="dropdown-content">
-                    <a href="../../pages/about/about.html" class="dropdown-top"
-                      >About Woodland</a
-                    >
-                    <a href="../../pages/about/news.html">News</a>
-                    <a href="../../pages/about/faq.html">FAQ</a>
-                    <a
-                      href="../../pages/about/contact.html"
-                      class="dropdown-bottom"
-                      >Contact Us</a
-                    >
-                  </div>
-                </div>
-
-                <div class="dropdown">
-                  <li>
-                    <a
-                      class="dropbtn"
-                      href="../../pages/burial/burial_page.html"
-                      >Burial</a
-                    >
-                  </li>
-                  <div class="dropdown-content">
-                    <a
-                      href="../../pages/burial/burial_page.html"
-                      class="dropdown-top"
-                      >About Burial</a
-                    >
-                    <a
-                      href="../../pages/burial/burial_page.html#buttons"
-                      class="dropdown-bottom"
-                      >Request Burial</a
-                    >
-                  </div>
-                </div>
-
-                <li>
-                  <a href="../../pages/e-commerce/estore.html">Marketplace</a>
-                </li>
-
-                <li>
-                  <a href="../../pages/newmap/client/index.html">Map</a>
-                </li>
-
-                <div class="dropdown">
-                  <li>
-                    <a class="dropbtn" href="../../pages/gallery/gallery.html"
-                      >Gallery</a
-                    >
-                  </li>
-                  <div class="dropdown-content">
-                    <a
-                      href="../../pages/gallery/gallery.html"
-                      class="dropdown-top"
-                      >Photo Gallery</a
-                    >
-                    <a
-                      href="../../pages/gallery/photoupload.html"
-                      class="dropdown-bottom"
-                      >Upload a Photo</a
-                    >
-                  </div>
-                </div>
-                <div class="dropdown">
-                  <li>
-                    <a class="dropbtn" href="../../pages/wiki/wikiHome.html"
-                      >Wiki</a
-                    >
-                  </li>
-                  <div class="dropdown-content">
-                    <a
-                      href="../../pages/wiki/wikiHome.html"
-                      class="dropdown-top"
-                      >Home</a
-                    >
-                    <a href="../../pages/wiki/yorkshireTerrier.html"
-                      >Example Wikipage</a
-                    >
-                  </div>
-                </div>
-              </ul>
-            </nav>
+         <!-- Header section with organization logo and navigation -->
+         <header>
+          <div class="header-container">
+            <div class="org-name">
+              <!-- Links back to homepage if clicked -->
+              <a class="org-logo" href="../../index.html"
+                ><img src="https://i.ibb.co/GvF71Pz/logo.png"
+              /></a>
+            </div>
+            <div class="menu-btn">
+              <div class="menu-btn_burger"></div>
+              <div id="nav-bar" class="nav-bar">
+                <nav>
+                  <ul>
+                    <!-- Links to alternative pages in the navbar -->
+                    <div class="dropdown">
+                      <li>
+                        <a class="dropbtn" href="../../pages/about/about.html"
+                          >About</a
+                        >
+                      </li>
+                      <div class="dropdown-content">
+                        <a href="../../pages/about/about.html" class="dropdown-top"
+                          >About Woodland</a
+                        >
+                        <a href="../../pages/about/news.html">News</a>
+                        <a href="../../pages/about/faq.html">FAQ</a>
+                        <a
+                          href="../../pages/about/contact.html"
+                          class="dropdown-bottom"
+                          >Contact Us</a
+                        >
+                      </div>
+                    </div>
+                    <!-- More navigation links -->
+                    <div class="dropdown">
+                      <li>
+                        <a
+                          class="dropbtn"
+                          href="../../pages/burial/burial_page.html"
+                          >Burial</a
+                        >
+                      </li>
+                      <div class="dropdown-content">
+                        <a
+                          href="../../pages/burial/burial_page.html"
+                          class="dropdown-top"
+                          >About Burial</a
+                        >
+                        <a
+                          href="../../pages/burial/burial_page.html#buttons"
+                          class="dropdown-bottom"
+                          >Request Burial</a
+                        >
+                      </div>
+                    </div>
+    
+                    <li>
+                      <a href="../../pages/e-commerce/estore.html">Marketplace</a>
+                    </li>
+    
+                    <li>
+                      <a href="../../pages/newmap/client/index.html">Map</a>
+                    </li>
+    
+                    <div class="dropdown">
+                      <li>
+                        <a class="dropbtn" href="../../pages/gallery/gallery.html"
+                          >Gallery</a
+                        >
+                      </li>
+                      <div class="dropdown-content">
+                        <a
+                          href="../../pages/gallery/gallery.html"
+                          class="dropdown-top"
+                          >Photo Gallery</a
+                        >
+                        <a
+                          href="../../pages/gallery/photoupload.html"
+                          class="dropdown-bottom"
+                          >Upload a Photo</a
+                        >
+                      </div>
+                    </div>
+                    <div class="dropdown">
+                      <li>
+                        <a class="dropbtn" href="../../pages/wiki/wikiHome.html"
+                          >Wiki</a
+                        >
+                      </li>
+                      <div class="dropdown-content">
+                        <a
+                          href="../../pages/wiki/wikiHome.html"
+                          class="dropdown-top"
+                          >Home</a
+                        >
+                        <a href="../../pages/wiki/yorkshireTerrier.html"></a>
+                          Wikipage</a
+                        >
+                      </div>
+                    </div>
+                  </ul>
+                </nav>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </header>
+        </header>
 
     <!--Main content div for all page content for responsive design-->
 

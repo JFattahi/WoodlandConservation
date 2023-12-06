@@ -1,18 +1,19 @@
+/* 
+  Purpose: Styling for photo gallery, used to structure gallery columns
+
+  Author: Ben Le: Initial Design
+*/
+
+/* class based styling */
 .main * {
   box-sizing: border-box;
 }
 
 .main {
-  /* background-color: #f1f1f1; */
   padding: 20px;
   font-family: "CustomFont";
 }
 
-#myBtnContainer button {
-  border-radius: 15px;
-  margin-left: 3px;
-  margin-right: 3px;
-}
 /* Center website */
 .main {
   max-width: 2000px;
@@ -28,20 +29,18 @@
   margin: 10px -16px;
 }
 
-/* Add padding BETWEEN each column */
 .row,
 .row > .column {
   padding: 8px;
 }
 
-/* Create three equal columns that floats next to each other */
 .column {
   float: left;
+  /* Adjusts how photos show per row: ex 33.33% = 3 photos shown */
   width: 33.33%;
-  display: none; /* Hide all elements by default */
+  display: none;
 }
 
-/* Clear floats after rows */
 .row:after {
   content: "";
   display: table;
@@ -50,22 +49,16 @@
 
 /* Content */
 .content {
-  position: relative; /* Ensure the overlay is positioned relative to this container */
+  position: relative;
   background-color: white;
   padding: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* .content img {
-  height: 275px;
-} */
-
-/* The "show" class is added to the filtered elements */
 .show {
   display: block;
 }
 
-/* Style the buttons */
 .btn {
   border: none;
   outline: none;
@@ -78,7 +71,6 @@
   background-color: #ddd;
 }
 
-/* Css for Pagetation */
 .pagination-button {
   margin-top: 5rem;
 }
@@ -91,14 +83,13 @@
   color: green;
 }
 
-/* Overlay */
 .overlay {
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.25); /* Black see-through */
+  background: rgba(0, 0, 0, 0.25);
   color: #f1f1f1;
   opacity: 0;
   display: flex;
@@ -122,6 +113,14 @@
   opacity: 1;
 }
 
+/* element based styling */
+#myBtnContainer button {
+  border-radius: 15px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+/* For mobile responsiveness */
 @media only screen and (max-width: 900px) {
   .column {
     width: 50%;

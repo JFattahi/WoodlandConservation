@@ -1,3 +1,10 @@
+/* 
+  Purpose: Styling for dropdown menu when you hover over one of the section in the header 
+
+  Author: Ben Le: Initial Design
+*/
+
+/* Custom font used throughout website */
 @font-face {
   font-family: "CustomFont";
   font-style: normal;
@@ -9,6 +16,7 @@
     U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+/* class based styling */
 .dropbtn {
   padding: 1rem;
   font-size: 1rem;
@@ -60,6 +68,7 @@
   background-color: none;
 }
 
+/* For mobile responsiveness */
 @media screen and (max-width: 768px) {
   .dropdown-top {
     border-radius: 0;
@@ -87,9 +96,7 @@
     box-shadow: none;
   }
 
-  
-.dropdown-content a:hover {
-  background-color: #fdf5e6;
-}
-
+  .dropdown-content a:hover {
+    background-color: #fdf5e6;
+  }
 }
