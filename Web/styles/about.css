@@ -1,36 +1,38 @@
 /*
-Purpose: Style for About page
+  Purpose: Style for the About page
 
-Author: Alex Nguyen (A) 
+  Author:
+    Alex Nguyen (A): Main container design and content
 */
 
 /* ---------------- Class based styles ------------------ */
-/* Style for text container */
+
+/* Main container for the About page */
 .aboutpage-container {
-  margin-top: 8rem;
-  margin-bottom: 8rem;
+  margin: 8rem 0;
 }
 
+/* Generic div style */
 .div {
   background-color: #fffeeb;
   display: flex;
   flex-direction: column;
 }
 
+/* Second level of div styling */
 .div-2 {
   display: flex;
   width: 100%;
   flex-direction: column;
   align-items: center;
   padding: 0 20px;
-}
 
-@media (max-width: 991px) {
-  .div-2 {
+  @media (max-width: 991px) {
     max-width: 100%;
   }
 }
 
+/* Third level of div styling */
 .div-3 {
   background-color: #fcf2e0;
   display: flex;
@@ -39,205 +41,148 @@ Author: Alex Nguyen (A)
   flex-direction: column;
   padding: 50px 60px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
 
-@media (max-width: 991px) {
-  .div-3 {
+  @media (max-width: 991px) {
     max-width: 100%;
     padding: 0 20px;
   }
 }
 
-.div-4 {
-  color: #282d32;
-  text-align: center;
-  backdrop-filter: blur(2px);
-  align-self: center;
-  margin-top: 235px;
-  max-width: 430px;
-  font: 600 104px/128px "CustomFont", -apple-system, Roboto, Helvetica,
-    sans-serif;
-}
-
-@media (max-width: 991px) {
-  .div-4 {
-    margin-top: 40px;
-    font-size: 40px;
-    line-height: 54px;
-  }
-}
-
-.div-5 {
-  color: #282d32;
-  text-align: center;
-  align-self: center;
-  margin-top: 83px;
-  max-width: 937px;
-  font: 300 26px/35px "CustomFont", -apple-system, Roboto, Helvetica, sans-serif;
-}
-
-@media (max-width: 991px) {
-  .div-5 {
-    max-width: 100%;
-    margin-top: 40px;
-  }
-}
-
-.img {
-  aspect-ratio: 1.73;
-  object-fit: contain;
-  object-position: center;
-  width: 798px;
-  overflow: hidden;
-  align-self: center;
-  margin-top: 185px;
-  max-width: 100%;
-}
-
-@media (max-width: 991px) {
-  .img {
-    margin-top: 40px;
-  }
-}
-
-.div-6 {
-  color: #282d32;
-  text-align: center;
-  backdrop-filter: blur(2px);
-  align-self: center;
-  margin-top: 265px;
-  max-width: 641px;
-  font: 600 104px/128px "CustomFont", -apple-system, Roboto, Helvetica,
-    sans-serif;
-}
-
-@media (max-width: 991px) {
-  .div-6 {
-    max-width: 100%;
-    margin-top: 40px;
-    font-size: 40px;
-    line-height: 54px;
-  }
-}
-
-.div-7 {
-  color: #000;
-  text-align: center;
-  align-self: center;
-  margin-top: 83px;
-  max-width: 879px;
-  font: 300 26px/35px "CustomFont", -apple-system, Roboto, Helvetica, sans-serif;
-}
-
-@media (max-width: 991px) {
-  .div-7 {
-    max-width: 100%;
-    margin-top: 40px;
-  }
-}
-
-.img-2 {
-  aspect-ratio: 2.33;
-  object-fit: contain;
-  object-position: center;
-  width: 100%;
-  overflow: hidden;
-  align-self: stretch;
-  margin-top: 182px;
-}
-
-@media (max-width: 991px) {
-  .img-2 {
-    max-width: 100%;
-    margin-top: 40px;
-  }
-}
-
-.img-3 {
-  aspect-ratio: 1.72;
-  object-fit: contain;
-  object-position: center;
-  width: 800px;
-  overflow: hidden;
-  align-self: end;
-  margin-top: 90px;
-  max-width: 100%;
-}
-
-.div-8 {
-  color: #ba972f;
-  text-align: center;
-  align-self: center;
-  margin-top: 185px;
-  max-width: 926px;
-  font: italic 600 26px/33px serif, "CustomFont", -apple-system, Roboto,
-    Helvetica, sans-serif;
-}
-
-@media (max-width: 991px) {
-  .div-8 {
-    max-width: 100%;
-    margin-top: 40px;
-  }
-}
-
-.img-4 {
-  aspect-ratio: 1.49;
-  object-fit: contain;
-  object-position: center;
-  width: 803px;
-  overflow: hidden;
-  align-self: center;
-  margin-top: 182px;
-  max-width: 100%;
-}
-
-@media (max-width: 991px) {
-  .img-4 {
-    margin-top: 40px;
-  }
-}
-
+/* History, Mission, and Rules & Regulation titles styling */
+.div-4,
+.div-6,
 .div-9 {
   color: #282d32;
   text-align: center;
   backdrop-filter: blur(2px);
   align-self: center;
+}
+
+.div-4 {
+  margin-top: 235px;
+  max-width: 430px;
+  font: 600 104px/128px "CustomFont", -apple-system, Roboto, Helvetica, sans-serif;
+
+  @media (max-width: 991px) {
+    margin-top: 40px;
+    font-size: 40px;
+    line-height: 54px;
+  }
+}
+
+.div-6 {
+  margin-top: 265px;
+  max-width: 641px;
+  font: 600 104px/128px "CustomFont", -apple-system, Roboto, Helvetica, sans-serif;
+
+  @media (max-width: 991px) {
+    max-width: 100%;
+    margin-top: 40px;
+    font-size: 40px;
+    line-height: 54px;
+  }
+}
+
+.div-9 {
   margin-top: 278px;
   max-width: 611px;
-  font: 600 104px/102px "CustomFont", -apple-system, Roboto, Helvetica,
-    sans-serif;
+  font: 600 104px/102px "CustomFont", -apple-system, Roboto, Helvetica, sans-serif;
 }
 
+/* History, Mission, Green Burials, and Rules & Regulation content styling */
+.div-5,
+.div-7,
+.div-8,
 .div-10 {
-  color: #000;
+  color: #282d32;
   text-align: center;
   align-self: center;
-  margin-top: 72px;
-  max-width: 879px;
-  font: 300 26px/35px "CustomFont", -apple-system, Roboto, Helvetica, sans-serif;
 }
 
-@media (max-width: 991px) {
-  .div-10 {
+.div-5 {
+  margin-top: 83px;
+  max-width: 937px;
+  font: 300 26px/35px "CustomFont", -apple-system, Roboto, Helvetica, sans-serif;
+
+  @media (max-width: 991px) {
     max-width: 100%;
     margin-top: 40px;
   }
 }
 
-.img-5 {
-  aspect-ratio: 0.97;
-  object-fit: contain;
-  object-position: center;
-  width: 92px;
-  overflow: hidden;
-  align-self: center;
-  max-width: 100%;
-  margin: 92px 0 218px;
+.div-7 {
+  margin-top: 83px;
+  max-width: 879px;
+  font: 300 26px/35px "CustomFont", -apple-system, Roboto, Helvetica, sans-serif;
+
+  @media (max-width: 991px) {
+    max-width: 100%;
+    margin-top: 40px;
+  }
 }
 
-@media (max-width: 991px) {
-  .img-5 {
+.div-8 {
+  color: #ba972f;
+  margin-top: 185px;
+  max-width: 926px;
+  font: italic 600 26px/33px serif, "CustomFont", -apple-system, Roboto, Helvetica, sans-serif;
+
+  @media (max-width: 991px) {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+}
+
+.div-10 {
+  margin-top: 72px;
+  max-width: 879px;
+  font: 300 26px/35px "CustomFont", -apple-system, Roboto, Helvetica, sans-serif;
+
+  @media (max-width: 991px) {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+}
+
+/* Image styling */
+.img,
+.img-2,
+.img-3,
+.img-4,
+.img-5 {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  align-self: center;
+  max-width: 100%;
+}
+
+.img {
+  margin-top: 185px;
+}
+
+.img-2 {
+  margin-top: 182px;
+  aspect-ratio: 2.33;
+  align-self: stretch;
+}
+
+.img-3 {
+  margin-top: 90px;
+  aspect-ratio: 1.72;
+  align-self: end;
+}
+
+.img-4 {
+  margin-top: 182px;
+  aspect-ratio: 1.49;
+}
+
+.img-5 {
+  margin: 92px 0 218px;
+  aspect-ratio: 0.97;
+
+  @media (max-width: 991px) {
     margin: 40px 0;
   }
 }
