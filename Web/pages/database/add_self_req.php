@@ -1,6 +1,6 @@
 <!--
   Purpose: Displays a success page after the user successfully submits a burial request.
-           Adds a burial request for loved one into the database.
+           Adds a self burial request into the database's burial_self_requests table.
 
   Authors: 
   Ben Le: Created the structure of the HTML (contact_success.html)
@@ -93,8 +93,6 @@
           <a class="org-logo" href="../../index.html"
             ><img src="https://i.ibb.co/GvF71Pz/logo.png"
           /></a>
-          <!--Links back to homepage if clicked-->
-          <!-- <a class="org-text" href="index.html"></a> -->
         </div>
         <div class="menu-btn">
           <div class="menu-btn_burger"></div>

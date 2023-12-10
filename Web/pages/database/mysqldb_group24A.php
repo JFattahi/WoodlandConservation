@@ -12,5 +12,5 @@ $dbLocation="localhost";
 $dbUsername="group24A";
 $dbPassword="fancyPARISbasket438";
 $dbName="group24A";
-$adminPagePass="password";
+$adminPagePass="password"; // admin page is currently not password protected
 ?>

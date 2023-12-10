@@ -1,5 +1,5 @@
 -- Purpose: This SQL file is used to create a table on the MySQL server to store the
--- self burial requests.
+-- other burial requests.
 -- Creates table structure for the burial_other_requests table.
 -- Only run this code once (will delete the table if you try to run it again)
 -- 
