@@ -1,3 +1,10 @@
+/**
+ * Purpose: This JavaScript will retreive the user information from the photo upload form
+ * Send an email to the Admin email via emailJS, and then send the user to the 
+ * Success page after successfully sending the email to the Admin.
+ * Author: Ben Le
+ */
+
 // Get references to the HTML elements
 const imagesInput = document.getElementById("images");
 const preview = document.querySelector(".preview");
@@ -29,7 +36,11 @@ imagesInput.addEventListener("change", (event) => {
   displayImages();
 });
 
-// Function to send a message using EmailJS
+/**
+ * Function to retreive the information from the photo upload form, 
+ * and send an email with that information to the admin account.
+ * Author: Ben Le
+ */
 function sendMessage() {
   // Initialize EmailJS with the public key
   (function () {

@@ -2,7 +2,7 @@
 // Purpose: This PHP file will take fields entered in by an admin using a form and will query
 // the burial_other_requests table. The resulting query will be printed out to allow an admin
 // to view burial requests made for others.
-// Author: Anonymous
+// Author: Matthew MacNeil
 
 // Fields to query the database (all of them could be null)
 $start_date = $_POST["start_date"];
@@ -36,7 +36,7 @@ $column_names = array(
  * @param mysqli_result $query - the SQL query created based on the admin's input
  * @param array $column_names - the column names for the table being queried
  * 
- * Author: Anonymous
+ * Author: Matthew MacNeil
  */
 function print_query($query, $column_names) {
     print "<table style='border-collapse: collapse;'>\n"; // start table
