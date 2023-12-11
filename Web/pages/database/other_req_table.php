@@ -51,7 +51,7 @@ function print_query($query, $column_names) {
 
     // loop through all of the rows in the query
     while ($a_row = mysqli_fetch_row($query)) {
-        print "<tr'>"; // start row
+        print "<tr>"; // start row
 
         // Print each column value
         foreach ($a_row as $columnValue) {
@@ -155,7 +155,7 @@ if($num_rows > 5) {
 }
 
 // Print out each row from the result of the query
-print_table($result, $column_names);
+print_query($result, $column_names);
 
 // Close the MySQL connection
 mysqli_close($link);
