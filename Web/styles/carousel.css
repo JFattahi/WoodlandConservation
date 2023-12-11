@@ -1,6 +1,8 @@
 /* 
 Purpose: Styling for carousel of homepage
-Author: Ben Le: Initial Design
+Authors: 
+Ben Le: Initial Design
+Jacob F: Mobile friendly implementation 
 */
 
 /* --------------- Element based styles ---------------------- */
@@ -21,22 +23,26 @@ Author: Ben Le: Initial Design
   text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
+/* Styling for First Slide Title Caption */
 .slide-container h5 {
   font-family: "CustomFont";
   font-size: 6em;
 }
 
+/* Styling for First Slide Subtitle Caption */
 .slide-container p {
   font-style: italic;
   font-size: 2.4rem;
 }
 
+/* Styling for Second and Third Slide Title Caption */
 .slide-container3 h5,
 .slide-container2 h5 {
   font-size: 2rem;
   text-shadow: none;
 }
 
+/* Styling for Second and Third Slide Subtitle Caption */
 .slide-container3 p,
 .slide-container2 p {
   font-size: 1rem;
