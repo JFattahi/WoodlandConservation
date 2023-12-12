@@ -2,7 +2,7 @@
  * Purpose: This JavaScript filters the photo gallery based on a given tag.
  * The gallery will shows photos with the given tag, and hide the other 
  * photos without the given tag.
- * Author: Anonymous
+ * Author: Ben Le
  */
 
 // Initialize with all elements displayed
@@ -10,7 +10,7 @@ filterPhotos("all");
 
 /**
  * Function to filter photos based on the given tag
- * Author: Anonymous
+ * Author: Ben Le
  * @param {*} tag, the tag to be filtered
  */
 function filterPhotos(tag) {
