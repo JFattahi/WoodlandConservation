@@ -1,1 +1,23 @@
 Woodland Conservation
+
+Woodland Conservation is a web application aimed at promoting awareness and conservation efforts for woodlands. It features a functional carousel, a captivating photo gallery with sorting capabilities, and a seamless "Contact Us" form powered by EmailJS for direct communication with administrators
+
+## Usage
+- Navigate the carousel to explore featured content.
+- Use the photo gallery's sort feature to display images with specific tags.
+- Contact administrators via the "Contact Us" form for inquiries or feedback.
+
+## Features
+
+- Functional carousel powered by Bootstrap framework.
+- Captivating photo gallery with sorting capabilities.
+- Seamless communication via EmailJS-integrated "Contact Us" form.
+  
+# Screentshots
+![Carousel](https://github.com/bencsci/WoodlandConservation/assets/127059162/99df5c19-dd61-44dc-986c-ea714d64144e)
+
+![PhotoGallery](https://github.com/bencsci/WoodlandConservation/assets/127059162/0796d0fd-6ff1-4b9f-95ea-4fc3d1ba3c71)
+
+![Contact](https://github.com/bencsci/WoodlandConservation/assets/127059162/b4306ac4-4a74-4c1a-96a1-3663b48e7815)
+
+![email](https://github.com/bencsci/WoodlandConservation/assets/127059162/59dad271-0ad3-4e3d-bc4d-76154c7b099e)
