@@ -1,6 +1,6 @@
 # Woodland Conservation
 
-Woodland Conservation is a web application aimed at promoting awareness and conservation efforts for woodlands. It features a functional carousel, a captivating photo gallery with sorting capabilities, and a seamless "Contact Us" form powered by EmailJS for direct communication with administrators
+Woodland Conservation is a web application aimed at promoting awareness and conservation efforts for woodlands. It features a functional carousel, a captivating photo gallery with sorting capabilities, and a seamless "Contact Us" form powered by EmailJS for direct communication with administrators.
 
 ## Usage
 - Navigate the carousel to explore featured content.
